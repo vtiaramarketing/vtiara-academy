@@ -36,6 +36,14 @@ export function CourseImage({ course, className }: { course: Pick<Course, 'code'
     return () => { live = false; };
   }, [course.image_path]);
   if (src) return <img src={src} alt={course.title} className={cn('object-cover', className)} />;
+  if (course.role_key && ROLE_ICON[course.role_key]) {
+    return (
+      <div className={cn('relative overflow-hidden bg-navy', className)}>
+        <img src={`/courses/${course.role_key}.jpg`} alt={course.title} loading="lazy" onError={(e) => { const i = e.currentTarget; if (!i.dataset.fb) { i.dataset.fb = '1'; i.src = `/courses/${course.role_key}.svg`; } }} className="h-full w-full object-cover" />
+        <span className="absolute left-3 top-3 rounded-full bg-navy/60 px-2.5 py-1 text-[10px] font-semibold tracking-widest text-white backdrop-blur">{course.code}</span>
+      </div>
+    );
+  }
   return (
     <div className={cn('relative overflow-hidden bg-gradient-to-br', courseGradient(course.code), className)} role="img" aria-label={`${course.title} image placeholder`}>
       <svg className="absolute inset-0 h-full w-full opacity-[0.12]" aria-hidden><defs><pattern id={'p' + course.code} width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" /></pattern></defs><rect width="100%" height="100%" fill={`url(#p${course.code})`} /></svg>
