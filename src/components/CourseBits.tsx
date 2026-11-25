@@ -67,8 +67,8 @@ export function CourseCard({ course }: { course: Course }) {
             <button className="btn-outline flex-1 cursor-not-allowed opacity-60" disabled>Coming Soon</button>
           ) : (
             <>
-              <Link to={`/courses/${course.slug}?enrol=1`} className="btn-primary flex-1">Enrol Now</Link>
-              <Link to={`/courses/${course.slug}`} className="btn-outline">Details</Link>
+              <Link to={`/courses/${course.slug}`} className="btn-primary flex-1">View course</Link>
+              <Link to={`/courses/${course.slug}?enrol=1`} className="btn-outline">Enquire</Link>
             </>
           )}
         </div>

@@ -9,6 +9,9 @@ interface AuthCtx {
   hasRole: (...roles: RoleKey[]) => boolean;
   isAdmin: boolean;
   isStaff: boolean;
+  isTutor: boolean;
+  /** Where this person's workspace lives after sign-in. */
+  home: string;
 }
 const Ctx = createContext<AuthCtx>(null as unknown as AuthCtx);
 export const useAuth = () => useContext(Ctx);
@@ -37,10 +40,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<AuthCtx>(() => {
     const has = (...r: RoleKey[]) => !!user?.roles.some((x) => r.includes(x));
+    const isAdmin = has('super_admin', 'academy_admin');
+    const isStaff = has('super_admin', 'academy_admin', 'trainer', 'assessor');
+    const isTutor = !isAdmin && has('trainer', 'assessor');
     return {
-      user, loading, refresh, hasRole: has,
-      isAdmin: has('super_admin', 'academy_admin'),
-      isStaff: has('super_admin', 'academy_admin', 'trainer', 'assessor'),
+      user, loading, refresh, hasRole: has, isAdmin, isStaff, isTutor,
+      home: !user ? '/login' : isAdmin ? '/admin' : isTutor ? '/tutor' : '/app/dashboard',
     };
   }, [user, loading, refresh]);
 

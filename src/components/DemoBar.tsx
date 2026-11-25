@@ -22,7 +22,7 @@ export default function DemoBar() {
           <p className="mb-3 mt-0.5 text-xs text-navy/60">Data lives in this browser only. Password for all: <code className="rounded bg-pale px-1">{DEMO_PASSWORD}</code> · OTP: <code className="rounded bg-pale px-1">{DEMO_OTP}</code></p>
           <div className="space-y-1">
             {content.demoUsers.map((u) => {
-              const to = u.role === 'learner' ? '/app/dashboard' : '/admin';
+              const to = u.role === 'learner' ? '/app/dashboard' : u.role === 'trainer' || u.role === 'assessor' ? '/tutor' : '/admin';
               const active = user?.email === u.email;
               return (
                 <button key={u.key} onClick={() => go(u.key, to)} className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-pale ${active ? 'bg-pale font-semibold' : ''}`}>

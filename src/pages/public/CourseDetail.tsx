@@ -4,7 +4,7 @@ import { Award, CalendarDays, CheckCircle2, ChevronDown, Clock, Globe2, Layers, 
 import { backend, useQuery } from '@/lib/db';
 import { useAuth } from '@/lib/auth';
 import { Badge, CourseImage, Disclaimer, Empty, Notice, Spinner, Tabs } from '@/components/ui';
-import { EnrolModal, PrerequisiteNotice, validityText } from '@/components/CourseBits';
+import { CourseCard, EnrolModal, PrerequisiteNotice, validityText } from '@/components/CourseBits';
 import { ContactCtas, FeeBox } from '@/components/Cta';
 import { usePageMeta } from '@/lib/seo';
 import { MODE_LABEL, cn, fmtDate, fmtTime } from '@/lib/utils';
@@ -75,7 +75,7 @@ export default function CourseDetail() {
             <div className="mt-8">
               {soon ? <span className="inline-flex rounded-xl bg-gold px-5 py-2.5 text-sm font-bold text-navy">Coming Soon</span>
                 : enrolled ? <Link to={`/app/courses/${c.slug}`} className="btn-gold !px-6 !py-3">{enrolled.access_status === 'pending' ? 'Enrolment request sent' : 'Go to my course'}</Link>
-                : <button onClick={() => setEnrol(true)} className="btn-gold !px-6 !py-3 text-base">Enrol Now</button>}
+                : <button onClick={() => setEnrol(true)} className="btn-gold !px-6 !py-3 text-base">Request enrolment</button>}
               <ContactCtas course={c} dark className="mt-4" />
             </div>
           </div>
@@ -186,10 +186,18 @@ export default function CourseDetail() {
               <p className="mt-3 text-xs text-navy/55">Clinical direction provided by the VTIARA Medical Advisor.</p>
             </div>
             {!soon && <FeeBox course={c} />}
-            {!soon && !enrolled && <button onClick={() => setEnrol(true)} className="btn-primary w-full">Enrol Now</button>}
+            {!soon && !enrolled && <button onClick={() => setEnrol(true)} className="btn-primary w-full">Request enrolment</button>}
           </aside>
         </div>
       </div>
+      <Related course={c} />
+      <section className="section pb-4 pt-4">
+        <div className="rounded-3xl bg-navy p-8 text-white sm:p-10">
+          <h2 className="text-2xl font-bold !text-white">Questions about {c.title}?</h2>
+          <p className="mt-2 max-w-xl text-white/75">Talk to an academy counsellor about eligibility, fees and the next batch.</p>
+          <div className="mt-5 flex flex-wrap gap-3"><Link to={`/enquire?course=${c.id}`} className="btn-gold">Send an enquiry</Link><ContactCtas course={c} dark /></div>
+        </div>
+      </section>
       {!soon && <EnrolModal course={c} open={enrol} onClose={() => setEnrol(false)} />}
     </>
   );
@@ -203,4 +211,16 @@ function Check({ items, gold }: { items: string[]; gold?: boolean }) {
 }
 function Fact({ icon: I, label, value }: { icon: typeof Clock; label: string; value: string }) {
   return <div className="flex items-center gap-3 rounded-2xl bg-pale p-4"><I className="h-5 w-5 text-teal" /><div><p className="text-xs text-navy/55">{label}</p><p className="font-semibold">{value}</p></div></div>;
+}
+
+function Related({ course }: { course: Course }) {
+  const { data } = useQuery(() => backend.select<Course>('courses', { eq: { status: 'published' }, order: ['sort_order'] }), []);
+  const list = (data ?? []).filter((x) => x.id !== course.id && (x.category === course.category || x.code === 'CC')).slice(0, 3);
+  if (list.length === 0) return null;
+  return (
+    <section className="section py-10" aria-labelledby="related-h">
+      <h2 id="related-h" className="text-2xl font-bold">Related courses</h2>
+      <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{list.map((x) => <CourseCard key={x.id} course={x} />)}</div>
+    </section>
+  );
 }

@@ -70,8 +70,56 @@ export function ProgressBar({ value, tone = 'teal', label }: { value: number; to
   );
 }
 
+export function Skeleton({ className }: { className?: string }) { return <div className={cn('skeleton', className)} aria-hidden />; }
 export function Spinner({ label = 'Loading…' }: { label?: string }) {
-  return <div className="flex items-center justify-center gap-2 py-16 text-sm text-navy/60" role="status"><Loader2 className="h-5 w-5 animate-spin text-teal" />{label}</div>;
+  return (
+    <div className="space-y-4 py-8" role="status" aria-live="polite">
+      <span className="sr-only">{label}</span>
+      <Skeleton className="h-8 w-1/3" /><Skeleton className="h-4 w-2/3" />
+      <div className="grid gap-4 pt-2 sm:grid-cols-2 lg:grid-cols-3">{[0, 1, 2].map((i) => <Skeleton key={i} className="h-40" />)}</div>
+    </div>
+  );
+}
+
+/** One status vocabulary for every module: Pending, Approved, Active, Completed, Cancelled, Draft, Published, Review required. */
+const STATUS_MAP: Record<string, { label: string; tone: keyof typeof TONES }> = {
+  pending: { label: 'Pending', tone: 'gold' }, awaiting_approval: { label: 'Pending', tone: 'gold' },
+  approved: { label: 'Approved', tone: 'blue' }, active: { label: 'Active', tone: 'green' }, in_progress: { label: 'Active', tone: 'green' },
+  completed: { label: 'Completed', tone: 'teal' }, certified: { label: 'Completed', tone: 'teal' }, passed: { label: 'Passed', tone: 'green' },
+  cancelled: { label: 'Cancelled', tone: 'red' }, failed: { label: 'Needs improvement', tone: 'red' }, rejected: { label: 'Rejected', tone: 'red' },
+  draft: { label: 'Draft', tone: 'slate' }, published: { label: 'Published', tone: 'green' }, review_required: { label: 'Review required', tone: 'gold' },
+  coming_soon: { label: 'Coming soon', tone: 'gold' }, archived: { label: 'Archived', tone: 'slate' },
+  new: { label: 'New', tone: 'blue' }, contacted: { label: 'Contacted', tone: 'teal' }, valid: { label: 'Valid', tone: 'green' },
+};
+export function StatusBadge({ status, label }: { status: string; label?: string }) {
+  const m = STATUS_MAP[status] ?? { label: status.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase()), tone: 'slate' as const };
+  return <Badge tone={m.tone}>{label ?? m.label}</Badge>;
+}
+
+/** Slide-over panel for quick review without leaving a table. */
+export function Drawer({ open, onClose, title, children }: { open: boolean; onClose: () => void; title: string; children: ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.activeElement as HTMLElement | null;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    ref.current?.focus();
+    return () => { document.removeEventListener('keydown', onKey); prev?.focus(); };
+  }, [open, onClose]);
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-50 flex justify-end" role="dialog" aria-modal="true" aria-label={title}>
+      <button className="absolute inset-0 bg-navy/40" onClick={onClose} aria-label="Close panel" tabIndex={-1} />
+      <div ref={ref} tabIndex={-1} className="relative flex h-full w-full max-w-md flex-col bg-white shadow-lift outline-none fade-up">
+        <div className="flex items-center justify-between border-b border-navy/10 px-5 py-4">
+          <h2 className="text-lg font-bold">{title}</h2>
+          <button onClick={onClose} className="rounded-lg p-2 hover:bg-pale" aria-label="Close"><X className="h-5 w-5" /></button>
+        </div>
+        <div className="flex-1 overflow-y-auto p-5">{children}</div>
+      </div>
+    </div>
+  );
 }
 
 export function Empty({ title, children, action }: { title: string; children?: ReactNode; action?: ReactNode }) {

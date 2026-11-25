@@ -11,7 +11,7 @@ export default function EnquiryForm({ initialCourse = '', intent = 'general' }: 
   const toast = useToast();
   const { contact } = useSettings();
   const { data: courses } = useQuery(() => backend.select<Course>('courses', { order: ['sort_order'] }), []);
-  const [v, setV] = useState({ name: '', phone: '', email: '', course: initialCourse, contact: 'whatsapp', message: '', consent: false, website: '' });
+  const [v, setV] = useState({ name: '', phone: '', email: '', course: initialCourse, contact: 'whatsapp', callback: '', message: '', consent: false, website: '' });
   const [errors, setErrors] = useState<Errors>({});
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
@@ -37,7 +37,7 @@ export default function EnquiryForm({ initialCourse = '', intent = 'general' }: 
     try {
       await backend.rpc('submit_enquiry', {
         p_name: v.name.trim(), p_phone: v.phone.trim(), p_email: v.email.trim() || null, p_course: v.course || null,
-        p_contact: v.contact, p_type: v.course && intent === 'general' ? 'course' : intent, p_message: v.message.trim() || null, p_consent: v.consent,
+        p_contact: v.contact, p_type: v.course && intent === 'general' ? 'course' : intent, p_message: [v.callback ? `Preferred callback time: ${v.callback}` : '', v.message.trim()].filter(Boolean).join('\n') || null, p_consent: v.consent,
       });
       setDone(true); toast('Enquiry sent. We will be in touch soon.');
     } catch (err) {
@@ -80,6 +80,11 @@ export default function EnquiryForm({ initialCourse = '', intent = 'general' }: 
           ))}
         </div>
       </fieldset>
+      <Field label="Preferred callback time">
+        <select className="input" value={v.callback} onChange={(e) => set('callback', e.target.value)}>
+          <option value="">Any time</option><option>Morning (9am to 12pm)</option><option>Afternoon (12pm to 4pm)</option><option>Evening (4pm to 7pm)</option>
+        </select>
+      </Field>
       <Field label="Message (optional)"><textarea className="input min-h-24" maxLength={2000} value={v.message} onChange={(e) => set('message', e.target.value)} /></Field>
       <div className="absolute -left-[9999px]" aria-hidden><label>Website<input tabIndex={-1} autoComplete="off" value={v.website} onChange={(e) => set('website', e.target.value)} /></label></div>
       <div>

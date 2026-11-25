@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { usePortalBase } from '@/lib/portal';
 import { useAuth } from '@/lib/auth';
 import { backend, useQuery } from '@/lib/db';
 import { Badge, Button, Disclaimer, Empty, ErrorNote, Notice, PageHeader, Spinner, Table, useAction, useToast } from '@/components/ui';
@@ -13,6 +14,7 @@ export default function Practicals() {
 }
 
 function List() {
+  const base = usePortalBase();
   const { data, loading, error } = useQuery(async () => {
     const [enrols, profiles, courses, practicals] = await Promise.all([backend.select<Enrolment>('course_enrolments'), backend.select<Profile>('profiles'), backend.select<Course>('courses'), backend.select<PracticalAssessment>('practical_assessments')]);
     return { enrols: enrols.filter((e) => courses.find((c) => c.id === e.course_id)?.requires_practical && e.status !== 'not_started'), profiles, courses, practicals };
@@ -26,12 +28,13 @@ function List() {
       <PageHeader title="Practical reviews" subtitle="Record practical results and approve completion. Certificates are issued only after approval." />
       {rows.length === 0 ? <Empty title="No learners to review" /> : <Table><thead><tr><th className="th">Learner</th><th className="th">Course</th><th className="th">Status</th><th className="th">Practical</th><th className="th" /></tr></thead>
         <tbody className="divide-y divide-navy/5">{rows.map((e) => { const p = data.practicals.filter((x) => x.enrolment_id === e.id); const pend = p.some((x) => x.result === 'passed' && x.approval_status === 'pending');
-          return <tr key={e.id}><td className="td font-medium">{data.profiles.find((x) => x.id === e.user_id)?.full_name}</td><td className="td">{data.courses.find((c) => c.id === e.course_id)?.title}</td><td className="td"><Badge tone={STATUS_TONE[e.status]}>{STATUS_LABEL[e.status]}</Badge></td><td className="td">{pend ? <Badge tone="gold">Needs approval</Badge> : p.length ? <Badge tone={p.every((x) => x.approval_status === 'approved') ? 'green' : 'slate'}>{p.every((x) => x.approval_status === 'approved') ? 'Approved' : p[0].result}</Badge> : <span className="text-navy/40">Not recorded</span>}</td><td className="td text-right"><Link className="font-semibold text-teal" to={`/admin/practicals/${e.id}`}>Open</Link></td></tr>; })}</tbody></Table>}
+          return <tr key={e.id}><td className="td font-medium">{data.profiles.find((x) => x.id === e.user_id)?.full_name}</td><td className="td">{data.courses.find((c) => c.id === e.course_id)?.title}</td><td className="td"><Badge tone={STATUS_TONE[e.status]}>{STATUS_LABEL[e.status]}</Badge></td><td className="td">{pend ? <Badge tone="gold">Needs approval</Badge> : p.length ? <Badge tone={p.every((x) => x.approval_status === 'approved') ? 'green' : 'slate'}>{p.every((x) => x.approval_status === 'approved') ? 'Approved' : p[0].result}</Badge> : <span className="text-navy/40">Not recorded</span>}</td><td className="td text-right"><Link className="font-semibold text-teal" to={`${base}/practicals/${e.id}`}>Open</Link></td></tr>; })}</tbody></Table>}
     </>
   );
 }
 
 function Detail({ id }: { id: string }) {
+  const base = usePortalBase();
   const { user, isAdmin, hasRole } = useAuth();
   const nav = useNavigate(); const toast = useToast(); const { busy, run } = useAction();
   const [res, setRes] = useState<Record<string, ItemResult>>({});
@@ -70,7 +73,7 @@ function Detail({ id }: { id: string }) {
   const approve = async (yes: boolean) => { if (!existing) return; const ok = await run(() => backend.rpc('approve_practical', { p_practical: existing.id, p_approve: yes, p_note: yes ? null : reject }), yes ? 'Approved. Certificate issued if all requirements are met.' : 'Practical sent back to the learner'); if (ok) { setReject(''); reload(); } };
   return (
     <>
-      <PageHeader title={learner.full_name} subtitle={`${course.title} · ${STATUS_LABEL[enrol.status]}`} actions={<button className="btn-outline" onClick={() => nav('/admin/practicals')}>Back</button>} />
+      <PageHeader title={learner.full_name} subtitle={`${course.title} · ${STATUS_LABEL[enrol.status]}`} actions={<button className="btn-outline" onClick={() => nav(`${base}/practicals`)}>Back</button>} />
       <div className="mb-5 grid gap-3 sm:grid-cols-3 text-sm">
         <div className="card !p-4"><p className="text-xs text-navy/55">Attendance</p><p className="font-semibold">{course.requires_attendance ? (attended ? 'Present' : 'Not marked') : 'Not required'}</p></div>
         <div className="card !p-4"><p className="text-xs text-navy/55">Enrolled</p><p className="font-semibold">{fmtDate(enrol.enrolled_at)}</p></div>

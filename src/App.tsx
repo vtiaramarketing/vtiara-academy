@@ -1,7 +1,7 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { isConfigured } from './lib/db';
 import ConfigMissing from './components/ConfigMissing';
-import { AdminLayout, LearnerLayout, PublicLayout, RequireAuth, RequireStaff } from './components/Layouts';
+import { AdminLayout, TutorLayout, LearnerLayout, PublicLayout, RequireAuth, RequireStaff } from './components/Layouts';
 
 import Home from './pages/public/Home';
 import Catalogue from './pages/public/Catalogue';
@@ -34,6 +34,8 @@ import Reports from './pages/admin/Reports';
 import Audit from './pages/admin/Audit';
 import Enquiries from './pages/admin/Enquiries';
 import SettingsPage from './pages/admin/Settings';
+import TrainerDashboard from './pages/admin/TrainerDashboard';
+import { TutorStudents, TutorLessonReview, TutorSupport } from './pages/tutor/TutorPages';
 
 export default function App() {
   if (!isConfigured) return <ConfigMissing />;
@@ -86,6 +88,21 @@ export default function App() {
           <Route path="audit" element={<Audit />} />
           <Route path="enquiries" element={<Enquiries />} />
           <Route path="settings" element={<SettingsPage />} />
+        </Route>
+      </Route>
+
+ 
+      <Route element={<RequireStaff />}>
+        <Route path="tutor" element={<TutorLayout />}>
+          <Route index element={<TrainerDashboard />} />
+          <Route path="batches" element={<Batches />} />
+          <Route path="attendance" element={<Batches />} />
+          <Route path="students" element={<TutorStudents />} />
+          <Route path="practicals" element={<Practicals />} />
+          <Route path="practicals/:enrolmentId" element={<Practicals />} />
+          <Route path="lessons" element={<TutorLessonReview />} />
+          <Route path="support" element={<TutorSupport />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Route>
 

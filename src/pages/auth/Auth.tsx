@@ -41,8 +41,10 @@ function useAfterAuth() {
   return async (id: string, fallback?: string) => {
     await refresh();
     const roles = await backend.select<{ role_key: string }>('user_roles', { eq: { user_id: id } });
-    const staff = roles.some((r) => r.role_key !== 'learner');
-    nav(from ?? fallback ?? (staff ? '/admin' : '/app/dashboard'), { replace: true });
+    const keys = roles.map((r) => r.role_key);
+    const admin = keys.some((k) => k === 'super_admin' || k === 'academy_admin');
+    const tutor = !admin && keys.some((k) => k === 'trainer' || k === 'assessor');
+    nav(from ?? fallback ?? (admin ? '/admin' : tutor ? '/tutor' : '/app/dashboard'), { replace: true });
   };
 }
 

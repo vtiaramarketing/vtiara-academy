@@ -6,6 +6,8 @@ import { Empty, Spinner, ErrorNote, Disclaimer } from '@/components/ui';
 import { MODE_LABEL } from '@/lib/utils';
 import type { Course, LearningMode } from '@/lib/types';
 import { usePageMeta } from '@/lib/seo';
+import { UI_CATEGORIES, inCategory, type UiCategory } from '@/lib/pathways';
+import { useSearchParams } from 'react-router-dom';
 
 const DURATIONS = [
   { id: 'any', label: 'Any duration', test: () => true },
@@ -17,21 +19,24 @@ const DURATIONS = [
 export default function Catalogue() {
   usePageMeta('Courses', 'Browse VTIARA Training Academy courses: Common Core and role-specific training for clinical, support and front-office roles in Bangalore.');
   const { data, loading, error } = useQuery(() => backend.select<Course>('courses', { order: ['sort_order'] }), []);
-  const [q, setQ] = useState('');
+  const [sp0] = useSearchParams();
+  const [q, setQ] = useState(sp0.get('q') ?? '');
   const [role, setRole] = useState('all');
   const [mode, setMode] = useState('all');
   const [duration, setDuration] = useState('any');
   const [level, setLevel] = useState('all');
   const [lang, setLang] = useState('all');
   const [cert, setCert] = useState('all');
-  const [category, setCategory] = useState<'all' | Course['category']>('all');
+  const [sp] = useSearchParams();
+  const initial = sp.get('cat');
+  const [category, setCategory] = useState<'all' | UiCategory>(UI_CATEGORIES.includes(initial as UiCategory) ? (initial as UiCategory) : 'all');
 
   const courses = (data ?? []).filter((c) => c.status !== 'draft' && c.status !== 'archived');
   const roles = useMemo(() => [...new Map(courses.map((c) => [c.role_key, c.role_label])).entries()].filter(([k]) => k), [courses.length]);
   const langs = useMemo(() => [...new Set(courses.flatMap((c) => c.languages))], [courses.length]);
 
   const list = courses.filter((c) =>
-    (category === 'all' || c.category === category) &&
+    inCategory(c, category) &&
     (!q || (c.title + ' ' + c.short_description).toLowerCase().includes(q.toLowerCase())) &&
     (role === 'all' || c.role_key === role) &&
     (mode === 'all' || c.learning_modes.includes(mode as LearningMode)) &&
@@ -47,11 +52,11 @@ export default function Catalogue() {
   return (
     <div className="section py-12">
       <p className="eyebrow">Course catalogue</p>
-      <h1 className="mt-2 font-display text-4xl font-semibold">Find your role path</h1>
+      <h1 className="h-section mt-2">Find your role path</h1>
       <p className="mt-2 max-w-2xl text-navy/70">Every role starts with Common Core. Then choose the training for the work you do.</p>
 
       <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Category">
-        {(['all', 'Clinical and Support', 'Front Office and Management'] as const).map((c) => (
+        {(['all', ...UI_CATEGORIES] as const).map((c) => (
           <button key={c} role="tab" aria-selected={category === c} onClick={() => setCategory(c)} className={`rounded-full px-4 py-2 text-sm font-semibold transition ${category === c ? 'bg-navy text-white' : 'bg-pale text-navy/70 hover:bg-accent/10'}`}>{c === 'all' ? 'All courses' : c}</button>
         ))}
       </div>
