@@ -7,17 +7,14 @@ import type { Course } from '@/lib/types';
 /* ───────── Brand ───────── */
 export function Logo({ light = false, small = false }: { light?: boolean; small?: boolean }) {
   return (
-    <Link to="/" className="flex items-center gap-3" aria-label="VTIARA Training Academy home">
-      <svg viewBox="0 0 48 48" className={small ? 'h-8 w-8' : 'h-10 w-10'} aria-hidden>
-        <rect width="48" height="48" rx="12" fill={light ? '#ffffff14' : '#0D2137'} />
-        <path d="M9 31 L14 17 L24 26 L34 17 L39 31 Z" fill="none" stroke="#F5C300" strokeWidth="2.4" strokeLinejoin="round" />
-        <circle cx="14" cy="15" r="2.2" fill="#F5C300" /><circle cx="24" cy="12" r="2.2" fill="#F5C300" /><circle cx="34" cy="15" r="2.2" fill="#F5C300" />
-        <path d="M11 35 H37" stroke="#2A9DBB" strokeWidth="2.4" strokeLinecap="round" />
-      </svg>
-      <span className="leading-tight">
-        <span className={cn('block font-display text-lg font-semibold tracking-wide', light ? 'text-white' : 'text-navy')}>VTIARA</span>
-        <span className={cn('block text-[10px] font-semibold uppercase tracking-[0.22em]', light ? 'text-accent' : 'text-teal')}>Training Academy</span>
-      </span>
+    <Link to="/" className="inline-flex items-center" aria-label="VTIARA Training Academy home">
+      <img
+        src={light ? '/logo-light.png' : '/logo.png'}
+        alt="VTIARA Training Academy"
+        className={small ? 'h-9 w-auto' : 'h-11 w-auto'}
+        width={702}
+        height={229}
+      />
     </Link>
   );
 }
