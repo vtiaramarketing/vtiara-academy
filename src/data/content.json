@@ -1,0 +1,1511 @@
+{
+  "branches": [
+    {
+      "key": "main",
+      "name": "VTIARA Indiranagar",
+      "city": "Bangalore",
+      "address": "1st Floor, Chinmaya Mission Hospital Road, near Indiranagar Metro Station, Hoysala Nagar, Indiranagar, Bangalore 560 038",
+      "maps_url": "https://maps.app.goo.gl/kJQtHceQpqWjZetQ9",
+      "phone": "+91 63613 47722",
+      "hours": "Monday to Sunday, 10:00 AM to 7:30 PM"
+    },
+    {
+      "key": "second",
+      "name": "VTIARA New BEL Road",
+      "city": "Bangalore",
+      "address": "New BEL Road, Bangalore 560 094",
+      "maps_url": "https://maps.app.goo.gl/E9fSJ2oELxkVfB5c9",
+      "phone": "+91 63613 47722",
+      "hours": "Monday to Sunday, 10:00 AM to 7:30 PM"
+    }
+  ],
+  "courses": [
+    {
+      "slug": "common-core",
+      "title": "Common Core Training",
+      "code": "CC",
+      "category": "Clinical and Support",
+      "role_key": "all",
+      "role_label": "All roles",
+      "status": "published",
+      "sort_order": 1,
+      "duration_hours": 16,
+      "duration_label": "16 hours",
+      "level": "Foundation",
+      "languages": [
+        "English",
+        "Kannada",
+        "Hindi"
+      ],
+      "learning_modes": [
+        "online",
+        "academy",
+        "blended"
+      ],
+      "certificate_title": "Common Core Certified",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "The mandatory foundation for every VTIARA role: values, hygiene, consent, privacy and emergency awareness.",
+      "overview": "Common Core is the shared foundation every VTIARA team member completes before role training. It covers how we present ourselves, how we speak with patients, and the hygiene, infection-control, consent and privacy habits that keep every patient safe. It ends with a 20-question knowledge test and a supervised hand-hygiene practical.",
+      "audience": "Every new and existing VTIARA team member, and future trainees from outside the clinic, regardless of final role.",
+      "eligibility": [
+        "No prior clinical qualification required",
+        "Basic reading comprehension in English",
+        "Willingness to attend the academy practical session"
+      ],
+      "outcomes": [
+        "Explain VTIARA values and uphold grooming and presentation standards",
+        "Communicate with patients clearly, kindly and within role scope",
+        "Describe skin and hair basics without diagnosing or advising treatment",
+        "Perform hand hygiene correctly and apply infection-control precautions",
+        "Segregate biomedical waste correctly",
+        "Obtain and respect consent, privacy and confidentiality",
+        "Respond to fire and medical emergencies by escalating promptly"
+      ],
+      "pass_rules": {
+        "attendance_pct": 100,
+        "knowledge_pct": 80,
+        "practical": "Hand-hygiene practical passed"
+      },
+      "requirements_text": [
+        "100% attendance at the academy session",
+        "80% or higher on the 20-question knowledge test",
+        "Hand-hygiene practical passed"
+      ],
+      "modules": [
+        {
+          "title": "VTIARA values and presentation",
+          "lessons": [
+            {
+              "title": "VTIARA values and standards",
+              "minutes": 25,
+              "description": "What 'One Standard' means across every role and branch.",
+              "transcript": "Welcome to VTIARA. Our standard is the same in every room and every role: safe, respectful, consistent care. In this lesson we walk through the VTIARA values and how they show up in everyday decisions."
+            },
+            {
+              "title": "Grooming and professional presentation",
+              "minutes": 20,
+              "description": "Uniform, grooming, jewellery, nails and personal hygiene expectations.",
+              "transcript": "Your presentation tells patients how seriously we take their care. We cover uniform, nails, hair, jewellery and personal hygiene, and why each matters in a clinical setting."
+            }
+          ]
+        },
+        {
+          "title": "Patient communication and skin & hair basics",
+          "lessons": [
+            {
+              "title": "Patient communication",
+              "minutes": 30,
+              "description": "Greeting, listening, empathy, and knowing when to hand over to a clinician.",
+              "transcript": "Good communication starts with a warm greeting and active listening. If a patient asks a clinical question, you acknowledge it and refer them to the doctor. You never diagnose or prescribe."
+            },
+            {
+              "title": "Skin and hair basics",
+              "minutes": 35,
+              "description": "Plain-language structure of skin and hair, to support — never replace — clinical advice.",
+              "transcript": "This lesson gives you a shared vocabulary for skin layers, the hair growth cycle and common concerns, so you can understand your colleagues and support patients within your role."
+            }
+          ]
+        },
+        {
+          "title": "Hygiene and infection control",
+          "lessons": [
+            {
+              "title": "Hand hygiene: the five moments",
+              "minutes": 30,
+              "description": "When and how to clean hands; rub versus wash; common mistakes.",
+              "transcript": "Clean hands before touching a patient, before a clean or aseptic task, after body-fluid exposure, after touching a patient and after touching patient surroundings. Rub for 20 to 30 seconds, or wash for 40 to 60 seconds when hands are visibly soiled."
+            },
+            {
+              "title": "Infection control and biomedical waste",
+              "minutes": 40,
+              "description": "Standard precautions, PPE, safe sharps handling and colour-coded waste segregation.",
+              "transcript": "Treat every patient with standard precautions. Sharps go in a puncture-proof container without recapping. Segregate waste at the point of generation using the colour-coded system."
+            }
+          ]
+        },
+        {
+          "title": "Consent, privacy and emergencies",
+          "lessons": [
+            {
+              "title": "Consent, privacy and confidentiality",
+              "minutes": 35,
+              "description": "Informed consent, patient photos, data safety and what never to share.",
+              "transcript": "Consent must be informed, voluntary and documented. Patient information is shared only with those who need it, in private, and photos are taken only with consent on approved devices."
+            },
+            {
+              "title": "Fire and emergency awareness",
+              "minutes": 30,
+              "description": "Raising the alarm, evacuation, and escalating medical emergencies.",
+              "transcript": "If a patient collapses or a fire starts, raise the alarm, stay calm and follow the clinic emergency plan. Your role is to escalate quickly and support, not to treat."
+            }
+          ]
+        }
+      ],
+      "assessment": {
+        "title": "Common Core Knowledge Test",
+        "time_limit_min": 30,
+        "pass_mark": 80,
+        "num_questions": 20,
+        "retake_after_days": 3,
+        "compulsory_category": null,
+        "questions": [
+          {
+            "cat": "Hand hygiene",
+            "q": "How long should you rub alcohol-based hand rub over all hand surfaces?",
+            "o": [
+              "About 5 seconds",
+              "20 to 30 seconds, until dry",
+              "2 minutes",
+              "Only until it stops feeling wet"
+            ],
+            "c": 1,
+            "e": "Alcohol-based rub needs 20–30 seconds of contact and should be rubbed until your hands are dry."
+          },
+          {
+            "cat": "Hand hygiene",
+            "q": "Your hands are visibly soiled. What should you use?",
+            "o": [
+              "Alcohol-based hand rub",
+              "Soap and water",
+              "A tissue",
+              "Gloves only"
+            ],
+            "c": 1,
+            "e": "Visibly soiled hands must be washed with soap and water; rub is not enough."
+          },
+          {
+            "cat": "Hand hygiene",
+            "q": "Which is one of the five moments for hand hygiene?",
+            "o": [
+              "Before touching a patient",
+              "Only at the start of your shift",
+              "Only when leaving the clinic",
+              "Only when wearing gloves"
+            ],
+            "c": 0,
+            "e": "The five moments include before touching a patient, before a clean/aseptic task, after body-fluid exposure, after touching a patient and after touching patient surroundings."
+          },
+          {
+            "cat": "Hand hygiene",
+            "q": "After removing gloves you should:",
+            "o": [
+              "Do nothing, gloves kept hands clean",
+              "Perform hand hygiene",
+              "Wipe hands on your uniform",
+              "Reuse the gloves later"
+            ],
+            "c": 1,
+            "e": "Gloves do not replace hand hygiene. Clean your hands after removing them."
+          },
+          {
+            "cat": "Infection control",
+            "q": "Standard precautions apply to:",
+            "o": [
+              "Only patients with known infections",
+              "All patients, every time",
+              "Only surgical procedures",
+              "Only patients who ask for them"
+            ],
+            "c": 1,
+            "e": "Standard precautions treat every patient's blood and body fluids as potentially infectious."
+          },
+          {
+            "cat": "Infection control",
+            "q": "A reusable instrument has just been used on a patient. What do you do?",
+            "o": [
+              "Wipe it and use it on the next patient",
+              "Treat it as contaminated and send it for decontamination per protocol",
+              "Rinse under the tap and keep it on the tray",
+              "Leave it in the treatment room"
+            ],
+            "c": 1,
+            "e": "Used instruments are contaminated until they go through the clinic's decontamination and sterilisation process."
+          },
+          {
+            "cat": "Biomedical waste",
+            "q": "Where do used needles and other sharps go?",
+            "o": [
+              "Regular dustbin",
+              "Yellow bag",
+              "White translucent puncture-proof sharps container",
+              "Red bag with plastics"
+            ],
+            "c": 2,
+            "e": "Sharps go into a puncture-proof, leak-proof sharps container (white translucent under the Bio-Medical Waste Rules)."
+          },
+          {
+            "cat": "Biomedical waste",
+            "q": "You have just used a needle. What must you never do?",
+            "o": [
+              "Dispose of it immediately in the sharps container",
+              "Recap or bend it by hand",
+              "Keep the container below fill line",
+              "Report a needle-stick injury"
+            ],
+            "c": 1,
+            "e": "Never recap or bend needles; this is a leading cause of needle-stick injuries."
+          },
+          {
+            "cat": "Biomedical waste",
+            "q": "Blood-soiled cotton and dressings are segregated into:",
+            "o": [
+              "Yellow bag",
+              "General waste",
+              "Blue box",
+              "Paper recycling"
+            ],
+            "c": 0,
+            "e": "Soiled waste such as blood-stained cotton and dressings goes into the yellow category bag."
+          },
+          {
+            "cat": "Consent",
+            "q": "Before any procedure, patient consent must be:",
+            "o": [
+              "Assumed if the patient booked an appointment",
+              "Informed, voluntary and documented as per clinic policy",
+              "Taken verbally from a relative only",
+              "Taken after the procedure"
+            ],
+            "c": 1,
+            "e": "Valid consent is informed, voluntary and recorded before the procedure begins."
+          },
+          {
+            "cat": "Consent",
+            "q": "A patient hesitates and asks you to stop during a procedure. You:",
+            "o": [
+              "Finish quickly as it is almost done",
+              "Stop and inform the doctor or supervisor",
+              "Convince them to continue",
+              "Ignore it if they are quiet"
+            ],
+            "c": 1,
+            "e": "Consent can be withdrawn at any time. Stop safely and escalate."
+          },
+          {
+            "cat": "Privacy",
+            "q": "You need a photo of a patient's treatment area for the record. You:",
+            "o": [
+              "Use your personal phone for convenience",
+              "Take it only with the patient's consent on an approved clinic device",
+              "Ask a colleague to take it on theirs",
+              "Skip consent if the face is not visible"
+            ],
+            "c": 1,
+            "e": "Photos need explicit consent and must be taken and stored only on approved clinic systems."
+          },
+          {
+            "cat": "Privacy",
+            "q": "A friend asks whether a well-known person visited the clinic. You:",
+            "o": [
+              "Tell them quietly",
+              "Say nothing is confirmed or shared about any patient",
+              "Hint with a smile",
+              "Post a vague story"
+            ],
+            "c": 1,
+            "e": "Never confirm or hint at who is or is not a patient."
+          },
+          {
+            "cat": "Confidentiality",
+            "q": "Patient details may be discussed:",
+            "o": [
+              "In the lift with colleagues",
+              "Only with those who need to know, in a private place",
+              "In a public WhatsApp group",
+              "With any staff member"
+            ],
+            "c": 1,
+            "e": "Share on a need-to-know basis and in private settings only."
+          },
+          {
+            "cat": "Patient data safety",
+            "q": "A colleague asks to use your system login 'just this once'. You:",
+            "o": [
+              "Share it, it's quicker",
+              "Refuse; every user must use their own login",
+              "Share it and change it later",
+              "Write it on a sticky note for them"
+            ],
+            "c": 1,
+            "e": "Logins are personal. Sharing breaks audit trails and patient privacy."
+          },
+          {
+            "cat": "Patient data safety",
+            "q": "You step away from a computer showing a patient record. You should:",
+            "o": [
+              "Leave it open",
+              "Lock the screen",
+              "Turn the monitor away",
+              "Ask the patient to watch it"
+            ],
+            "c": 1,
+            "e": "Lock the screen every time you leave a device."
+          },
+          {
+            "cat": "Patient communication",
+            "q": "A patient asks which tablet to take for hair fall. You:",
+            "o": [
+              "Suggest one you have heard works",
+              "Politely explain you cannot advise and connect them with the doctor",
+              "Tell them to search online",
+              "Say any supplement is fine"
+            ],
+            "c": 1,
+            "e": "Only qualified clinicians diagnose or prescribe. Refer clinical questions to the doctor."
+          },
+          {
+            "cat": "Patient communication",
+            "q": "An upset patient complains about waiting. Your best first step is to:",
+            "o": [
+              "Argue the wait was not long",
+              "Listen calmly, acknowledge the concern and escalate if unresolved",
+              "Ignore until they leave",
+              "Blame another team"
+            ],
+            "c": 1,
+            "e": "Listening and acknowledging calms the situation; escalate to your supervisor when needed."
+          },
+          {
+            "cat": "Emergency escalation",
+            "q": "A patient feels faint and slumps in the waiting area. You first:",
+            "o": [
+              "Give water and carry on",
+              "Stay with the patient and alert the clinical team immediately",
+              "Wait to see if it passes",
+              "Give any medicine you have"
+            ],
+            "c": 1,
+            "e": "Stay with the patient, call for help and follow the emergency protocol. Do not give medication."
+          },
+          {
+            "cat": "Emergency escalation",
+            "q": "You discover a fire. What is the correct action?",
+            "o": [
+              "Collect your belongings first",
+              "Raise the alarm, alert others and follow the evacuation plan",
+              "Investigate the source alone",
+              "Wait for a manager's permission"
+            ],
+            "c": 1,
+            "e": "Raise the alarm, help others to safety and follow the evacuation plan."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Hand hygiene practical",
+        "description": "Observed hand-hygiene technique (rub and wash).",
+        "requires_evidence": false,
+        "items": [
+          {
+            "label": "Removes jewellery/watch and rolls sleeves",
+            "critical": false
+          },
+          {
+            "label": "Applies adequate product and covers all hand surfaces",
+            "critical": true
+          },
+          {
+            "label": "Palm-to-palm, backs of hands and between fingers",
+            "critical": true
+          },
+          {
+            "label": "Thumbs, fingertips and wrists cleaned",
+            "critical": true
+          },
+          {
+            "label": "Correct duration (20–30 s rub or 40–60 s wash)",
+            "critical": true
+          },
+          {
+            "label": "Dries hands properly / rub left to dry",
+            "critical": false
+          },
+          {
+            "label": "Avoids re-contamination (e.g. taps)",
+            "critical": false
+          }
+        ]
+      }
+    },
+    {
+      "slug": "skin-therapist",
+      "title": "Skin Therapist Training",
+      "code": "ST",
+      "category": "Clinical and Support",
+      "role_key": "skin_therapist",
+      "role_label": "Skin Therapist",
+      "status": "published",
+      "sort_order": 2,
+      "duration_hours": 280,
+      "duration_label": "280 hours / 8 weeks",
+      "level": "Advanced",
+      "languages": [
+        "English"
+      ],
+      "learning_modes": [
+        "academy",
+        "blended"
+      ],
+      "certificate_title": "Level 1 Certified Therapist",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "An eight-week structured programme to become a Level 1 Certified Therapist with supervised floor practice.",
+      "overview": "This programme builds safe, consistent skin and hair therapy skills in the VTIARA way. You will learn the science, consultation and documentation, then practise facials, skin treatments, scalp care and device handling under direct supervision, finishing with practical stations and a completed logbook.",
+      "audience": "Aspiring and existing skin therapists, and cosmetology or aesthetics trainees joining VTIARA.",
+      "eligibility": [
+        "Common Core Training completed (recommended before starting)",
+        "Minimum Class 12 or equivalent",
+        "Comfort working with patients in a clinical setting"
+      ],
+      "outcomes": [
+        "Apply skin and hair science to safe therapy decisions within scope",
+        "Conduct structured consultations and complete accurate documentation",
+        "Perform facials, skin treatments and scalp care to VTIARA standard under supervision",
+        "Operate devices with laser-safety precautions",
+        "Explain products and aftercare without prescribing",
+        "Demonstrate consistent practice through a supervised logbook"
+      ],
+      "pass_rules": {
+        "attendance_pct": 100,
+        "knowledge_pct": 80,
+        "practical": "All practical stations passed",
+        "logbook": true
+      },
+      "requirements_text": [
+        "100% attendance",
+        "80% or higher knowledge score",
+        "All practical stations passed",
+        "Completed logbook",
+        "Trainer approval before certificate issue"
+      ],
+      "modules": [
+        {
+          "title": "Common Core (prerequisite revision)",
+          "lessons": [
+            {
+              "title": "Common Core recap for therapists",
+              "minutes": 30,
+              "description": "Hygiene, consent and privacy as they apply to therapy rooms."
+            }
+          ]
+        },
+        {
+          "title": "Skin science",
+          "lessons": [
+            {
+              "title": "Skin structure and function",
+              "minutes": 45,
+              "description": "Layers, barrier function and skin types."
+            },
+            {
+              "title": "Common skin concerns and scope boundaries",
+              "minutes": 40,
+              "description": "What a therapist can support and when to refer to the doctor."
+            }
+          ]
+        },
+        {
+          "title": "Hair science",
+          "lessons": [
+            {
+              "title": "Hair structure and growth cycle",
+              "minutes": 40,
+              "description": "Growth phases, common concerns and scalp health."
+            }
+          ]
+        },
+        {
+          "title": "Consultation and documentation",
+          "lessons": [
+            {
+              "title": "Structured consultation",
+              "minutes": 40,
+              "description": "History-taking prompts, red flags and referral."
+            },
+            {
+              "title": "Records and consent documentation",
+              "minutes": 30,
+              "description": "Accurate, timely, confidential records."
+            }
+          ]
+        },
+        {
+          "title": "Facials and skin treatments",
+          "lessons": [
+            {
+              "title": "Facial protocols",
+              "minutes": 60,
+              "description": "Cleansing, exfoliation, extraction, masks and finishing."
+            },
+            {
+              "title": "Skin treatment support procedures",
+              "minutes": 60,
+              "description": "Preparation, assistance, monitoring and aftercare."
+            }
+          ]
+        },
+        {
+          "title": "Hair and scalp care",
+          "lessons": [
+            {
+              "title": "Scalp analysis and care routines",
+              "minutes": 45,
+              "description": "Safe scalp services and client guidance."
+            }
+          ]
+        },
+        {
+          "title": "Devices and laser safety",
+          "lessons": [
+            {
+              "title": "Device handling and laser safety",
+              "minutes": 60,
+              "description": "Eye protection, room precautions, settings approved by the doctor."
+            }
+          ]
+        },
+        {
+          "title": "Products and aftercare",
+          "lessons": [
+            {
+              "title": "Products and aftercare guidance",
+              "minutes": 40,
+              "description": "Explaining prescribed regimens; no substitution or advice beyond scope."
+            }
+          ]
+        },
+        {
+          "title": "Supervised floor practice and logbook",
+          "lessons": [
+            {
+              "title": "Logbook and supervised practice guide",
+              "minutes": 30,
+              "description": "How to record procedures and request trainer sign-off."
+            }
+          ]
+        }
+      ],
+      "assessment": {
+        "title": "Skin Therapist Knowledge Test",
+        "time_limit_min": 45,
+        "pass_mark": 80,
+        "num_questions": 40,
+        "retake_after_days": 3,
+        "compulsory_category": null,
+        "questions": [
+          {
+            "cat": "Scope",
+            "q": "A client shows a changing mole during a facial. You should:",
+            "o": [
+              "Continue and ignore it",
+              "Pause and refer the client to the doctor",
+              "Apply a lightening product",
+              "Tell them it is harmless"
+            ],
+            "c": 1,
+            "e": "Anything outside therapist scope, including suspicious lesions, is referred to the doctor."
+          },
+          {
+            "cat": "Device safety",
+            "q": "Before a laser treatment starts, everyone in the room must:",
+            "o": [
+              "Remove their gloves",
+              "Wear the correct protective eyewear",
+              "Leave the door open",
+              "Switch off the lights"
+            ],
+            "c": 1,
+            "e": "Correct protective eyewear is mandatory for all persons in the laser room."
+          },
+          {
+            "cat": "Documentation",
+            "q": "When should a procedure be recorded?",
+            "o": [
+              "At the end of the week",
+              "Promptly and accurately after the procedure",
+              "Only if something went wrong",
+              "Never, the doctor records it"
+            ],
+            "c": 1,
+            "e": "Timely, accurate records protect the patient and the clinic."
+          },
+          {
+            "cat": "Skin science",
+            "q": "The outermost layer of the skin is the:",
+            "o": [
+              "Dermis",
+              "Epidermis",
+              "Hypodermis",
+              "Basal lamina"
+            ],
+            "c": 1,
+            "e": "The epidermis is the outermost layer and forms the skin barrier."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Skin Therapist practical stations and logbook",
+        "description": "Supervised practical stations and logbook review.",
+        "requires_evidence": true,
+        "items": [
+          {
+            "label": "Station 1: Consultation and documentation",
+            "critical": true
+          },
+          {
+            "label": "Station 2: Facial protocol (supervised)",
+            "critical": true
+          },
+          {
+            "label": "Station 3: Skin treatment support",
+            "critical": true
+          },
+          {
+            "label": "Station 4: Hair and scalp care",
+            "critical": true
+          },
+          {
+            "label": "Station 5: Device and laser-room safety",
+            "critical": true
+          },
+          {
+            "label": "Station 6: Aftercare counselling within scope",
+            "critical": true
+          },
+          {
+            "label": "Logbook completed and signed by trainer",
+            "critical": true
+          }
+        ]
+      }
+    },
+    {
+      "slug": "staff-nurse",
+      "title": "Staff Nurse Training",
+      "code": "SN",
+      "category": "Clinical and Support",
+      "role_key": "staff_nurse",
+      "role_label": "Staff Nurse",
+      "status": "published",
+      "sort_order": 3,
+      "duration_hours": 94,
+      "duration_label": "94 hours / approx. 2.5 weeks",
+      "level": "Intermediate",
+      "languages": [
+        "English"
+      ],
+      "learning_modes": [
+        "academy",
+        "blended"
+      ],
+      "certificate_title": "VTIARA Certified Staff Nurse",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "Sterilisation, procedure assistance, medication safety and emergency readiness for nurses in a dermatology setting.",
+      "overview": "Designed for registered nurses joining VTIARA. You will standardise sterilisation and instrument processing, documentation, consent and photography, medication safety, procedure assistance and emergency response including BLS, followed by supervised practice and a practical examination.",
+      "audience": "Registered nurses (GNM or B.Sc Nursing) joining or working at VTIARA clinics.",
+      "eligibility": [
+        "GNM or B.Sc Nursing",
+        "Verified State Nursing Council registration (upload your registration document at sign-up)",
+        "Common Core Training completed (recommended before starting)"
+      ],
+      "outcomes": [
+        "Process and sterilise instruments to clinic standard",
+        "Document, take consent and manage clinical photographs correctly",
+        "Apply medication-safety checks",
+        "Assist procedures safely within scope and Medical Advisor direction",
+        "Respond to emergencies and deliver BLS",
+        "Provide aftercare instructions as directed by the doctor"
+      ],
+      "pass_rules": {
+        "attendance_pct": 100,
+        "knowledge_pct": 80,
+        "practical": "All practical stations passed",
+        "emergency_drill": true
+      },
+      "requirements_text": [
+        "100% attendance",
+        "80% or higher knowledge test",
+        "Emergency drill passed",
+        "All practical stations passed",
+        "BLS renewal required to keep certificate valid"
+      ],
+      "modules": [
+        {
+          "title": "Common Core (prerequisite revision)",
+          "lessons": [
+            {
+              "title": "Common Core recap for nurses",
+              "minutes": 30,
+              "description": "Infection control, consent and privacy for clinical staff."
+            }
+          ]
+        },
+        {
+          "title": "Sterilisation and instrument processing",
+          "lessons": [
+            {
+              "title": "Decontamination to sterile storage",
+              "minutes": 60,
+              "description": "Cleaning, packing, sterilising, indicators and storage."
+            },
+            {
+              "title": "Sterilisation records",
+              "minutes": 25,
+              "description": "Logs, batch tracking and failures."
+            }
+          ]
+        },
+        {
+          "title": "Documentation, consent and photos",
+          "lessons": [
+            {
+              "title": "Clinical documentation and consent",
+              "minutes": 40,
+              "description": "Records, consent forms and clinical photographs."
+            }
+          ]
+        },
+        {
+          "title": "Medication safety",
+          "lessons": [
+            {
+              "title": "Medication safety checks",
+              "minutes": 45,
+              "description": "Right patient, drug, dose, route, time; storage and labelling."
+            }
+          ]
+        },
+        {
+          "title": "Procedure assistance",
+          "lessons": [
+            {
+              "title": "Assisting dermatology procedures",
+              "minutes": 60,
+              "description": "Set-up, monitoring and post-procedure care under doctor direction."
+            }
+          ]
+        },
+        {
+          "title": "Emergencies and BLS",
+          "lessons": [
+            {
+              "title": "Recognising and managing emergencies",
+              "minutes": 45,
+              "description": "Anaphylaxis, syncope and escalation."
+            },
+            {
+              "title": "Basic Life Support",
+              "minutes": 60,
+              "description": "Adult BLS sequence and AED use."
+            }
+          ]
+        },
+        {
+          "title": "Aftercare and supervised practice",
+          "lessons": [
+            {
+              "title": "Aftercare guidance and logbook",
+              "minutes": 30,
+              "description": "Aftercare as instructed by the doctor; recording supervised practice."
+            }
+          ]
+        }
+      ],
+      "assessment": {
+        "title": "Staff Nurse Knowledge Test",
+        "time_limit_min": 60,
+        "pass_mark": 80,
+        "num_questions": 50,
+        "retake_after_days": 3,
+        "compulsory_category": null,
+        "questions": [
+          {
+            "cat": "BLS",
+            "q": "Recommended adult chest-compression rate in BLS is:",
+            "o": [
+              "60–80 per minute",
+              "100–120 per minute",
+              "140–160 per minute",
+              "As fast as possible"
+            ],
+            "c": 1,
+            "e": "Adult BLS uses 100–120 compressions per minute."
+          },
+          {
+            "cat": "BLS",
+            "q": "Adult compression depth should be about:",
+            "o": [
+              "1–2 cm",
+              "5–6 cm",
+              "8–10 cm",
+              "Whatever feels comfortable"
+            ],
+            "c": 1,
+            "e": "Compress about 5–6 cm with full recoil."
+          },
+          {
+            "cat": "Medication safety",
+            "q": "Before administering any medication you must confirm:",
+            "o": [
+              "Only the patient's name",
+              "Right patient, drug, dose, route and time",
+              "That the pack looks familiar",
+              "That a colleague used it yesterday"
+            ],
+            "c": 1,
+            "e": "The medication 'rights' are verified every time."
+          },
+          {
+            "cat": "Sterilisation",
+            "q": "A sterilised pack has a chemical indicator that did not change colour. You:",
+            "o": [
+              "Use it anyway",
+              "Treat the pack as non-sterile and reprocess it",
+              "Re-tape it",
+              "Use it for low-risk procedures"
+            ],
+            "c": 1,
+            "e": "An indicator failure means sterility is not assured. Do not use and reprocess."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Staff Nurse practical stations",
+        "description": "Sterilisation, emergency drill, procedure assistance and logbook.",
+        "requires_evidence": true,
+        "items": [
+          {
+            "label": "Sterilisation and instrument processing station",
+            "critical": true
+          },
+          {
+            "label": "Emergency drill (including BLS)",
+            "critical": true
+          },
+          {
+            "label": "Procedure assistance station",
+            "critical": true
+          },
+          {
+            "label": "Medication safety check station",
+            "critical": true
+          },
+          {
+            "label": "Documentation and consent station",
+            "critical": false
+          },
+          {
+            "label": "Logbook completed and signed by trainer",
+            "critical": true
+          }
+        ]
+      }
+    },
+    {
+      "slug": "housekeeping",
+      "title": "Housekeeping Training",
+      "code": "HK",
+      "category": "Clinical and Support",
+      "role_key": "housekeeping",
+      "role_label": "Housekeeping",
+      "status": "published",
+      "sort_order": 4,
+      "duration_hours": 36,
+      "duration_label": "36 hours / 6 days",
+      "level": "Foundation",
+      "languages": [
+        "English",
+        "Kannada"
+      ],
+      "learning_modes": [
+        "academy",
+        "blended"
+      ],
+      "certificate_title": "VTIARA Certified Housekeeping Associate",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "Clinical-grade cleaning, chemical safety, spill response and laser-room precautions, with a supervised practical.",
+      "overview": "Cleaning in a clinic is part of patient safety. This six-day programme covers cleaning routines, chemical safety and disinfectants, spill management, biomedical waste, linen handling and laser-room precautions, with supervised practical work signed off by a trainer.",
+      "audience": "Housekeeping and facility staff at VTIARA clinics and the academy.",
+      "eligibility": [
+        "Common Core Training completed (recommended before starting)",
+        "Able to follow written and verbal safety instructions"
+      ],
+      "outcomes": [
+        "Follow validated cleaning routines for clinical areas",
+        "Handle and dilute chemicals and disinfectants safely",
+        "Respond correctly to spills and biohazards",
+        "Segregate biomedical waste and handle linen safely",
+        "Observe laser-room precautions"
+      ],
+      "pass_rules": {
+        "attendance_pct": 100,
+        "knowledge_pct": 80,
+        "practical": "Practical checklist passed",
+        "trainer_signoff": true
+      },
+      "requirements_text": [
+        "100% attendance",
+        "80% or higher knowledge score",
+        "Practical checklist passed",
+        "Trainer sign-off"
+      ],
+      "modules": [
+        {
+          "title": "Common Core (prerequisite revision)",
+          "lessons": [
+            {
+              "title": "Common Core recap for housekeeping",
+              "minutes": 25,
+              "description": "Hand hygiene, PPE and waste segregation."
+            }
+          ]
+        },
+        {
+          "title": "Cleaning routines",
+          "lessons": [
+            {
+              "title": "Clean-to-dirty cleaning and room turnover",
+              "minutes": 45,
+              "description": "Sequence, high-touch surfaces and checklists."
+            }
+          ]
+        },
+        {
+          "title": "Chemical safety and disinfectants",
+          "lessons": [
+            {
+              "title": "Dilution, labelling and chemical safety",
+              "minutes": 40,
+              "description": "Never mix chemicals; correct contact times."
+            }
+          ]
+        },
+        {
+          "title": "Spill management and biomedical waste",
+          "lessons": [
+            {
+              "title": "Spill response",
+              "minutes": 35,
+              "description": "Blood and body-fluid spill steps."
+            },
+            {
+              "title": "Biomedical waste and linen",
+              "minutes": 35,
+              "description": "Colour-coded segregation and soiled linen handling."
+            }
+          ]
+        },
+        {
+          "title": "Laser-room precautions",
+          "lessons": [
+            {
+              "title": "Laser-room cleaning precautions",
+              "minutes": 30,
+              "description": "Signage, eyewear and reflective surfaces."
+            }
+          ]
+        }
+      ],
+      "assessment": {
+        "title": "Housekeeping Knowledge Test",
+        "time_limit_min": 30,
+        "pass_mark": 80,
+        "num_questions": 20,
+        "retake_after_days": 3,
+        "compulsory_category": null,
+        "questions": [
+          {
+            "cat": "Chemical safety",
+            "q": "Which must you never mix?",
+            "o": [
+              "Water and detergent",
+              "Bleach and ammonia-based cleaners",
+              "Two cloths",
+              "Detergent and a mop"
+            ],
+            "c": 1,
+            "e": "Mixing bleach with ammonia or acids can release toxic gas."
+          },
+          {
+            "cat": "Spill response",
+            "q": "You find a blood spill. First you:",
+            "o": [
+              "Wipe it with a dry cloth",
+              "Wear PPE, contain and treat the spill per protocol",
+              "Cover it with a towel and leave",
+              "Ask a patient to avoid it"
+            ],
+            "c": 1,
+            "e": "Wear PPE, contain and disinfect using the clinic's spill procedure."
+          },
+          {
+            "cat": "Room turnover",
+            "q": "When cleaning a treatment room you work:",
+            "o": [
+              "Dirty to clean",
+              "Clean to dirty, top to bottom",
+              "Randomly",
+              "Floor first, then surfaces"
+            ],
+            "c": 1,
+            "e": "Clean-to-dirty and top-to-bottom avoids spreading contamination."
+          },
+          {
+            "cat": "Laser room",
+            "q": "In a laser room with the 'laser in use' sign lit, you:",
+            "o": [
+              "Enter to clean quickly",
+              "Do not enter until the treatment ends and it is declared safe",
+              "Enter without eyewear",
+              "Remove the sign"
+            ],
+            "c": 1,
+            "e": "Never enter while the laser is in use; follow the room's safety instructions."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Treatment-room turnover and spill response",
+        "description": "Observed practical with trainer sign-off.",
+        "requires_evidence": false,
+        "items": [
+          {
+            "label": "Wears correct PPE and performs hand hygiene",
+            "critical": true
+          },
+          {
+            "label": "Segregates waste by colour code",
+            "critical": true
+          },
+          {
+            "label": "Cleans high-touch surfaces clean-to-dirty",
+            "critical": true
+          },
+          {
+            "label": "Uses correct disinfectant dilution and contact time",
+            "critical": true
+          },
+          {
+            "label": "Performs spill response correctly",
+            "critical": true
+          },
+          {
+            "label": "Follows laser-room precautions",
+            "critical": true
+          },
+          {
+            "label": "Completes turnover checklist",
+            "critical": false
+          }
+        ]
+      }
+    },
+    {
+      "slug": "telecaller",
+      "title": "Telecaller Training",
+      "code": "TC",
+      "category": "Front Office and Management",
+      "role_key": "telecaller",
+      "role_label": "Telecaller",
+      "status": "published",
+      "sort_order": 5,
+      "duration_hours": 74,
+      "duration_label": "74 hours / 2 weeks + monitored calls",
+      "level": "Intermediate",
+      "languages": [
+        "English",
+        "Kannada",
+        "Hindi"
+      ],
+      "learning_modes": [
+        "online",
+        "academy",
+        "blended"
+      ],
+      "certificate_title": "VTIARA Certified Telecaller",
+      "validity_months": null,
+      "requires_attendance": false,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "Patient communication, ethical selling, privacy and DND compliance, with mock calls and monitored live calls.",
+      "overview": "Telecallers are often a patient's first contact with VTIARA. This programme covers patient communication, treatment-knowledge boundaries, call scripts, CRM use, ethical selling, privacy and DND compliance, followed by mock calls and a period of monitored live calls before approval.",
+      "audience": "Telecallers, appointment-desk and lead-follow-up staff.",
+      "eligibility": [
+        "Common Core Training completed (recommended before starting)",
+        "Good spoken communication in English and at least one local language"
+      ],
+      "outcomes": [
+        "Communicate clearly, respectfully and within knowledge boundaries",
+        "Use approved scripts and the CRM correctly",
+        "Sell ethically without guarantees or clinical advice",
+        "Protect patient privacy and comply with DND regulations",
+        "Handle live calls to the clinic's quality standard"
+      ],
+      "pass_rules": {
+        "knowledge_pct": 80,
+        "mock_call_pct": 85,
+        "compliance": true,
+        "monitored_calls": true
+      },
+      "requirements_text": [
+        "80% or higher knowledge score",
+        "Mock-call score of 85% or above",
+        "Compliance section passed",
+        "Monitored live-call approval"
+      ],
+      "modules": [
+        {
+          "title": "Common Core (prerequisite revision)",
+          "lessons": [
+            {
+              "title": "Common Core recap for telecallers",
+              "minutes": 25,
+              "description": "Privacy, confidentiality and communication essentials."
+            }
+          ]
+        },
+        {
+          "title": "Patient communication and knowledge boundaries",
+          "lessons": [
+            {
+              "title": "Patient communication on calls",
+              "minutes": 45,
+              "description": "Tone, pacing, empathy and active listening."
+            },
+            {
+              "title": "Treatment knowledge boundaries",
+              "minutes": 40,
+              "description": "What you can explain and when to hand over to a clinician."
+            }
+          ]
+        },
+        {
+          "title": "Scripts and CRM",
+          "lessons": [
+            {
+              "title": "Call scripts and CRM use",
+              "minutes": 50,
+              "description": "Approved scripts, lead notes and follow-ups."
+            }
+          ]
+        },
+        {
+          "title": "Ethical selling, privacy and DND",
+          "lessons": [
+            {
+              "title": "Ethical selling",
+              "minutes": 35,
+              "description": "No guarantees, no pressure, honest information."
+            },
+            {
+              "title": "Privacy and DND compliance",
+              "minutes": 40,
+              "description": "Consent for calls, DND registry and data handling."
+            }
+          ]
+        },
+        {
+          "title": "Mock calls and monitored calls",
+          "lessons": [
+            {
+              "title": "Mock-call and monitoring guide",
+              "minutes": 30,
+              "description": "How scoring works and what trainers listen for."
+            }
+          ]
+        }
+      ],
+      "assessment": {
+        "title": "Telecaller Knowledge Test",
+        "time_limit_min": 40,
+        "pass_mark": 80,
+        "num_questions": 30,
+        "retake_after_days": 3,
+        "compulsory_category": "Compliance",
+        "questions": [
+          {
+            "cat": "Compliance",
+            "q": "A number is on the DND registry and the person has not asked to be called. For a promotional call you:",
+            "o": [
+              "Call anyway",
+              "Do not call",
+              "Call after 9 pm",
+              "Send a promotional SMS from a personal number"
+            ],
+            "c": 1,
+            "e": "Promotional calls to numbers on the DND registry are not allowed without valid consent."
+          },
+          {
+            "cat": "Compliance",
+            "q": "A caller asks whether a treatment will 'definitely' cure their problem. You:",
+            "o": [
+              "Promise a cure to book the appointment",
+              "Avoid guarantees and invite them for a doctor consultation",
+              "Say results are 100%",
+              "Quote another patient's results"
+            ],
+            "c": 1,
+            "e": "Never guarantee outcomes. Invite the patient for a consultation."
+          },
+          {
+            "cat": "Boundaries",
+            "q": "A caller asks you to diagnose their rash. You:",
+            "o": [
+              "Give your best guess",
+              "Explain you cannot diagnose and offer a doctor consultation",
+              "Recommend a cream",
+              "Tell them it is nothing"
+            ],
+            "c": 1,
+            "e": "Telecallers never diagnose or prescribe."
+          },
+          {
+            "cat": "Privacy",
+            "q": "A person claiming to be a relative asks for a patient's appointment details. You:",
+            "o": [
+              "Share them",
+              "Do not share without authorised verification",
+              "Share the date only",
+              "Share on WhatsApp"
+            ],
+            "c": 1,
+            "e": "Patient information is confidential and shared only after proper verification."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Mock calls and monitored live calls",
+        "description": "Mock-call score (minimum 85%), compliance check and monitored live-call approval.",
+        "requires_evidence": false,
+        "min_score": 85,
+        "items": [
+          {
+            "label": "Mock-call score meets 85% or above",
+            "critical": true
+          },
+          {
+            "label": "Compliance script check (DND, consent, no guarantees)",
+            "critical": true
+          },
+          {
+            "label": "Monitored live-call approval",
+            "critical": true
+          }
+        ]
+      }
+    },
+    {
+      "slug": "dermatologist",
+      "title": "Dermatologist Training",
+      "code": "DT",
+      "category": "Clinical and Support",
+      "role_key": "dermatologist",
+      "role_label": "Dermatologist",
+      "status": "coming_soon",
+      "sort_order": 6,
+      "duration_hours": 0,
+      "duration_label": "To be announced",
+      "level": "Advanced",
+      "languages": [
+        "English"
+      ],
+      "learning_modes": [
+        "academy"
+      ],
+      "certificate_title": "To be announced",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "Clinical onboarding for VTIARA dermatologists. Coming soon.",
+      "overview": "This programme is being prepared.",
+      "audience": "",
+      "eligibility": [],
+      "outcomes": [],
+      "pass_rules": {},
+      "requirements_text": [],
+      "modules": []
+    },
+    {
+      "slug": "front-desk",
+      "title": "Front Desk Training",
+      "code": "FD",
+      "category": "Front Office and Management",
+      "role_key": "front_desk",
+      "role_label": "Front Desk",
+      "status": "coming_soon",
+      "sort_order": 7,
+      "duration_hours": 0,
+      "duration_label": "To be announced",
+      "level": "Foundation",
+      "languages": [
+        "English"
+      ],
+      "learning_modes": [
+        "blended"
+      ],
+      "certificate_title": "To be announced",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "Reception, scheduling and patient-experience standards. Coming soon.",
+      "overview": "This programme is being prepared.",
+      "audience": "",
+      "eligibility": [],
+      "outcomes": [],
+      "pass_rules": {},
+      "requirements_text": [],
+      "modules": []
+    },
+    {
+      "slug": "branch-manager",
+      "title": "Branch Manager Training",
+      "code": "BM",
+      "category": "Front Office and Management",
+      "role_key": "branch_manager",
+      "role_label": "Branch Manager",
+      "status": "coming_soon",
+      "sort_order": 8,
+      "duration_hours": 0,
+      "duration_label": "To be announced",
+      "level": "Advanced",
+      "languages": [
+        "English"
+      ],
+      "learning_modes": [
+        "blended"
+      ],
+      "certificate_title": "To be announced",
+      "validity_months": null,
+      "requires_attendance": true,
+      "requires_practical": true,
+      "requires_trainer_approval": true,
+      "short_description": "Operations, compliance and team leadership for branch managers. Coming soon.",
+      "overview": "This programme is being prepared.",
+      "audience": "",
+      "eligibility": [],
+      "outcomes": [],
+      "pass_rules": {},
+      "requirements_text": [],
+      "modules": []
+    }
+  ],
+  "batches": [
+    {
+      "course": "common-core",
+      "title": "Common Core – Weekend Batch A",
+      "branch": "main",
+      "offset_days": 9,
+      "start": "10:00",
+      "end": "17:00",
+      "capacity": 20,
+      "mode": "academy"
+    },
+    {
+      "course": "common-core",
+      "title": "Common Core – Weekday Batch B",
+      "branch": "second",
+      "offset_days": 16,
+      "start": "10:00",
+      "end": "17:00",
+      "capacity": 15,
+      "mode": "blended"
+    },
+    {
+      "course": "skin-therapist",
+      "title": "Skin Therapist – Cohort 1",
+      "branch": "main",
+      "offset_days": 14,
+      "start": "09:30",
+      "end": "17:30",
+      "capacity": 12,
+      "mode": "academy"
+    },
+    {
+      "course": "staff-nurse",
+      "title": "Staff Nurse – Cohort 1",
+      "branch": "main",
+      "offset_days": 12,
+      "start": "09:30",
+      "end": "17:00",
+      "capacity": 10,
+      "mode": "academy"
+    },
+    {
+      "course": "housekeeping",
+      "title": "Housekeeping – Batch A",
+      "branch": "main",
+      "offset_days": 10,
+      "start": "09:00",
+      "end": "16:00",
+      "capacity": 12,
+      "mode": "academy"
+    },
+    {
+      "course": "telecaller",
+      "title": "Telecaller – Batch A",
+      "branch": "second",
+      "offset_days": 11,
+      "start": "10:00",
+      "end": "17:00",
+      "capacity": 15,
+      "mode": "blended"
+    }
+  ],
+  "demoUsers": [
+    {
+      "key": "superadmin",
+      "email": "superadmin@vtiara.demo",
+      "name": "Meera Iyer (Super Admin)",
+      "role": "super_admin",
+      "mobile": "9000000001"
+    },
+    {
+      "key": "admin",
+      "email": "admin@vtiara.demo",
+      "name": "Arjun Nair (Academy Admin)",
+      "role": "academy_admin",
+      "mobile": "9000000002"
+    },
+    {
+      "key": "trainer",
+      "email": "trainer@vtiara.demo",
+      "name": "Anita Rao (Trainer)",
+      "role": "trainer",
+      "mobile": "9000000003"
+    },
+    {
+      "key": "assessor",
+      "email": "assessor@vtiara.demo",
+      "name": "Kiran Menon (Assessor)",
+      "role": "assessor",
+      "mobile": "9000000004"
+    },
+    {
+      "key": "learner",
+      "email": "learner@vtiara.demo",
+      "name": "Divya Prakash (Learner)",
+      "role": "learner",
+      "mobile": "9000000005"
+    },
+    {
+      "key": "learner2",
+      "email": "learner2@vtiara.demo",
+      "name": "Rohan Shetty (Learner, certified)",
+      "role": "learner",
+      "mobile": "9000000006"
+    }
+  ]
+}

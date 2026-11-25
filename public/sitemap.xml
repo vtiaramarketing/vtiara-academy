@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://academy.example.com/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/enquire</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/verify</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/privacy</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/terms</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/certificate-terms</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/common-core</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/skin-therapist</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/staff-nurse</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/housekeeping</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/telecaller</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/dermatologist</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/front-desk</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://academy.example.com/courses/branch-manager</loc><lastmod>2026-11-25</lastmod></url>
+</urlset>

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /admin/
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /reset-password
+
+# Replace with your live domain (scripts/generate-sitemap.mjs rewrites this line when VITE_SITE_URL is set)
+Sitemap: https://academy.example.com/sitemap.xml
