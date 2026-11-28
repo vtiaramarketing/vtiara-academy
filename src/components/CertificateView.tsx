@@ -14,10 +14,7 @@ export default function CertificateView({ cert, className }: { cert: Certificate
       <div className="absolute inset-3.5 rounded-lg border border-navy/15 sm:inset-5" />
       <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-pale to-transparent" />
       <div className="relative flex h-full flex-col items-center justify-between px-[6%] py-[5%] text-center">
-        <div className="flex items-center gap-2 sm:gap-3">
-          <svg viewBox="0 0 48 48" className="h-7 w-7 sm:h-11 sm:w-11" aria-hidden><rect width="48" height="48" rx="12" fill="#0D2137" /><path d="M9 31 L14 17 L24 26 L34 17 L39 31 Z" fill="none" stroke="#F5C300" strokeWidth="2.4" strokeLinejoin="round" /><circle cx="14" cy="15" r="2.2" fill="#F5C300" /><circle cx="24" cy="12" r="2.2" fill="#F5C300" /><circle cx="34" cy="15" r="2.2" fill="#F5C300" /><path d="M11 35 H37" stroke="#2A9DBB" strokeWidth="2.4" strokeLinecap="round" /></svg>
-          <div className="text-left leading-tight"><p className="font-display text-sm font-semibold tracking-wider sm:text-xl">VTIARA</p><p className="text-[7px] font-semibold uppercase tracking-[0.22em] text-teal sm:text-[10px]">Training Academy</p></div>
-        </div>
+        <img src="/logo.png" alt="VTIARA Training Academy" className="h-9 w-auto sm:h-14" width={702} height={229} />
         <div>
           <p className="text-[8px] font-semibold uppercase tracking-[0.3em] text-accent sm:text-xs">Certificate of Completion</p>
           <p className="mt-1 text-[9px] text-navy/60 sm:mt-2 sm:text-sm">This is to certify that</p>
