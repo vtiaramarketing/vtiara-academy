@@ -9,12 +9,19 @@ export default function CertificateView({ cert, className }: { cert: Certificate
   const bad = cert.status === 'revoked' || cert.status === 'expired';
   const url = verifyUrl(cert.cert_no);
   return (
-    <div className={cn('print-cert relative mx-auto aspect-[1.414/1] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-lift', className)}>
-      <div className="absolute inset-2 rounded-xl border-2 border-gold/80 sm:inset-3" />
-      <div className="absolute inset-3.5 rounded-lg border border-navy/15 sm:inset-5" />
-      <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-pale to-transparent" />
-      <div className="relative flex h-full flex-col items-center justify-between px-[6%] py-[5%] text-center">
-        <img src="/logo.png" alt="VTIARA Training Academy" className="h-9 w-auto sm:h-14" width={702} height={229} />
+    <div className={cn('print-cert relative mx-auto aspect-[1.414/1] w-full max-w-4xl overflow-hidden rounded-md bg-white shadow-lift', className)}>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#EAF4F8_0%,transparent_60%)]" />
+      <div className="absolute inset-[2.2%] border-[3px] border-navy" />
+      <div className="absolute inset-[3.4%] border border-gold" />
+      {(['left-[3.4%] top-[3.4%]', 'right-[3.4%] top-[3.4%] rotate-90', 'bottom-[3.4%] right-[3.4%] rotate-180', 'bottom-[3.4%] left-[3.4%] -rotate-90'] as const).map((pos) => (
+        <svg key={pos} viewBox="0 0 40 40" className={cn('absolute h-6 w-6 sm:h-10 sm:w-10', pos)} aria-hidden>
+          <path d="M2 38 V2 H38" fill="none" stroke="#C9A227" strokeWidth="3" />
+          <path d="M9 38 V9 H38" fill="none" stroke="#C9A227" strokeWidth="1" />
+          <rect x="12" y="12" width="6" height="6" transform="rotate(45 15 15)" fill="#C9A227" />
+        </svg>
+      ))}
+      <div className="relative flex h-full flex-col items-center justify-between px-[8%] py-[6.5%] text-center">
+        <img src="/logo.png" alt="VTIARA Training Academy" className="h-11 w-auto sm:h-24" width={702} height={229} />
         <div>
           <p className="text-[8px] font-semibold uppercase tracking-[0.3em] text-accent sm:text-xs">Certificate of Completion</p>
           <p className="mt-1 text-[9px] text-navy/60 sm:mt-2 sm:text-sm">This is to certify that</p>
