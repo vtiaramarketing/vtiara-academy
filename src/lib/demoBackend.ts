@@ -575,7 +575,7 @@ export function createDemoBackend(): Backend {
           if ('is_published' in patch && !('content_status' in patch)) r.content_status = r.is_published ? 'published' : 'draft';
           else if ('content_status' in patch) r.is_published = r.content_status !== 'draft';
         }
-        if (table === 'profiles' && typeof patch.full_name === 'string' && patch.full_name.trim()) T('certificates').filter((c) => c.learner_id === r.id).forEach((c) => { c.learner_name = patch.full_name.trim(); });
+        if (table === 'profiles' && typeof patch.full_name === 'string' && patch.full_name.trim()) T('certificates').filter((c) => c.learner_id === r.id).forEach((c) => { c.learner_name = String(patch.full_name).trim(); });
         if (table === 'enquiries') { r.updated_at = nowIso(); if (r.status !== 'new' && !r.contacted_at) r.contacted_at = nowIso(); }
       });
       persist(); notify();
