@@ -10,7 +10,7 @@ import type { Enrolment, Notification } from '@/lib/types';
 
 const PATH = ['Common Core', 'Role Training', 'Supervised Practice', 'Assessment', 'Certificate'];
 
-function pathState(d: LearnerData): { index: number; focusSlug?: string } {
+function pathState(d: LearnerData): { index: number; focusSlug?: string; pickRole?: boolean } {
   const bySlug = (slug: string) => d.courses.find((c) => c.slug === slug);
   const ccEnrol = d.enrolments.find((e) => e.course_id === bySlug('common-core')?.id);
   if (!ccEnrol || ccEnrol.status !== 'certified') {
@@ -19,7 +19,7 @@ function pathState(d: LearnerData): { index: number; focusSlug?: string } {
     return { index: 0 };
   }
   const role = d.enrolments.find((e) => e.course_id !== bySlug('common-core')?.id);
-  if (!role) return { index: 1 };
+  if (!role) return { index: 1, pickRole: true };
   const s = role.status;
   const slug = d.courses.find((c) => c.id === role.course_id)?.slug;
   if (s === 'certified') return { index: 5, focusSlug: slug };
@@ -43,7 +43,7 @@ export default function Dashboard() {
   const upcoming = d.bookings.filter((b) => ['booked', 'waitlist'].includes(b.status)).map((b) => ({ b, batch: d.batches.find((x) => x.id === b.batch_id)! })).filter((x) => x.batch && x.batch.starts_on >= new Date().toISOString().slice(0, 10)).sort((a, z) => a.batch.starts_on.localeCompare(z.batch.starts_on));
   const attended = d.bookings.filter((b) => b.status === 'attended').length;
   const noShow = d.bookings.filter((b) => b.status === 'no_show').length;
-  const { index, focusSlug } = pathState(d);
+  const { index, focusSlug, pickRole } = pathState(d);
 
   const cont = async (e: Enrolment) => {
     const c = course(e.course_id);
@@ -93,7 +93,7 @@ export default function Dashboard() {
               <li key={p} className={cn('relative rounded-2xl border p-4 text-sm', done ? 'border-teal/30 bg-teal/5' : cur ? 'border-accent bg-accent/5 ring-1 ring-accent' : 'border-navy/10')}>
                 <span className={cn('mb-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold', done ? 'bg-teal text-white' : cur ? 'bg-accent text-white' : i === 4 ? 'bg-gold-soft text-amber-700' : 'bg-navy/10 text-navy/50')}>{done ? <CheckCircle2 className="h-4 w-4" /> : i === 4 ? <Award className="h-4 w-4" /> : i + 1}</span>
                 <p className={cn('font-semibold', !done && !cur && 'text-navy/50')}>{p}</p>
-                {cur && <p className="text-xs text-accent">In progress</p>}
+                {cur && (pickRole ? <Link to="/courses" className="text-xs font-semibold text-accent underline">Choose your role course →</Link> : <p className="text-xs text-accent">In progress</p>)}
               </li>
             );
           })}
