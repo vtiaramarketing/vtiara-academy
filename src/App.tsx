@@ -102,7 +102,7 @@ export default function App() {
           <Route path="practicals/:enrolmentId" element={<Practicals />} />
           <Route path="lessons" element={<TutorLessonReview />} />
           <Route path="support" element={<TutorSupport />} />
-          <Route path="profile" element={<Profile />} />
+          <Route path="profile" element={<Profile mode="tutor" />} />
         </Route>
       </Route>
 

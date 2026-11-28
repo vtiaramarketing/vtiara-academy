@@ -10,7 +10,8 @@ import type { Branch } from '@/lib/types';
 const LANGS = ['English', 'Kannada', 'Hindi', 'Tamil', 'Telugu', 'Malayalam'];
 const ROLES = ['Skin Therapist', 'Staff Nurse', 'Housekeeping', 'Telecaller', 'Front Desk', 'Branch Manager', 'Dermatologist', 'Other'];
 
-export default function Profile() {
+export default function Profile({ mode = 'learner' }: { mode?: 'learner' | 'tutor' }) {
+  const staff = mode === 'tutor';
   const { user, refresh } = useAuth();
   const [params] = useSearchParams();
   const { busy, run } = useAction();
@@ -35,7 +36,7 @@ export default function Profile() {
   }, [p?.id, p?.avatar_path]);
 
   if (!p) return <Spinner />;
-  const isNurse = f.job_role === 'Staff Nurse';
+  const isNurse = !staff && f.job_role === 'Staff Nurse';
   const set = (k: keyof typeof f) => (e: any) => setF({ ...f, [k]: e.target.type === 'checkbox' ? e.target.checked : e.target.value });
 
   const save = (e: React.FormEvent) => {
@@ -44,6 +45,7 @@ export default function Profile() {
       if (!f.full_name.trim()) throw new Error('Name is required');
       if (isNurse && !nurse.reg.trim()) throw new Error('Nursing Council registration number is required for nurses');
       const patch: Record<string, unknown> = { ...f, branch_id: f.branch_id || null };
+      if (staff) delete patch.consent_comms;
       if (isNurse) patch.nursing_reg_no = nurse.reg.trim();
       if (photo) patch.avatar_path = await backend.storage.upload('learner-documents', `${user!.id}/avatar-${Date.now()}-${photo.name}`, photo);
       if (doc) patch.nursing_doc_path = await backend.storage.upload('learner-documents', `${user!.id}/nursing-registration-${Date.now()}-${doc.name}`, doc);
@@ -56,8 +58,8 @@ export default function Profile() {
 
   return (
     <div className="mx-auto max-w-2xl">
-      <PageHeader title="My profile" subtitle="Keep your details current. They appear on your certificate only as your name." />
-      {params.get('welcome') && <div className="mb-5"><Notice tone="green" title="Welcome to VTIARA Training Academy">Please check your details and add a photo. Then browse the catalogue and enrol in Common Core Training.</Notice></div>}
+      <PageHeader title={staff ? 'My staff profile' : 'My profile'} subtitle={staff ? 'Your details as shown to learners and academy staff.' : 'Keep your details current. They appear on your certificate only as your name.'} />
+      {!staff && params.get('welcome') && <div className="mb-5"><Notice tone="green" title="Welcome to VTIARA Training Academy">Please check your details and add a photo. Then browse the catalogue and enrol in Common Core Training.</Notice></div>}
       <form onSubmit={save} className="card space-y-5">
         <div className="flex items-center gap-4">
           {avatar ? <img src={avatar} alt="" className="h-16 w-16 rounded-full object-cover" /> : <span className="flex h-16 w-16 items-center justify-center rounded-full bg-navy font-display text-2xl text-white">{p.full_name.charAt(0)}</span>}
@@ -68,10 +70,12 @@ export default function Profile() {
           <Field label="Email" hint="Sign-in email cannot be changed here."><input className="input bg-pale" value={p.email ?? ''} disabled /></Field>
           <Field label="Mobile" htmlFor="pm"><input id="pm" className="input" inputMode="tel" value={f.mobile} onChange={set('mobile')} /></Field>
           <Field label="City" htmlFor="pc"><input id="pc" className="input" value={f.city} onChange={set('city')} /></Field>
-          <Field label="Job role" htmlFor="pr"><select id="pr" className="input" value={f.job_role} onChange={set('job_role')}>{[...new Set([f.job_role, ...ROLES])].filter(Boolean).map((r) => <option key={r}>{r}</option>)}</select></Field>
-          <Field label="Branch" htmlFor="pb"><select id="pb" className="input" value={f.branch_id} onChange={set('branch_id')}><option value="">Not an employee / none</option>{branches?.map((b) => <option key={b.id} value={b.id}>{b.name}</option>)}</select></Field>
+          {staff
+            ? <Field label="Designation" htmlFor="pr" hint="For example Senior Trainer or Medical Advisor"><input id="pr" className="input" value={f.job_role} onChange={set('job_role')} /></Field>
+            : <Field label="Job role" htmlFor="pr"><select id="pr" className="input" value={f.job_role} onChange={set('job_role')}>{[...new Set([f.job_role, ...ROLES])].filter(Boolean).map((r) => <option key={r}>{r}</option>)}</select></Field>}
+          <Field label={staff ? 'Home branch' : 'Branch'} htmlFor="pb"><select id="pb" className="input" value={f.branch_id} onChange={set('branch_id')}><option value="">{staff ? 'Not set' : 'Not an employee / none'}</option>{branches?.map((b) => <option key={b.id} value={b.id}>{b.name}</option>)}</select></Field>
           <Field label="Preferred language" htmlFor="pl"><select id="pl" className="input" value={f.preferred_language} onChange={set('preferred_language')}>{LANGS.map((l) => <option key={l}>{l}</option>)}</select></Field>
-          <Field label="Employee / learner ID" hint="Optional" htmlFor="pi"><input id="pi" className="input" value={f.learner_code} onChange={set('learner_code')} /></Field>
+          <Field label={staff ? 'Employee ID' : 'Employee / learner ID'} hint="Optional" htmlFor="pi"><input id="pi" className="input" value={f.learner_code} onChange={set('learner_code')} /></Field>
         </div>
 
         {isNurse && (
@@ -85,8 +89,16 @@ export default function Profile() {
           </div>
         )}
 
-        <label className="flex items-start gap-3 text-sm"><input type="checkbox" className="mt-1 h-4 w-4 accent-teal" checked={f.consent_comms} onChange={set('consent_comms')} />Send me course reminders and academy updates.</label>
-        <p className="text-xs text-navy/55">Privacy consent was given at sign-up{p.consent_privacy ? '' : ' (not recorded)'}.</p>
+        {staff ? (
+          <div className="rounded-2xl bg-pale p-4 text-sm">
+            <p className="font-semibold">Your academy access</p>
+            <div className="mt-2 flex flex-wrap gap-2">{user!.roles.map((r) => <span key={r} className="rounded-full bg-white px-3 py-1 text-xs font-semibold capitalize text-navy ring-1 ring-navy/10">{r.replace(/_/g, ' ')}</span>)}</div>
+            <p className="mt-2 text-xs text-navy/60">Access levels are managed by an academy administrator.</p>
+          </div>
+        ) : (<>
+          <label className="flex items-start gap-3 text-sm"><input type="checkbox" className="mt-1 h-4 w-4 accent-teal" checked={f.consent_comms} onChange={set('consent_comms')} />Send me course reminders and academy updates.</label>
+          <p className="text-xs text-navy/55">Privacy consent was given at sign-up{p.consent_privacy ? '' : ' (not recorded)'}.</p>
+        </>)}
         <Button className="btn-primary" loading={busy} type="submit">Save profile</Button>
       </form>
     </div>
