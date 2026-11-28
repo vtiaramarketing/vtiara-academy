@@ -78,6 +78,11 @@ export function PublicLayout() {
   );
 }
 
+const CLINIC_BRANCHES = [
+  { name: 'VTIARA Indiranagar', address: '1st Floor, Chinmaya Mission Hospital Road, near Indiranagar Metro Station, Hoysala Nagar, Indiranagar, Bangalore, Karnataka 560 038', maps: 'https://maps.app.goo.gl/kJQtHceQpqWjZetQ9' },
+  { name: 'VTIARA New BEL Road', address: 'New BEL Road, Bangalore, Karnataka', maps: 'https://maps.app.goo.gl/E9fSJ2oELxkVfB5c9' },
+];
+
 function Footer() {
   const { settings: s, contact } = useSettings();
   const socials = ([['Instagram', s.instagram_url, Instagram], ['Facebook', s.facebook_url, Facebook], ['YouTube', s.youtube_url, Youtube], ['LinkedIn', s.linkedin_url, Linkedin]] as const).filter(([, u]) => u) as unknown as [string, string, typeof Instagram][];
@@ -105,7 +110,11 @@ function Footer() {
           <ul className="mt-3 space-y-2"><li><Link to="/privacy" className={L}>Privacy policy</Link></li><li><Link to="/terms" className={L}>Terms and conditions</Link></li><li><Link to="/certificate-terms" className={L}>Certificate terms</Link></li></ul></nav>
         <div><p className="text-sm font-bold text-gold">Locations and contact</p>
           <ul className="mt-3 space-y-3 text-sm text-white/70">
-            <li className="flex gap-2.5"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><span>{contact.address ?? 'Academy address to be confirmed'}{contact.mapsUrl && <> · <a className="underline hover:text-white" href={contact.mapsUrl} target="_blank" rel="noreferrer">Map</a></>}</span></li>
+            {s.academy_address
+              ? <li className="flex gap-2.5"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><span>{contact.address}{contact.mapsUrl && <> · <a className="underline hover:text-white" href={contact.mapsUrl} target="_blank" rel="noreferrer">Map</a></>}</span></li>
+              : CLINIC_BRANCHES.map((b) => (
+                <li key={b.name} className="flex gap-2.5"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><span><span className="font-semibold text-white/90">{b.name}</span><br />{b.address} · <a className="underline hover:text-white" href={b.maps} target="_blank" rel="noreferrer">Map</a></span></li>
+              ))}
             {contact.hours && <li className="flex gap-2.5"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><span>{contact.hours}</span></li>}
             {contact.phone && <li className="flex gap-2.5"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><a className="hover:text-white" href={contact.telUrl ?? undefined}>{contact.phone}</a></li>}
             {contact.email && <li className="flex gap-2.5"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><a className="break-all hover:text-white" href={`mailto:${contact.email}`}>{contact.email}</a></li>}
