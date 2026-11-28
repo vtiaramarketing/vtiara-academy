@@ -24,7 +24,7 @@ await b.auth.signOut(); await b.auth.signIn('admin@vtiara.demo', m.DEMO_PASSWORD
 await b.rpc('set_enrolment_access', { p_enrolment: en.id, p_status: 'active', p_note: null });
 await b.auth.signOut(); await b.auth.signIn('learner@vtiara.demo', m.DEMO_PASSWORD);
 const lessons = await b.select('lessons', { eq: { course_id: course.id } });
-ok(lessons.length === 8, 'admin activation unlocks 8 lessons');
+ok(lessons.length === 16, 'admin activation unlocks all 16 Common Core lessons');
 for (const l of lessons) await b.rpc('complete_lesson', { p_lesson: l.id });
 [en] = await b.select('course_enrolments', { eq: { id: en.id } });
 ok(en.progress_pct === 100, `all ${lessons.length} lessons complete (${en.status})`);

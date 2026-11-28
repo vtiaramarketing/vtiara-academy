@@ -30,7 +30,7 @@
       "status": "published",
       "sort_order": 1,
       "duration_hours": 16,
-      "duration_label": "16 hours",
+      "duration_label": "16 hours (2.5 days)",
       "level": "Foundation",
       "languages": [
         "English",
@@ -43,103 +43,165 @@
         "blended"
       ],
       "certificate_title": "Common Core Certified",
-      "validity_months": null,
+      "validity_months": 12,
       "requires_attendance": true,
       "requires_practical": true,
       "requires_trainer_approval": true,
-      "short_description": "The mandatory foundation for every VTIARA role: values, hygiene, consent, privacy and emergency awareness.",
-      "overview": "Common Core is the shared foundation every VTIARA team member completes before role training. It covers how we present ourselves, how we speak with patients, and the hygiene, infection-control, consent and privacy habits that keep every patient safe. It ends with a 20-question knowledge test and a supervised hand-hygiene practical.",
-      "audience": "Every new and existing VTIARA team member, and future trainees from outside the clinic, regardless of final role.",
+      "short_description": "The mandatory 16-hour foundation for every VTIARA role: values, patient communication, hygiene, consent, privacy and emergencies.",
+      "overview": "Every new hire completes the Common Core first, over 2.5 days (6 + 5.5 + 4.5 hours), before any role training. It gives everyone the same safe, patient-first foundation through classroom sessions, demonstrations, role-play and a short quiz. Its 16 hours are counted inside each role's total hours.",
+      "audience": "All new hires: therapists, nurses, dermatologists, housekeeping, telecallers, front desk and managers.",
       "eligibility": [
         "No prior clinical qualification required",
-        "Basic reading comprehension in English",
-        "Willingness to attend the academy practical session"
+        "Basic reading comprehension",
+        "Attend the academy practical session"
       ],
       "outcomes": [
-        "Explain VTIARA values and uphold grooming and presentation standards",
-        "Communicate with patients clearly, kindly and within role scope",
-        "Describe skin and hair basics without diagnosing or advising treatment",
-        "Perform hand hygiene correctly and apply infection-control precautions",
-        "Segregate biomedical waste correctly",
-        "Obtain and respect consent, privacy and confidentiality",
-        "Respond to fire and medical emergencies by escalating promptly"
+        "Greet and treat patients with the VTIARA standard of courtesy and privacy",
+        "Explain, in simple words, what skin and hair are and why hygiene matters",
+        "Clean hands correctly at the right moments and use gloves and masks properly",
+        "Separate waste into the right colour bin",
+        "Handle consent, photos and patient information without breaking privacy",
+        "Act correctly in a fainting, allergic reaction or fire emergency"
       ],
       "pass_rules": {
         "attendance_pct": 100,
         "knowledge_pct": 80,
-        "practical": "Hand-hygiene practical passed"
+        "practical": "Hand hygiene practical passed"
       },
       "requirements_text": [
-        "100% attendance at the academy session",
-        "80% or higher on the 20-question knowledge test",
-        "Hand-hygiene practical passed"
+        "100% attendance",
+        "80% or higher on the 20-question knowledge test (16 of 20)",
+        "Hand hygiene practical passed"
       ],
       "modules": [
         {
-          "title": "VTIARA values and presentation",
+          "title": "C1 Welcome, VTIARA values, grooming and behaviour",
           "lessons": [
             {
-              "title": "VTIARA values and standards",
-              "minutes": 25,
-              "description": "What 'One Standard' means across every role and branch.",
-              "transcript": "Welcome to VTIARA. Our standard is the same in every room and every role: safe, respectful, consistent care. In this lesson we walk through the VTIARA values and how they show up in everyday decisions."
+              "title": "The VTIARA story and our values",
+              "minutes": 60,
+              "description": "Each person can state the VTIARA values and shows correct grooming and conduct.",
+              "transcript": "Key points:\n- VTIARA story, branch map, who does what in a branch\n- Values: safety first, honesty, respect, same standard in every branch"
             },
             {
-              "title": "Grooming and professional presentation",
-              "minutes": 20,
-              "description": "Uniform, grooming, jewellery, nails and personal hygiene expectations.",
-              "transcript": "Your presentation tells patients how seriously we take their care. We cover uniform, nails, hair, jewellery and personal hygiene, and why each matters in a clinical setting."
+              "title": "Grooming, attendance and conduct",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Dress code, ID badge, nails, hair, light perfume; punctuality, attendance and leave rules\n- Phone use on the floor; no gossip about patients; no photos without consent"
+            },
+            {
+              "title": "Anti-harassment (POSH) and good service",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Anti-harassment policy (POSH) and whom to approach\n- Practice: discuss good and bad service scenes and write 3 rules each"
             }
           ]
         },
         {
-          "title": "Patient communication and skin & hair basics",
+          "title": "C2 Patient communication and courtesy",
           "lessons": [
             {
-              "title": "Patient communication",
-              "minutes": 30,
-              "description": "Greeting, listening, empathy, and knowing when to hand over to a clinician.",
-              "transcript": "Good communication starts with a warm greeting and active listening. If a patient asks a clinical question, you acknowledge it and refer them to the doctor. You never diagnose or prescribe."
+              "title": "Greeting and listening",
+              "minutes": 60,
+              "description": "Each person greets, listens and responds to a patient in simple, respectful words.",
+              "transcript": "Key points:\n- Greeting standard: smile, name, offer help within 10 seconds\n- Active listening; plain words instead of medical jargon; never promise results"
             },
             {
-              "title": "Skin and hair basics",
-              "minutes": 35,
-              "description": "Plain-language structure of skin and hair, to support — never replace — clinical advice.",
-              "transcript": "This lesson gives you a shared vocabulary for skin layers, the hair growth cycle and common concerns, so you can understand your colleagues and support patients within your role."
+              "title": "Upset patients, phone and WhatsApp",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Upset patients: Listen, Apologise, Solve, Thank; when to call the nurse, doctor or manager\n- Tone on phone and WhatsApp\n- Practice: pair role-play of 4 scenarios (long wait, price complaint, anxious patient, wrong appointment)"
             }
           ]
         },
         {
-          "title": "Hygiene and infection control",
+          "title": "C3 Skin and hair basics in plain language",
           "lessons": [
             {
-              "title": "Hand hygiene: the five moments",
-              "minutes": 30,
-              "description": "When and how to clean hands; rub versus wash; common mistakes.",
-              "transcript": "Clean hands before touching a patient, before a clean or aseptic task, after body-fluid exposure, after touching a patient and after touching patient surroundings. Rub for 20 to 30 seconds, or wash for 40 to 60 seconds when hands are visibly soiled."
+              "title": "Skin basics",
+              "minutes": 50,
+              "description": "Each person can explain skin and hair basics and knows when to call the doctor.",
+              "transcript": "Key points:\n- Skin layers (epidermis, dermis, hypodermis), skin functions\n- Skin types: oily, dry, combination, sensitive; why sun protection matters"
             },
             {
-              "title": "Infection control and biomedical waste",
-              "minutes": 40,
-              "description": "Standard precautions, PPE, safe sharps handling and colour-coded waste segregation.",
-              "transcript": "Treat every patient with standard precautions. Sharps go in a puncture-proof container without recapping. Segregate waste at the point of generation using the colour-coded system."
+              "title": "Hair basics",
+              "minutes": 50,
+              "description": null,
+              "transcript": "Key points:\n- Hair structure; growth cycle (growing, transition, resting phases)\n- Losing about 50-100 hairs a day is normal"
+            },
+            {
+              "title": "Common problems and our limits",
+              "minutes": 50,
+              "description": null,
+              "transcript": "Key points:\n- Names and meaning of common problems: acne, pigmentation, dandruff, hair fall\n- Staff never diagnose; they say 'the doctor will examine you'\n- Practice: label skin and hair diagrams; myth-or-fact quiz"
             }
           ]
         },
         {
-          "title": "Consent, privacy and emergencies",
+          "title": "C4 Hygiene, infection control and waste",
           "lessons": [
             {
-              "title": "Consent, privacy and confidentiality",
-              "minutes": 35,
-              "description": "Informed consent, patient photos, data safety and what never to share.",
-              "transcript": "Consent must be informed, voluntary and documented. Patient information is shared only with those who need it, in private, and photos are taken only with consent on approved devices."
+              "title": "How infection spreads and standard precautions",
+              "minutes": 60,
+              "description": "Each person cleans hands correctly, uses PPE, handles sharps safely and sorts waste.",
+              "transcript": "Key points:\n- How infection spreads; standard precautions for every patient"
             },
             {
-              "title": "Fire and emergency awareness",
-              "minutes": 30,
-              "description": "Raising the alarm, evacuation, and escalating medical emergencies.",
-              "transcript": "If a patient collapses or a fire starts, raise the alarm, stay calm and follow the clinic emergency plan. Your role is to escalate quickly and support, not to treat."
+              "title": "Hand hygiene: the 5 moments",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Before touching a patient; before a clean or aseptic task; after body-fluid exposure risk; after touching a patient; after touching patient surroundings\n- Hand rub 20-30 seconds until dry; wash with soap and water 40-60 seconds when hands are visibly dirty"
+            },
+            {
+              "title": "PPE and cleaning levels",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Gloves, masks, aprons, eye protection: when and how to put on and remove; gloves come off first\n- Clean, disinfect, sterilise: what each means"
+            },
+            {
+              "title": "Sharps, needle-stick and waste colour bins",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Never recap or bend needles; use the sharps container; needle-stick response\n- Biomedical waste colour bins and spill basics\n- Practice: hand hygiene practical, PPE sequence, waste-sorting game"
+            }
+          ]
+        },
+        {
+          "title": "C5 Consent, privacy and confidentiality",
+          "lessons": [
+            {
+              "title": "Consent",
+              "minutes": 60,
+              "description": "Each person knows what consent is, handles photos and records correctly and keeps patient information private.",
+              "transcript": "Key points:\n- Consent must be informed, written for procedures, and can be withdrawn\n- Photos need separate consent; minors need a guardian"
+            },
+            {
+              "title": "Privacy and patient data",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Share patient information only with the treating team; never on personal phones or WhatsApp groups\n- Collect only needed data and keep it safe under the Digital Personal Data Protection Act, 2023\n- Practice: 3 case studies (relative asks for a report, photo for social media, lost file)"
+            }
+          ]
+        },
+        {
+          "title": "C6 Safety, fire and emergency awareness",
+          "lessons": [
+            {
+              "title": "Exits, alarms and first actions",
+              "minutes": 90,
+              "description": "Each person knows exits, alarms, extinguishers and the first actions in a fainting, allergic reaction or fire.",
+              "transcript": "Key points:\n- Exits, assembly point, alarm, extinguisher locations\n- Rule for any emergency: call for help first, then act within your training\n- Fainting, allergic reaction signs, and fire (RACE: Rescue, Alarm, Contain, Evacuate or Extinguish)\n- Practice: branch walk-through; mock fainting drill"
+            }
+          ]
+        },
+        {
+          "title": "Knowledge test and practical sign-off",
+          "lessons": [
+            {
+              "title": "Knowledge test and practical sign-off",
+              "minutes": 60,
+              "description": "20-question knowledge test (30 minutes, pass mark 80%) and trainer-observed hand hygiene practical.",
+              "transcript": "Knowledge test: 20 questions, 30 minutes, 16 of 20 correct to pass. Below 80%: revise with the trainer and retake after 3 days.\nHand hygiene practical: trainer checklist.\nRecords: attendance sheet, test score, handout acknowledgement, signed code of conduct."
             }
           ]
         }
@@ -440,7 +502,7 @@
       "status": "published",
       "sort_order": 2,
       "duration_hours": 280,
-      "duration_label": "280 hours / 8 weeks",
+      "duration_label": "280 hours (8 weeks)",
       "level": "Advanced",
       "languages": [
         "English"
@@ -450,25 +512,25 @@
         "blended"
       ],
       "certificate_title": "Level 1 Certified Therapist",
-      "validity_months": null,
+      "validity_months": 12,
       "requires_attendance": true,
       "requires_practical": true,
       "requires_trainer_approval": true,
-      "short_description": "An eight-week structured programme to become a Level 1 Certified Therapist with supervised floor practice.",
-      "overview": "This programme builds safe, consistent skin and hair therapy skills in the VTIARA way. You will learn the science, consultation and documentation, then practise facials, skin treatments, scalp care and device handling under direct supervision, finishing with practical stations and a completed logbook.",
-      "audience": "Aspiring and existing skin therapists, and cosmetology or aesthetics trainees joining VTIARA.",
+      "short_description": "An 8-week, 280-hour programme that turns a trainee into a safe, consistent skin and hair therapist. Nobody works on a patient until the Level 1 exams are passed.",
+      "overview": "Over 8 weeks (16 hours of Common Core plus 264 therapist hours: about 100 classroom and online, 90 hands-on lab and 90 supervised floor work) you learn skin and hair science, consultation support, facials and skin treatments, hair and scalp treatments, device and laser safety, and products and aftercare. Advanced devices need Level 2, and therapists never diagnose, prescribe or change the doctor's settings.",
+      "audience": "New therapists (skin, hair, facial), and existing therapists for upskilling.",
       "eligibility": [
-        "Common Core Training completed (recommended before starting)",
-        "Minimum Class 12 or equivalent",
-        "Comfort working with patients in a clinical setting"
+        "12th pass plus beauty or skin diploma, or a fresher passing the aptitude test",
+        "Good communication skills",
+        "No active skin infection"
       ],
       "outcomes": [
-        "Apply skin and hair science to safe therapy decisions within scope",
-        "Conduct structured consultations and complete accurate documentation",
-        "Perform facials, skin treatments and scalp care to VTIARA standard under supervision",
-        "Operate devices with laser-safety precautions",
-        "Explain products and aftercare without prescribing",
-        "Demonstrate consistent practice through a supervised logbook"
+        "Analyse skin and scalp, name common conditions and know exactly when to call the doctor",
+        "Complete an intake, find contraindications, set honest expectations and document correctly",
+        "Perform approved facial and skin treatments safely and consistently",
+        "Perform scalp analysis and approved scalp treatments and assist doctor-led hair procedures",
+        "Understand device and laser safety and prepare and assist (independent operation needs Level 2)",
+        "Give honest product advice and the right aftercare"
       ],
       "pass_rules": {
         "attendance_pct": 100,
@@ -477,115 +539,166 @@
         "logbook": true
       },
       "requirements_text": [
-        "100% attendance",
-        "80% or higher knowledge score",
-        "All practical stations passed",
-        "Completed logbook",
-        "Trainer approval before certificate issue"
+        "100% attendance (missed days made up)",
+        "80% or higher on both knowledge tests",
+        "All practical stations passed with every critical item",
+        "Patient-safety check passed (100%)",
+        "Logbook minimums completed",
+        "Yearly practical and test; case review every quarter"
       ],
       "modules": [
         {
-          "title": "Common Core (prerequisite revision)",
+          "title": "S1 Skin and hair science",
           "lessons": [
             {
-              "title": "Common Core recap for therapists",
-              "minutes": 30,
-              "description": "Hygiene, consent and privacy as they apply to therapy rooms."
-            }
-          ]
-        },
-        {
-          "title": "Skin science",
-          "lessons": [
-            {
-              "title": "Skin structure and function",
-              "minutes": 45,
-              "description": "Layers, barrier function and skin types."
+              "title": "Skin structure, types and the Fitzpatrick scale",
+              "minutes": 540,
+              "description": "The therapist can analyse skin and scalp, name common conditions and knows exactly when to call the doctor.",
+              "transcript": "Key points:\n- Skin layers and functions, the skin barrier, skin types\n- Fitzpatrick scale (types I-VI) and how each type reacts to sun and procedures"
             },
             {
-              "title": "Common skin concerns and scope boundaries",
-              "minutes": 40,
-              "description": "What a therapist can support and when to refer to the doctor."
-            }
-          ]
-        },
-        {
-          "title": "Hair science",
-          "lessons": [
-            {
-              "title": "Hair structure and growth cycle",
-              "minutes": 40,
-              "description": "Growth phases, common concerns and scalp health."
-            }
-          ]
-        },
-        {
-          "title": "Consultation and documentation",
-          "lessons": [
-            {
-              "title": "Structured consultation",
-              "minutes": 40,
-              "description": "History-taking prompts, red flags and referral."
+              "title": "Common skin conditions",
+              "minutes": 540,
+              "description": null,
+              "transcript": "Key points:\n- Acne and its grades, pigmentation (melasma, post-inflammatory), rosacea, eczema and dermatitis, ageing\n- Recognise infections (fungal, bacterial, viral) and refer them\n- Moles and spots that change (asymmetry, border, colour, diameter, evolving): always refer"
             },
             {
-              "title": "Records and consent documentation",
-              "minutes": 30,
-              "description": "Accurate, timely, confidential records."
-            }
-          ]
-        },
-        {
-          "title": "Facials and skin treatments",
-          "lessons": [
-            {
-              "title": "Facial protocols",
-              "minutes": 60,
-              "description": "Cleansing, exfoliation, extraction, masks and finishing."
+              "title": "Hair and scalp science",
+              "minutes": 540,
+              "description": null,
+              "transcript": "Key points:\n- Hair cycle (anagen, catagen, telogen); patterns of hair loss (androgenetic, stress-related shedding, patchy loss, traction)\n- Scalp conditions such as dandruff and seborrhoeic dermatitis"
             },
             {
-              "title": "Skin treatment support procedures",
-              "minutes": 60,
-              "description": "Preparation, assistance, monitoring and aftercare."
+              "title": "Lifestyle, and why diagnosis is the doctor's job",
+              "minutes": 540,
+              "description": null,
+              "transcript": "Key points:\n- Nutrition, sleep, stress and hair; why diagnosis is the doctor's job\n- Practice: skin type and Fitzpatrick identification on models; slide quiz; scalp photos"
             }
           ]
         },
         {
-          "title": "Hair and scalp care",
+          "title": "S2 Consultation support and documentation",
           "lessons": [
             {
-              "title": "Scalp analysis and care routines",
-              "minutes": 45,
-              "description": "Safe scalp services and client guidance."
+              "title": "Intake and contraindication checks",
+              "minutes": 400,
+              "description": "The therapist completes an intake, finds contraindications, sets honest expectations and documents correctly.",
+              "transcript": "Key points:\n- Greeting, privacy, intake questions, medicines and allergies, pregnancy, skin and hair history\n- Contraindication check; stop and call the doctor if in doubt"
+            },
+            {
+              "title": "Expectations, consent and photos",
+              "minutes": 400,
+              "description": null,
+              "transcript": "Key points:\n- Results take weeks to months; never guarantee\n- Consent forms; standard photo method (same light, angle, distance; no filters)"
+            },
+            {
+              "title": "Handing the case to the doctor",
+              "minutes": 400,
+              "description": null,
+              "transcript": "Key points:\n- Handing the case to the doctor with a clear written note\n- Practice: 6 mock consultations scored by the trainer"
             }
           ]
         },
         {
-          "title": "Devices and laser safety",
+          "title": "S3 Facials and skin treatments",
           "lessons": [
             {
-              "title": "Device handling and laser safety",
-              "minutes": 60,
-              "description": "Eye protection, room precautions, settings approved by the doctor."
+              "title": "Set-up and hygiene",
+              "minutes": 900,
+              "description": "The therapist performs approved facial and skin treatments safely and consistently.",
+              "transcript": "Key points:\n- Room set-up, tool hygiene, patient positioning, hand hygiene\n- Patch tests; product handling and shelf life"
+            },
+            {
+              "title": "Facial steps",
+              "minutes": 900,
+              "description": null,
+              "transcript": "Key points:\n- Cleansing, gentle exfoliation, steam and its cautions, masks, LED light, hydration and hydrafacial-type treatments\n- Extractions only of non-inflamed blackheads and whiteheads"
+            },
+            {
+              "title": "Assisting peels and microneedling",
+              "minutes": 900,
+              "description": null,
+              "transcript": "Key points:\n- Assist superficial peels and microneedling when ordered by the doctor: preparing the skin, single-use sterile cartridges, timing, neutralising and soothing per the product protocol, immediate after-care"
+            },
+            {
+              "title": "Standard facial and practice",
+              "minutes": 900,
+              "description": null,
+              "transcript": "Key points:\n- Standard facial time plan: 60 minutes\n- Practice: 40 supervised facials in lab and floor"
             }
           ]
         },
         {
-          "title": "Products and aftercare",
+          "title": "S4 Hair and scalp treatments",
           "lessons": [
             {
-              "title": "Products and aftercare guidance",
-              "minutes": 40,
-              "description": "Explaining prescribed regimens; no substitution or advice beyond scope."
+              "title": "Scalp analysis",
+              "minutes": 800,
+              "description": "The therapist performs scalp analysis and approved scalp treatments and assists doctor-led hair procedures.",
+              "transcript": "Key points:\n- Scalp analysis with a trichoscope: capture and record, never diagnose"
+            },
+            {
+              "title": "Scalp treatments",
+              "minutes": 800,
+              "description": null,
+              "transcript": "Key points:\n- Scalp cleansing and exfoliation, scalp massage, low-level light therapy"
+            },
+            {
+              "title": "Assisting mesotherapy and PRP",
+              "minutes": 800,
+              "description": null,
+              "transcript": "Key points:\n- Assist mesotherapy and PRP when ordered: room and tray set-up, patient comfort, labelling; blood draw and preparation by the nurse or doctor\n- Realistic timelines for hair regrowth; home-care routines\n- Practice: 20 scalp analyses, 15 hair treatments with logbook entries"
             }
           ]
         },
         {
-          "title": "Supervised floor practice and logbook",
+          "title": "S5 Devices and laser safety",
           "lessons": [
             {
-              "title": "Logbook and supervised practice guide",
-              "minutes": 30,
-              "description": "How to record procedures and request trainer sign-off."
+              "title": "Light and skin",
+              "minutes": 800,
+              "description": "The therapist understands device safety and can prepare and assist; independent operation needs Level 2.",
+              "transcript": "Key points:\n- Simple light physics: wavelength, targets in skin, why skin type matters"
+            },
+            {
+              "title": "Laser safety",
+              "minutes": 800,
+              "description": null,
+              "transcript": "Key points:\n- Laser safety officer role, door signs, correct protective eyewear for the device's wavelength for everyone in the room, cooling, emergency stop\n- Settings are chosen by the doctor for each patient; therapists never change them"
+            },
+            {
+              "title": "Daily checks and reactions",
+              "minutes": 800,
+              "description": null,
+              "transcript": "Key points:\n- Daily checks, consumables, cleaning, logs; test patch routine\n- Burn and reaction first aid, then call the doctor\n- Practice: device handling on practice models and approved training tools only; no patient use until Level 2"
+            }
+          ]
+        },
+        {
+          "title": "S6 Products and aftercare",
+          "lessons": [
+            {
+              "title": "Common actives and sunscreen",
+              "minutes": 360,
+              "description": "The therapist gives honest product advice and the right aftercare.",
+              "transcript": "Key points:\n- What common actives do: retinoids, AHA and BHA, vitamin C, niacinamide, azelaic acid\n- Sunscreen SPF 30 or higher, broad spectrum, reapplied every 2-3 hours outdoors"
+            },
+            {
+              "title": "Aftercare and reactions",
+              "minutes": 360,
+              "description": null,
+              "transcript": "Key points:\n- Aftercare sheet for each treatment; recognising reactions; honest, no-pressure product advice"
+            }
+          ]
+        },
+        {
+          "title": "Supervised practice, logbook and exams",
+          "lessons": [
+            {
+              "title": "Supervised practice, logbook and exams",
+              "minutes": 3360,
+              "description": "40 hours of supervised floor practice and 16 hours of revision and exams.",
+              "transcript": "Assessment: knowledge test 1 (skin, hair, consultation) 40 MCQ in 60 minutes; knowledge test 2 (devices, safety, products) 30 MCQ in 45 minutes; both pass at 80%. Practical exam: facial, scalp analysis and a mock consultation, observed live; every critical item must be passed. Patient-safety check: contraindication scenario, reaction scenario and PPE, 100%.\nLogbook minimums before Level 1: supervised facials 40; scalp analyses 20; hair or scalp treatments 15; consultations documented 30; device assists (no independent use) 20."
             }
           ]
         }
@@ -694,7 +807,7 @@
       "status": "published",
       "sort_order": 3,
       "duration_hours": 94,
-      "duration_label": "94 hours / approx. 2.5 weeks",
+      "duration_label": "94 hours (about 2.5 weeks)",
       "level": "Intermediate",
       "languages": [
         "English"
@@ -703,118 +816,171 @@
         "academy",
         "blended"
       ],
-      "certificate_title": "VTIARA Certified Staff Nurse",
-      "validity_months": null,
+      "certificate_title": "Nursing Level 1 Certified",
+      "validity_months": 12,
       "requires_attendance": true,
       "requires_practical": true,
       "requires_trainer_approval": true,
-      "short_description": "Sterilisation, procedure assistance, medication safety and emergency readiness for nurses in a dermatology setting.",
-      "overview": "Designed for registered nurses joining VTIARA. You will standardise sterilisation and instrument processing, documentation, consent and photography, medication safety, procedure assistance and emergency response including BLS, followed by supervised practice and a practical examination.",
-      "audience": "Registered nurses (GNM or B.Sc Nursing) joining or working at VTIARA clinics.",
+      "short_description": "A 94-hour programme that makes a registered nurse safe and consistent in a VTIARA dermatology and hair clinic: sterility, medicines, emergencies and documentation.",
+      "overview": "Nurses are the clinic's safety backbone. Over about 2.5 weeks (16 hours of Common Core plus 78 nursing hours) you learn sterilisation and instrument processing, documentation and consent, medication handling, assisting clinic procedures, emergencies including BLS, and patient counselling. You never diagnose, prescribe, or perform a procedure that has not been ordered by the dermatologist.",
+      "audience": "Newly hired staff nurses, and existing nurses for refresher.",
       "eligibility": [
         "GNM or B.Sc Nursing",
-        "Verified State Nursing Council registration (upload your registration document at sign-up)",
-        "Common Core Training completed (recommended before starting)"
+        "Valid State Nursing Council registration (verified and copied to file)",
+        "Hepatitis B vaccination status recorded"
       ],
       "outcomes": [
-        "Process and sterilise instruments to clinic standard",
-        "Document, take consent and manage clinical photographs correctly",
-        "Apply medication-safety checks",
-        "Assist procedures safely within scope and Medical Advisor direction",
-        "Respond to emergencies and deliver BLS",
-        "Provide aftercare instructions as directed by the doctor"
+        "Process instruments so every item used on a patient is clean and sterile",
+        "Prepare patients and rooms, check consent and contraindication forms, and document correctly",
+        "Store, check and handle medicines safely, including the emergency tray",
+        "Prepare for and assist dermatologist-ordered procedures",
+        "Recognise and manage reactions and emergencies until the doctor arrives",
+        "Give aftercare instructions from approved sheets and confirm understanding"
       ],
       "pass_rules": {
         "attendance_pct": 100,
         "knowledge_pct": 80,
         "practical": "All practical stations passed",
-        "emergency_drill": true
+        "emergency_drill": true,
+        "logbook": true
       },
       "requirements_text": [
         "100% attendance",
-        "80% or higher knowledge test",
-        "Emergency drill passed",
-        "All practical stations passed",
-        "BLS renewal required to keep certificate valid"
+        "80% or higher on the knowledge test",
+        "Both practical exams passed with all critical items",
+        "Emergency drill passed (100% of critical steps)",
+        "Logbook minimums completed",
+        "Yearly BLS renewal and re-certification"
       ],
       "modules": [
         {
-          "title": "Common Core (prerequisite revision)",
+          "title": "N1 Sterilisation and instrument processing",
           "lessons": [
             {
-              "title": "Common Core recap for nurses",
-              "minutes": 30,
-              "description": "Infection control, consent and privacy for clinical staff."
-            }
-          ]
-        },
-        {
-          "title": "Sterilisation and instrument processing",
-          "lessons": [
-            {
-              "title": "Decontamination to sterile storage",
-              "minutes": 60,
-              "description": "Cleaning, packing, sterilising, indicators and storage."
+              "title": "Item risk levels",
+              "minutes": 240,
+              "description": "The nurse processes instruments so that every item used on a patient is clean and sterile.",
+              "transcript": "Key points:\n- Critical (enter skin or blood), semi-critical, non-critical; what each needs"
             },
             {
-              "title": "Sterilisation records",
-              "minutes": 25,
-              "description": "Logs, batch tracking and failures."
-            }
-          ]
-        },
-        {
-          "title": "Documentation, consent and photos",
-          "lessons": [
-            {
-              "title": "Clinical documentation and consent",
-              "minutes": 40,
-              "description": "Records, consent forms and clinical photographs."
-            }
-          ]
-        },
-        {
-          "title": "Medication safety",
-          "lessons": [
-            {
-              "title": "Medication safety checks",
-              "minutes": 45,
-              "description": "Right patient, drug, dose, route, time; storage and labelling."
-            }
-          ]
-        },
-        {
-          "title": "Procedure assistance",
-          "lessons": [
-            {
-              "title": "Assisting dermatology procedures",
-              "minutes": 60,
-              "description": "Set-up, monitoring and post-procedure care under doctor direction."
-            }
-          ]
-        },
-        {
-          "title": "Emergencies and BLS",
-          "lessons": [
-            {
-              "title": "Recognising and managing emergencies",
-              "minutes": 45,
-              "description": "Anaphylaxis, syncope and escalation."
+              "title": "From dirty to sterile",
+              "minutes": 240,
+              "description": null,
+              "transcript": "Key points:\n- Point-of-use wipe, soak, manual or ultrasonic cleaning, rinse, dry, inspect, pack with indicator, sterilise, store"
             },
             {
-              "title": "Basic Life Support",
-              "minutes": 60,
-              "description": "Adult BLS sequence and AED use."
+              "title": "Steam sterilisation and load logs",
+              "minutes": 240,
+              "description": null,
+              "transcript": "Key points:\n- Cycle settings come from the autoclave and instrument manufacturers; chemical indicators in every pack; biological indicator tests as per policy\n- Load logs, pack dates, shelf life, storage, recall of failed loads; single-use items are never reprocessed\n- Practice: process a tray from dirty to sterile; read and sign a load log"
             }
           ]
         },
         {
-          "title": "Aftercare and supervised practice",
+          "title": "N2 Documentation, consent and photos",
           "lessons": [
             {
-              "title": "Aftercare guidance and logbook",
-              "minutes": 30,
-              "description": "Aftercare as instructed by the doctor; recording supervised practice."
+              "title": "The patient chart",
+              "minutes": 180,
+              "description": "The nurse keeps complete, accurate and private clinical records.",
+              "transcript": "Key points:\n- Patient chart, vitals, history, allergies, medication orders, procedure notes, aftercare given"
+            },
+            {
+              "title": "Consent, photos and incident forms",
+              "minutes": 180,
+              "description": null,
+              "transcript": "Key points:\n- Written consent for procedures; separate photo consent; minors and guardians\n- Incident and near-miss forms; privacy of records and the Digital Personal Data Protection Act, 2023\n- Practice: complete 5 mock charts; spot errors in 3 sample forms"
+            }
+          ]
+        },
+        {
+          "title": "N3 Medication handling",
+          "lessons": [
+            {
+              "title": "Medication safety",
+              "minutes": 160,
+              "description": "The nurse stores, checks and gives medicines safely and records every step.",
+              "transcript": "Key points:\n- Right patient, right drug, right dose, right route, right time, right documentation; check expiry and look-alike names"
+            },
+            {
+              "title": "Storage and cold chain",
+              "minutes": 160,
+              "description": null,
+              "transcript": "Key points:\n- Room temperature items; refrigerator items at 2-8 degrees C with a twice-daily temperature log; report cold chain breaks"
+            },
+            {
+              "title": "Topical anaesthetics and the emergency tray",
+              "minutes": 160,
+              "description": null,
+              "transcript": "Key points:\n- Topical anaesthetic creams only as ordered, on the specified area, for the time on the product label, then remove\n- Emergency tray contents set by the Medical Advisor; weekly check with signed list\n- Practice: read 10 orders and catch the errors; tray check"
+            }
+          ]
+        },
+        {
+          "title": "N4 Clinic procedures and assisting",
+          "lessons": [
+            {
+              "title": "Room set-up and patient preparation",
+              "minutes": 400,
+              "description": "The nurse prepares patients and rooms and assists dermatologist-ordered procedures safely.",
+              "transcript": "Key points:\n- Room and tray set-up, patient identification, positioning and skin preparation"
+            },
+            {
+              "title": "Assisting procedures",
+              "minutes": 400,
+              "description": null,
+              "transcript": "Key points:\n- Assisting peels, microneedling, PRP, mesotherapy and injectables as ordered by the dermatologist\n- PRP blood draw and preparation per the device protocol; labelling of tubes"
+            },
+            {
+              "title": "Dressings, monitoring and sharps",
+              "minutes": 400,
+              "description": null,
+              "transcript": "Key points:\n- Dressings and wound care; post-procedure monitoring; sharps handling\n- Practice: set up and assist 10 mock procedures on models; observe 10 real procedures"
+            }
+          ]
+        },
+        {
+          "title": "N5 Emergencies and reactions",
+          "lessons": [
+            {
+              "title": "Vital signs and when to call the doctor",
+              "minutes": 320,
+              "description": "The nurse recognises and manages reactions and emergencies until the doctor arrives.",
+              "transcript": "Key points:\n- Vital signs and when to call the doctor"
+            },
+            {
+              "title": "Basic life support",
+              "minutes": 320,
+              "description": null,
+              "transcript": "Key points:\n- Adults: call for help, compressions at 100-120 a minute, depth 5-6 cm, 30 compressions to 2 breaths, AED as soon as available"
+            },
+            {
+              "title": "Anaphylaxis and other emergencies",
+              "minutes": 320,
+              "description": null,
+              "transcript": "Key points:\n- Anaphylaxis, fainting, low blood sugar, seizure, burns (cool under running water for 20 minutes), signs of local anaesthetic toxicity\n- Medicines in an emergency only as per the clinic's standing protocol or a doctor's order\n- Practice: BLS on a manikin with a certified instructor; two timed mock emergencies"
+            }
+          ]
+        },
+        {
+          "title": "N6 Patient counselling and aftercare",
+          "lessons": [
+            {
+              "title": "Counselling and teach-back",
+              "minutes": 240,
+              "description": "The nurse explains procedures and aftercare clearly and confirms understanding.",
+              "transcript": "Key points:\n- Explaining the procedure, what to expect, warning signs, aftercare, follow-up\n- Teach-back to confirm understanding\n- Practice: counsel 5 mock patients"
+            }
+          ]
+        },
+        {
+          "title": "Supervised practice, logbook and exams",
+          "lessons": [
+            {
+              "title": "Supervised practice, logbook and exams",
+              "minutes": 480,
+              "description": "8 hours supervised practice, then the knowledge test, two practical exams and the emergency drill.",
+              "transcript": "Assessment: knowledge test 50 MCQ in 75 minutes (pass 80%); practical exam 1 (instrument reprocessing and tray set-up); practical exam 2 (pre-procedure checklist, assisting a mock procedure, counselling); emergency drill (BLS on manikin and mock anaphylaxis, 100% of critical steps).\nLogbook minimums before Level 1: instrument reprocessing cycles 20; procedures assisted 30; charts completed and checked 40; medication checks with a senior nurse 30; emergency drills 2."
             }
           ]
         }
@@ -919,7 +1085,7 @@
       "status": "published",
       "sort_order": 4,
       "duration_hours": 36,
-      "duration_label": "36 hours / 6 days",
+      "duration_label": "36 hours (6 days)",
       "level": "Foundation",
       "languages": [
         "English",
@@ -929,24 +1095,25 @@
         "academy",
         "blended"
       ],
-      "certificate_title": "VTIARA Certified Housekeeping Associate",
-      "validity_months": null,
+      "certificate_title": "Hygiene Certificate",
+      "validity_months": 12,
       "requires_attendance": true,
       "requires_practical": true,
       "requires_trainer_approval": true,
-      "short_description": "Clinical-grade cleaning, chemical safety, spill response and laser-room precautions, with a supervised practical.",
-      "overview": "Cleaning in a clinic is part of patient safety. This six-day programme covers cleaning routines, chemical safety and disinfectants, spill management, biomedical waste, linen handling and laser-room precautions, with supervised practical work signed off by a trainer.",
-      "audience": "Housekeeping and facility staff at VTIARA clinics and the academy.",
+      "short_description": "A 6-day, 36-hour programme teaching the exact cleaning routines, chemical safety and waste handling used in every VTIARA branch.",
+      "overview": "Housekeeping staff keep treatment rooms safe and clean; one missed step can spread infection. The 6 days (16 hours of Common Core plus 20 hours of housekeeping) are taught mostly through pictures and demonstrations, in Kannada, Hindi or the local language, with English terms for chemicals and equipment. You may never touch used sharps, handle lasers or other devices, move patient records, or enter a procedure room during a procedure without a nurse or doctor present.",
+      "audience": "Housekeeping and support staff, new hires and existing staff.",
       "eligibility": [
-        "Common Core Training completed (recommended before starting)",
-        "Able to follow written and verbal safety instructions"
+        "8th to 10th pass; can read labels and simple instructions",
+        "Medical fitness check",
+        "Hepatitis B vaccination recommended before joining"
       ],
       "outcomes": [
-        "Follow validated cleaning routines for clinical areas",
-        "Handle and dilute chemicals and disinfectants safely",
-        "Respond correctly to spills and biohazards",
-        "Segregate biomedical waste and handle linen safely",
-        "Observe laser-room precautions"
+        "Clean and reset treatment rooms, waiting areas, washrooms and corridors",
+        "Mix and use approved disinfectants as taught",
+        "Segregate and move biomedical waste to the storage area",
+        "Handle linen and towels safely",
+        "Clean small spills using the spill kit"
       ],
       "pass_rules": {
         "attendance_pct": 100,
@@ -956,63 +1123,82 @@
       },
       "requirements_text": [
         "100% attendance",
-        "80% or higher knowledge score",
-        "Practical checklist passed",
-        "Trainer sign-off"
+        "80% or higher on the knowledge test",
+        "All practical checklist items passed",
+        "Yearly refresher"
       ],
       "modules": [
         {
-          "title": "Common Core (prerequisite revision)",
+          "title": "H1 Cleaning basics and chemicals",
           "lessons": [
             {
-              "title": "Common Core recap for housekeeping",
-              "minutes": 25,
-              "description": "Hand hygiene, PPE and waste segregation."
-            }
-          ]
-        },
-        {
-          "title": "Cleaning routines",
-          "lessons": [
-            {
-              "title": "Clean-to-dirty cleaning and room turnover",
-              "minutes": 45,
-              "description": "Sequence, high-touch surfaces and checklists."
-            }
-          ]
-        },
-        {
-          "title": "Chemical safety and disinfectants",
-          "lessons": [
-            {
-              "title": "Dilution, labelling and chemical safety",
-              "minutes": 40,
-              "description": "Never mix chemicals; correct contact times."
-            }
-          ]
-        },
-        {
-          "title": "Spill management and biomedical waste",
-          "lessons": [
-            {
-              "title": "Spill response",
-              "minutes": 35,
-              "description": "Blood and body-fluid spill steps."
+              "title": "Clean first, then disinfect",
+              "minutes": 60,
+              "description": "Staff can pick the right cloth, mop and product and handle chemicals safely.",
+              "transcript": "Key points:\n- Clean first, then disinfect: dirt blocks disinfectants\n- Colour-coded cloths and mops: red for toilets and washroom floors, yellow for washbasins and taps, blue for treatment rooms and reception, green for pantry"
             },
             {
-              "title": "Biomedical waste and linen",
-              "minutes": 35,
-              "description": "Colour-coded segregation and soiled linen handling."
+              "title": "Chemical safety",
+              "minutes": 60,
+              "description": null,
+              "transcript": "Key points:\n- Read the label every time; wear gloves and, where the label says so, eye protection\n- Never mix chemicals; bleach mixed with acids or ammonia products gives toxic gas\n- Keep every bottle labelled; never pour chemicals into drink bottles\n- Practice: identify 10 products from labels; match product to area"
             }
           ]
         },
         {
-          "title": "Laser-room precautions",
+          "title": "H2 Disinfectants, room routines and spills",
           "lessons": [
             {
-              "title": "Laser-room cleaning precautions",
-              "minutes": 30,
-              "description": "Signage, eyewear and reflective surfaces."
+              "title": "Dilution and contact time",
+              "minutes": 120,
+              "description": "Staff can dilute correctly, clean a room in the right order and manage a spill.",
+              "transcript": "Key points:\n- Dilution and contact time come from the product label; typical chlorine strengths 0.1% (1,000 ppm) for general surfaces and 1% (10,000 ppm) for blood or body-fluid spills; confirm with the branch policy\n- Make fresh solution each day and label it with date and time"
+            },
+            {
+              "title": "Cleaning order and high-touch surfaces",
+              "minutes": 120,
+              "description": null,
+              "transcript": "Key points:\n- Clean to dirty, top to bottom, far to near; use two-bucket mopping\n- High-touch surfaces first: door handles, switches, bed rails, trolley handles, chair arms, taps"
+            },
+            {
+              "title": "Room turnover and spills",
+              "minutes": 120,
+              "description": null,
+              "transcript": "Key points:\n- Treatment room turnover between patients, end-of-day deep clean, washroom routine\n- Spill response (SOP-HK-04)\n- Practice: dilution exercise with measuring cups; timed cleaning of a mock treatment room (target 10 minutes)"
+            }
+          ]
+        },
+        {
+          "title": "H3 Biomedical waste, linen, procedure and laser rooms",
+          "lessons": [
+            {
+              "title": "Biomedical waste colour bins",
+              "minutes": 120,
+              "description": "Staff separate waste correctly, handle linen safely and respect procedure and laser room rules.",
+              "transcript": "Key points:\n- Yellow: soiled dressings, cotton, gauze, contaminated items, expired medicines; red: contaminated plastics such as tubing, syringes without needles, gloves\n- White translucent puncture-proof container: needles and blades; blue box: glass vials and ampoules; black bag: general waste\n- Confirm current Biomedical Waste Management Rules, 2016 and your waste vendor's instructions"
+            },
+            {
+              "title": "Handling and storing waste",
+              "minutes": 120,
+              "description": null,
+              "transcript": "Key points:\n- Never mix categories; fill bags only up to three-quarters; never press down a bag; never put hands inside; label with date and branch\n- Keep a waste register; store in the locked waste room; hand over only to the authorised vendor"
+            },
+            {
+              "title": "Linen, procedure rooms and laser rooms",
+              "minutes": 120,
+              "description": null,
+              "transcript": "Key points:\n- Linen: wear gloves, do not shake, carry in a closed bag, keep soiled linen apart\n- Laser room: enter only when the nurse says the device is off; never touch a device or move cables\n- Never touch a loose needle or blade: stay away and call the nurse\n- Practice: sort 30 items into bins; visit the waste room and read the register"
+            }
+          ]
+        },
+        {
+          "title": "Supervised practice and sign-off",
+          "lessons": [
+            {
+              "title": "Supervised practice and sign-off",
+              "minutes": 360,
+              "description": "4 hours cleaning real rooms with a buddy using the checklists, then 2 hours knowledge test and practical check.",
+              "transcript": "Pass rule: 100% attendance, 80% on the knowledge test, all practical checklist items passed. Certificate: Hygiene Certificate, valid 12 months, then yearly refresher."
             }
           ]
         }
@@ -1121,7 +1307,7 @@
       "status": "published",
       "sort_order": 5,
       "duration_hours": 74,
-      "duration_label": "74 hours / 2 weeks + monitored calls",
+      "duration_label": "74 hours (2 weeks)",
       "level": "Intermediate",
       "languages": [
         "English",
@@ -1133,24 +1319,27 @@
         "academy",
         "blended"
       ],
-      "certificate_title": "VTIARA Certified Telecaller",
-      "validity_months": null,
+      "certificate_title": "Telecaller Level 1",
+      "validity_months": 12,
       "requires_attendance": false,
       "requires_practical": true,
       "requires_trainer_approval": true,
-      "short_description": "Patient communication, ethical selling, privacy and DND compliance, with mock calls and monitored live calls.",
-      "overview": "Telecallers are often a patient's first contact with VTIARA. This programme covers patient communication, treatment-knowledge boundaries, call scripts, CRM use, ethical selling, privacy and DND compliance, followed by mock calls and a period of monitored live calls before approval.",
-      "audience": "Telecallers, appointment-desk and lead-follow-up staff.",
+      "short_description": "A 2-week, 74-hour programme building listening, accurate information, clean data entry and legal compliance for the first voice of VTIARA.",
+      "overview": "The telecaller is the first voice of VTIARA; one honest, warm call turns an enquiry into a safe first visit. Over 2 weeks (16 hours of Common Core plus 58 telecaller hours), then 3 days of monitored live calls, you learn patient communication and voice, treatment knowledge, six call flows, CRM use, ethical objection handling, compliance and scored mock calls.",
+      "audience": "New telecallers who handle enquiries, appointment booking, follow-up and reminders.",
       "eligibility": [
-        "Common Core Training completed (recommended before starting)",
-        "Good spoken communication in English and at least one local language"
+        "12th pass or graduate",
+        "Clear spoken English plus the local language of the market",
+        "Typing and basic computer skills",
+        "Voice and listening test"
       ],
       "outcomes": [
-        "Communicate clearly, respectfully and within knowledge boundaries",
-        "Use approved scripts and the CRM correctly",
-        "Sell ethically without guarantees or clinical advice",
-        "Protect patient privacy and comply with DND regulations",
-        "Handle live calls to the clinic's quality standard"
+        "Sound warm, clear and calm, and listen before speaking",
+        "Explain each treatment in simple, approved words and know what not to say",
+        "Follow the six call flows from opening to close",
+        "Record every call outcome accurately in the CRM the same day",
+        "Handle objections honestly without pressure",
+        "Follow consent, DND and telecom commercial-communication rules"
       ],
       "pass_rules": {
         "knowledge_pct": 80,
@@ -1159,69 +1348,144 @@
         "monitored_calls": true
       },
       "requirements_text": [
-        "80% or higher knowledge score",
-        "Mock-call score of 85% or above",
-        "Compliance section passed",
-        "Monitored live-call approval"
+        "80% or higher on the knowledge test",
+        "Mock-call average of 85% with no critical error",
+        "3 days of monitored live calls reviewed"
       ],
       "modules": [
         {
-          "title": "Common Core (prerequisite revision)",
+          "title": "T1 Patient communication and voice",
           "lessons": [
             {
-              "title": "Common Core recap for telecallers",
-              "minutes": 25,
-              "description": "Privacy, confidentiality and communication essentials."
-            }
-          ]
-        },
-        {
-          "title": "Patient communication and knowledge boundaries",
-          "lessons": [
-            {
-              "title": "Patient communication on calls",
-              "minutes": 45,
-              "description": "Tone, pacing, empathy and active listening."
+              "title": "Voice",
+              "minutes": 160,
+              "description": "The telecaller sounds warm, clear and calm, and listens before speaking.",
+              "transcript": "Key points:\n- Voice: pace, tone, smile in the voice, pausing, avoiding fillers and slang"
             },
             {
-              "title": "Treatment knowledge boundaries",
-              "minutes": 40,
-              "description": "What you can explain and when to hand over to a clinician."
-            }
-          ]
-        },
-        {
-          "title": "Scripts and CRM",
-          "lessons": [
-            {
-              "title": "Call scripts and CRM use",
-              "minutes": 50,
-              "description": "Approved scripts, lead notes and follow-ups."
-            }
-          ]
-        },
-        {
-          "title": "Ethical selling, privacy and DND",
-          "lessons": [
-            {
-              "title": "Ethical selling",
-              "minutes": 35,
-              "description": "No guarantees, no pressure, honest information."
+              "title": "Listening and language",
+              "minutes": 160,
+              "description": null,
+              "transcript": "Key points:\n- Let the patient finish, repeat back the concern, ask one question at a time\n- Simple words in English and the local language; no medical jargon; spell out names and numbers"
             },
             {
-              "title": "Privacy and DND compliance",
-              "minutes": 40,
-              "description": "Consent for calls, DND registry and data handling."
+              "title": "Anxious, angry or confused patients",
+              "minutes": 160,
+              "description": null,
+              "transcript": "Key points:\n- Stay calm, apologise for the inconvenience, fix the problem or escalate\n- Practice: recorded 1-minute calls, playback and feedback"
             }
           ]
         },
         {
-          "title": "Mock calls and monitored calls",
+          "title": "T2 Treatment knowledge",
           "lessons": [
             {
-              "title": "Mock-call and monitoring guide",
-              "minutes": 30,
-              "description": "How scoring works and what trainers listen for."
+              "title": "Explaining common treatments",
+              "minutes": 280,
+              "description": "The telecaller can explain each treatment in simple, approved words and knows what not to say.",
+              "transcript": "Key points:\n- For each common treatment (acne care, pigmentation, hair fall treatments, PRP and mesotherapy, laser hair reduction, anti-ageing facials and peels, dandruff care): what it is, who it may suit, typical sessions, visit time, general downtime"
+            },
+            {
+              "title": "What to always add",
+              "minutes": 280,
+              "description": null,
+              "transcript": "Key points:\n- The doctor decides after examination; results vary; no guarantees\n- Prices and packages: where to find the current approved list"
+            },
+            {
+              "title": "Questions to transfer",
+              "minutes": 280,
+              "description": null,
+              "transcript": "Key points:\n- Transfer to the nurse or doctor: pregnancy, medicines, reactions, pain, anything about a current treatment\n- Practice: explain 5 treatments in 30 seconds each; quiz with a nurse"
+            }
+          ]
+        },
+        {
+          "title": "T3 Call flows and scripts",
+          "lessons": [
+            {
+              "title": "The six call flows",
+              "minutes": 300,
+              "description": "The telecaller follows the six VTIARA call flows with a clear opening, discovery, next step and close.",
+              "transcript": "Key points:\n- New enquiry, appointment booking, reminder, reschedule and cancellation, follow-up after visit, complaint call"
+            },
+            {
+              "title": "Structure of every call",
+              "minutes": 300,
+              "description": null,
+              "transcript": "Key points:\n- Opening, discovery questions, summary, next step and polite closing\n- Practice: 15 scripted calls, then unscripted"
+            }
+          ]
+        },
+        {
+          "title": "T4 CRM use",
+          "lessons": [
+            {
+              "title": "Leads, fields and disposition codes",
+              "minutes": 180,
+              "description": "The telecaller records every call accurately in the CRM the same day.",
+              "transcript": "Key points:\n- Create and update a lead; required fields; disposition codes; follow-up dates; notes in plain facts"
+            },
+            {
+              "title": "Same-day updates and data privacy",
+              "minutes": 180,
+              "description": null,
+              "transcript": "Key points:\n- Same-day update rule; duplicate checking; no patient data in personal notes or chats\n- Practice: 20 entries in the practice CRM; error review"
+            }
+          ]
+        },
+        {
+          "title": "T5 Objection handling and ethical selling",
+          "lessons": [
+            {
+              "title": "Listen, acknowledge, answer, offer",
+              "minutes": 180,
+              "description": "The telecaller answers concerns with facts and offers a consultation, never pressure.",
+              "transcript": "Key points:\n- Listen, acknowledge, answer with facts, offer the next step (a consultation), never pressure"
+            },
+            {
+              "title": "Common objections",
+              "minutes": 180,
+              "description": null,
+              "transcript": "Key points:\n- Price, fear, time, 'I will think', 'another clinic is cheaper', 'is it safe?'\n- Never create false urgency or exaggerated claims\n- Practice: role-play 10 objections with a coach"
+            }
+          ]
+        },
+        {
+          "title": "T6 Compliance",
+          "lessons": [
+            {
+              "title": "Who you may call",
+              "minutes": 120,
+              "description": "The telecaller follows consent, telecom and privacy rules on every call.",
+              "transcript": "Key points:\n- Call only people who enquired or consented; honour do-not-disturb requests and the telecom commercial-communication rules (DND registry, registered sender and templates) as confirmed by the legal advisor"
+            },
+            {
+              "title": "Recording, privacy and claims",
+              "minutes": 120,
+              "description": null,
+              "transcript": "Key points:\n- Tell patients when calls are recorded; never share patient details with anyone else\n- No claims of guaranteed results, cure, or medical advice; no fake urgency\n- Practice: spot the violations in 8 sample calls"
+            }
+          ]
+        },
+        {
+          "title": "T7 Scored mock calls",
+          "lessons": [
+            {
+              "title": "Mock calls with coach feedback",
+              "minutes": 480,
+              "description": "The telecaller reaches an 85% average on scored mock calls with no critical error.",
+              "transcript": "Key points:\n- 20 mock calls scored with the call scoring sheet; coach feedback after each 5"
+            }
+          ]
+        },
+        {
+          "title": "Knowledge test, call exam and monitored live calls",
+          "lessons": [
+            {
+              "title": "Knowledge test, call exam and monitored live calls",
+              "minutes": 120,
+              "description": "2 hours knowledge test and call exam, followed by 3 days of monitored live calls with a buddy.",
+              "transcript": "Pass rule: 80% on the knowledge test; mock-call average 85% with no critical error; 3 days of live calls reviewed. Certificate: Telecaller Level 1, valid 12 months.\nRules of the role: never diagnose, advise on medicines or promise results; quote only approved prices, packages and offers; call only people who have enquired or given consent; tell the patient when a call is recorded; record every call outcome in the CRM the same day."
             }
           ]
         }
