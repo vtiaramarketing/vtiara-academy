@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { Link, NavLink, Navigate, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
   Award, BarChart3, Bell, BookOpen, Building2, CalendarDays, ClipboardCheck, FileClock, GraduationCap, LayoutDashboard,
-  LogOut, Menu, Search, ScrollText, Settings, ShieldCheck, UserCircle, Users, X, Library, ListChecks, Home, UserCheck, Phone, MessageCircle, Inbox,
+  LogOut, Menu, Search, ScrollText, Settings, ShieldCheck, UserCircle, Users, X, Library, ListChecks, Home, UserCheck, Phone, MessageCircle, Inbox, Instagram, Facebook, Youtube, Linkedin, MapPin, Clock, Mail, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { backend, isDemo, useQuery } from '@/lib/db';
@@ -80,7 +80,7 @@ export function PublicLayout() {
 
 function Footer() {
   const { settings: s, contact } = useSettings();
-  const socials = [['Instagram', s.instagram_url], ['Facebook', s.facebook_url], ['YouTube', s.youtube_url], ['LinkedIn', s.linkedin_url]].filter(([, u]) => u) as [string, string][];
+  const socials = ([['Instagram', s.instagram_url, Instagram], ['Facebook', s.facebook_url, Facebook], ['YouTube', s.youtube_url, Youtube], ['LinkedIn', s.linkedin_url, Linkedin]] as const).filter(([, u]) => u) as unknown as [string, string, typeof Instagram][];
   const L = 'text-sm text-white/70 hover:text-white';
   return (
     <footer className="mt-24 bg-navy text-white no-print">
@@ -89,6 +89,13 @@ function Footer() {
           <Logo light />
           <p className="mt-4 max-w-xs text-sm text-white/65">Structured online, academy and supervised training for safe, consistent VTIARA care.</p>
           {contact.whatsappUrl && <a className="btn-gold mt-5 !py-2 text-sm" href={contact.whatsappUrl} target="_blank" rel="noreferrer">Enquire on WhatsApp</a>}
+          {socials.length > 0 && (
+            <ul className="mt-6 flex gap-2.5" aria-label="Follow VTIARA on social media">
+              {socials.map(([n, u, Icon]) => (
+                <li key={n}><a href={u} target="_blank" rel="noreferrer" aria-label={`VTIARA on ${n}`} title={n} className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white/80 ring-1 ring-white/15 transition hover:-translate-y-0.5 hover:bg-gold hover:text-navy hover:ring-gold"><Icon className="h-[18px] w-[18px]" aria-hidden /></a></li>
+              ))}
+            </ul>
+          )}
         </div>
         <nav aria-label="Courses"><p className="text-sm font-bold text-gold">Courses</p>
           <ul className="mt-3 space-y-2"><li><Link to="/courses" className={L}>All courses</Link></li><li><Link to="/courses?cat=Clinical" className={L}>Clinical</Link></li><li><Link to="/courses?cat=Aesthetics" className={L}>Aesthetics</Link></li><li><Link to="/courses?cat=Operations" className={L}>Operations and management</Link></li></ul></nav>
@@ -97,18 +104,17 @@ function Footer() {
         <nav aria-label="Legal"><p className="text-sm font-bold text-gold">Policies</p>
           <ul className="mt-3 space-y-2"><li><Link to="/privacy" className={L}>Privacy policy</Link></li><li><Link to="/terms" className={L}>Terms and conditions</Link></li><li><Link to="/certificate-terms" className={L}>Certificate terms</Link></li></ul></nav>
         <div><p className="text-sm font-bold text-gold">Locations and contact</p>
-          <ul className="mt-3 space-y-2 text-sm text-white/70">
-            <li>{contact.address ?? 'Academy address to be confirmed'}{contact.mapsUrl && <> · <a className="underline hover:text-white" href={contact.mapsUrl} target="_blank" rel="noreferrer">Map</a></>}</li>
-            {contact.hours && <li>{contact.hours}</li>}
-            {contact.phone && <li><a className="hover:text-white" href={contact.telUrl ?? undefined}>{contact.phone}</a></li>}
-            {contact.email && <li><a className="hover:text-white" href={`mailto:${contact.email}`}>{contact.email}</a></li>}
-            {s.clinic_website && <li><a className="hover:text-white" href={s.clinic_website} target="_blank" rel="noreferrer">VTIARA Clinic website ↗</a></li>}
+          <ul className="mt-3 space-y-3 text-sm text-white/70">
+            <li className="flex gap-2.5"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><span>{contact.address ?? 'Academy address to be confirmed'}{contact.mapsUrl && <> · <a className="underline hover:text-white" href={contact.mapsUrl} target="_blank" rel="noreferrer">Map</a></>}</span></li>
+            {contact.hours && <li className="flex gap-2.5"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><span>{contact.hours}</span></li>}
+            {contact.phone && <li className="flex gap-2.5"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><a className="hover:text-white" href={contact.telUrl ?? undefined}>{contact.phone}</a></li>}
+            {contact.email && <li className="flex gap-2.5"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><a className="break-all hover:text-white" href={`mailto:${contact.email}`}>{contact.email}</a></li>}
+            {s.clinic_website && <li className="flex gap-2.5"><Globe className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden /><a className="hover:text-white" href={s.clinic_website} target="_blank" rel="noreferrer">VTIARA Clinic website</a></li>}
           </ul>
-          {socials.length > 0 && <ul className="mt-4 flex flex-wrap gap-3 text-sm text-white/70">{socials.map(([n, u]) => <li key={n}><a className="hover:text-white" href={u} target="_blank" rel="noreferrer">{n} ↗</a></li>)}</ul>}
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="section py-5 text-xs text-white/60">© {new Date().getFullYear()} VTIARA Training Academy. Completion of a course does not authorise diagnosis, prescribing, or procedures outside an approved role.</p>
+        <div className="section flex flex-col gap-2 py-5 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between"><p>© {new Date().getFullYear()} VTIARA Training Academy</p><p className="max-w-2xl sm:text-right">Completion of a course does not authorise diagnosis, prescribing, or procedures outside an approved role.</p></div>
       </div>
     </footer>
   );
