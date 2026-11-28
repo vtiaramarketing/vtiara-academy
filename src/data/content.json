@@ -216,243 +216,243 @@
         "questions": [
           {
             "cat": "Hand hygiene",
-            "q": "How long should you rub alcohol-based hand rub over all hand surfaces?",
+            "q": "Which list gives the five moments of hand hygiene?",
             "o": [
-              "About 5 seconds",
+              "Before touching a patient; before a clean or aseptic task; after body-fluid exposure risk; after touching a patient; after touching patient surroundings",
+              "Only before and after meals",
+              "Only when your hands look dirty",
+              "Only at the start and end of a shift"
+            ],
+            "c": 0,
+            "e": "These are the five moments in the Common Core handout."
+          },
+          {
+            "cat": "Hand hygiene",
+            "q": "Minimum time to rub hands with alcohol hand rub?",
+            "o": [
+              "5 seconds",
               "20 to 30 seconds, until dry",
-              "2 minutes",
-              "Only until it stops feeling wet"
+              "10 seconds",
+              "Until the rub stops feeling wet"
             ],
             "c": 1,
-            "e": "Alcohol-based rub needs 20–30 seconds of contact and should be rubbed until your hands are dry."
+            "e": "Rub all surfaces for 20 to 30 seconds until dry."
           },
           {
             "cat": "Hand hygiene",
-            "q": "Your hands are visibly soiled. What should you use?",
+            "q": "When must you wash with soap and water instead of using hand rub?",
             "o": [
-              "Alcohol-based hand rub",
-              "Soap and water",
-              "A tissue",
-              "Gloves only"
-            ],
-            "c": 1,
-            "e": "Visibly soiled hands must be washed with soap and water; rub is not enough."
-          },
-          {
-            "cat": "Hand hygiene",
-            "q": "Which is one of the five moments for hand hygiene?",
-            "o": [
-              "Before touching a patient",
-              "Only at the start of your shift",
-              "Only when leaving the clinic",
+              "Only after lunch",
+              "Never; hand rub is always enough",
+              "When hands are visibly dirty",
               "Only when wearing gloves"
             ],
+            "c": 2,
+            "e": "Visibly dirty hands need soap and water."
+          },
+          {
+            "cat": "PPE and infection control",
+            "q": "Which piece of PPE comes off first?",
+            "o": [
+              "Mask",
+              "Apron",
+              "Eye protection",
+              "Gloves"
+            ],
+            "c": 3,
+            "e": "Gloves are the most contaminated item and come off first."
+          },
+          {
+            "cat": "Sharps",
+            "q": "Can a used needle be recapped?",
+            "o": [
+              "No; put it straight into the sharps container",
+              "Yes, using both hands",
+              "Yes, if it was only used once",
+              "Yes, if the patient is not looking"
+            ],
             "c": 0,
-            "e": "The five moments include before touching a patient, before a clean/aseptic task, after body-fluid exposure, after touching a patient and after touching patient surroundings."
+            "e": "Never recap, bend or break a used needle."
           },
           {
-            "cat": "Hand hygiene",
-            "q": "After removing gloves you should:",
+            "cat": "Sharps",
+            "q": "Which container takes needles and blades?",
             "o": [
-              "Do nothing, gloves kept hands clean",
-              "Perform hand hygiene",
-              "Wipe hands on your uniform",
-              "Reuse the gloves later"
-            ],
-            "c": 1,
-            "e": "Gloves do not replace hand hygiene. Clean your hands after removing them."
-          },
-          {
-            "cat": "Infection control",
-            "q": "Standard precautions apply to:",
-            "o": [
-              "Only patients with known infections",
-              "All patients, every time",
-              "Only surgical procedures",
-              "Only patients who ask for them"
-            ],
-            "c": 1,
-            "e": "Standard precautions treat every patient's blood and body fluids as potentially infectious."
-          },
-          {
-            "cat": "Infection control",
-            "q": "A reusable instrument has just been used on a patient. What do you do?",
-            "o": [
-              "Wipe it and use it on the next patient",
-              "Treat it as contaminated and send it for decontamination per protocol",
-              "Rinse under the tap and keep it on the tray",
-              "Leave it in the treatment room"
-            ],
-            "c": 1,
-            "e": "Used instruments are contaminated until they go through the clinic's decontamination and sterilisation process."
-          },
-          {
-            "cat": "Biomedical waste",
-            "q": "Where do used needles and other sharps go?",
-            "o": [
-              "Regular dustbin",
               "Yellow bag",
-              "White translucent puncture-proof sharps container",
-              "Red bag with plastics"
+              "White puncture-proof sharps container",
+              "Red bag",
+              "Black bag"
+            ],
+            "c": 1,
+            "e": "Needles and blades go in the white translucent puncture-proof container."
+          },
+          {
+            "cat": "Waste",
+            "q": "Which bin takes soiled cotton and gauze?",
+            "o": [
+              "Black",
+              "Blue",
+              "Yellow",
+              "White"
             ],
             "c": 2,
-            "e": "Sharps go into a puncture-proof, leak-proof sharps container (white translucent under the Bio-Medical Waste Rules)."
+            "e": "Soiled dressings, cotton and gauze go in the yellow bag."
           },
           {
-            "cat": "Biomedical waste",
-            "q": "You have just used a needle. What must you never do?",
+            "cat": "Sharps",
+            "q": "What is the first action after a needle-stick?",
             "o": [
-              "Dispose of it immediately in the sharps container",
-              "Recap or bend it by hand",
-              "Keep the container below fill line",
-              "Report a needle-stick injury"
+              "Squeeze the wound hard and wait",
+              "Carry on and report at the end of the day",
+              "Apply a plaster and say nothing",
+              "Wash with soap and running water, then report immediately"
             ],
-            "c": 1,
-            "e": "Never recap or bend needles; this is a leading cause of needle-stick injuries."
+            "c": 3,
+            "e": "Wash with soap and running water, then report straight away."
           },
           {
-            "cat": "Biomedical waste",
-            "q": "Blood-soiled cotton and dressings are segregated into:",
+            "cat": "Privacy and consent",
+            "q": "Can staff photograph patients on a personal phone?",
             "o": [
-              "Yellow bag",
-              "General waste",
-              "Blue box",
-              "Paper recycling"
+              "No; only a clinic device and with separate consent",
+              "Yes, if the patient smiles",
+              "Yes, if it is deleted later",
+              "Yes, for social media posts"
             ],
             "c": 0,
-            "e": "Soiled waste such as blood-stained cotton and dressings goes into the yellow category bag."
+            "e": "Photos use a clinic device and separate consent only."
           },
           {
-            "cat": "Consent",
-            "q": "Before any procedure, patient consent must be:",
+            "cat": "Privacy and consent",
+            "q": "Who may receive patient information?",
             "o": [
-              "Assumed if the patient booked an appointment",
-              "Informed, voluntary and documented as per clinic policy",
-              "Taken verbally from a relative only",
-              "Taken after the procedure"
+              "Anyone who asks politely",
+              "The treating team (and the patient)",
+              "Any colleague in the branch",
+              "Friends and family of staff"
             ],
             "c": 1,
-            "e": "Valid consent is informed, voluntary and recorded before the procedure begins."
-          },
-          {
-            "cat": "Consent",
-            "q": "A patient hesitates and asks you to stop during a procedure. You:",
-            "o": [
-              "Finish quickly as it is almost done",
-              "Stop and inform the doctor or supervisor",
-              "Convince them to continue",
-              "Ignore it if they are quiet"
-            ],
-            "c": 1,
-            "e": "Consent can be withdrawn at any time. Stop safely and escalate."
-          },
-          {
-            "cat": "Privacy",
-            "q": "You need a photo of a patient's treatment area for the record. You:",
-            "o": [
-              "Use your personal phone for convenience",
-              "Take it only with the patient's consent on an approved clinic device",
-              "Ask a colleague to take it on theirs",
-              "Skip consent if the face is not visible"
-            ],
-            "c": 1,
-            "e": "Photos need explicit consent and must be taken and stored only on approved clinic systems."
-          },
-          {
-            "cat": "Privacy",
-            "q": "A friend asks whether a well-known person visited the clinic. You:",
-            "o": [
-              "Tell them quietly",
-              "Say nothing is confirmed or shared about any patient",
-              "Hint with a smile",
-              "Post a vague story"
-            ],
-            "c": 1,
-            "e": "Never confirm or hint at who is or is not a patient."
-          },
-          {
-            "cat": "Confidentiality",
-            "q": "Patient details may be discussed:",
-            "o": [
-              "In the lift with colleagues",
-              "Only with those who need to know, in a private place",
-              "In a public WhatsApp group",
-              "With any staff member"
-            ],
-            "c": 1,
-            "e": "Share on a need-to-know basis and in private settings only."
-          },
-          {
-            "cat": "Patient data safety",
-            "q": "A colleague asks to use your system login 'just this once'. You:",
-            "o": [
-              "Share it, it's quicker",
-              "Refuse; every user must use their own login",
-              "Share it and change it later",
-              "Write it on a sticky note for them"
-            ],
-            "c": 1,
-            "e": "Logins are personal. Sharing breaks audit trails and patient privacy."
-          },
-          {
-            "cat": "Patient data safety",
-            "q": "You step away from a computer showing a patient record. You should:",
-            "o": [
-              "Leave it open",
-              "Lock the screen",
-              "Turn the monitor away",
-              "Ask the patient to watch it"
-            ],
-            "c": 1,
-            "e": "Lock the screen every time you leave a device."
+            "e": "Information is shared only with those who need it for care."
           },
           {
             "cat": "Patient communication",
-            "q": "A patient asks which tablet to take for hair fall. You:",
+            "q": "Can you promise a patient a result?",
             "o": [
-              "Suggest one you have heard works",
-              "Politely explain you cannot advise and connect them with the doctor",
-              "Tell them to search online",
-              "Say any supplement is fine"
+              "Yes, if the treatment is popular",
+              "Yes, for hair treatments only",
+              "No; results vary",
+              "Yes, if the doctor is busy"
             ],
-            "c": 1,
-            "e": "Only qualified clinicians diagnose or prescribe. Refer clinical questions to the doctor."
+            "c": 2,
+            "e": "Never guarantee results; results vary from person to person."
           },
           {
             "cat": "Patient communication",
-            "q": "An upset patient complains about waiting. Your best first step is to:",
+            "q": "A patient is angry about waiting. What is your first step?",
             "o": [
-              "Argue the wait was not long",
-              "Listen calmly, acknowledge the concern and escalate if unresolved",
-              "Ignore until they leave",
-              "Blame another team"
+              "Tell them other patients waited longer",
+              "Ask them to complain in writing",
+              "Walk away until they calm down",
+              "Listen and apologise, then solve the problem or escalate"
             ],
-            "c": 1,
-            "e": "Listening and acknowledging calms the situation; escalate to your supervisor when needed."
+            "c": 3,
+            "e": "Listen, apologise, then fix or escalate."
           },
           {
-            "cat": "Emergency escalation",
-            "q": "A patient feels faint and slumps in the waiting area. You first:",
+            "cat": "Scope of work",
+            "q": "Who diagnoses a skin problem?",
             "o": [
-              "Give water and carry on",
-              "Stay with the patient and alert the clinical team immediately",
-              "Wait to see if it passes",
-              "Give any medicine you have"
+              "The dermatologist",
+              "The receptionist",
+              "The telecaller",
+              "Any trained staff member"
             ],
-            "c": 1,
-            "e": "Stay with the patient, call for help and follow the emergency protocol. Do not give medication."
+            "c": 0,
+            "e": "Staff never diagnose; they say the doctor will examine you."
           },
           {
-            "cat": "Emergency escalation",
-            "q": "You discover a fire. What is the correct action?",
+            "cat": "Skin and hair basics",
+            "q": "How many hairs are normally lost in a day?",
             "o": [
-              "Collect your belongings first",
-              "Raise the alarm, alert others and follow the evacuation plan",
-              "Investigate the source alone",
-              "Wait for a manager's permission"
+              "None",
+              "About 50 to 100",
+              "About 500",
+              "About 1,000"
             ],
             "c": 1,
-            "e": "Raise the alarm, help others to safety and follow the evacuation plan."
+            "e": "Losing roughly 50 to 100 hairs a day is normal."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "What does RACE stand for in a fire?",
+            "o": [
+              "Run, Ask, Call, Exit",
+              "Report, Act, Close, End",
+              "Rescue, Alarm, Contain, Evacuate or Extinguish",
+              "Rescue, Argue, Carry, Escape"
+            ],
+            "c": 2,
+            "e": "RACE is the fire response taught at VTIARA."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "A patient faints. What do you do?",
+            "o": [
+              "Sit them up and give water",
+              "Leave them alone to recover",
+              "Walk them to the car",
+              "Lay them flat, raise their legs and call the nurse or doctor"
+            ],
+            "c": 3,
+            "e": "Lay flat, raise legs, call the nurse or doctor; nothing by mouth until fully awake."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "Which are signs of an allergic reaction?",
+            "o": [
+              "Face or lip swelling, hives, breathing difficulty, dizziness",
+              "Mild tiredness only",
+              "A dry mouth only",
+              "Slight itching after a long day"
+            ],
+            "c": 0,
+            "e": "Stop the product or procedure and call the doctor at once."
+          },
+          {
+            "cat": "Privacy and consent",
+            "q": "Which law covers patient data privacy?",
+            "o": [
+              "Motor Vehicles Act",
+              "Digital Personal Data Protection Act, 2023",
+              "Consumer Goods Act",
+              "Indian Contract Act only"
+            ],
+            "c": 1,
+            "e": "The DPDP Act, 2023 governs personal data."
+          },
+          {
+            "cat": "Workplace conduct",
+            "q": "Who do you tell about harassment?",
+            "o": [
+              "Nobody; it is private",
+              "Only a friend at work",
+              "The POSH Internal Committee or the HR lead",
+              "Post about it on social media"
+            ],
+            "c": 2,
+            "e": "Report to the POSH Internal Committee or HR lead."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "What are the emergency numbers?",
+            "o": [
+              "100 ambulance, 108 fire, 112 police",
+              "102 ambulance, 109 fire, 110 national emergency",
+              "1 ambulance, 2 fire, 3 police",
+              "108 ambulance, 112 national emergency, 101 fire"
+            ],
+            "c": 3,
+            "e": "Memorise 108, 112 and 101."
           }
         ]
       },
@@ -704,95 +704,256 @@
         }
       ],
       "assessment": {
-        "title": "Skin Therapist Knowledge Test",
-        "time_limit_min": 45,
+        "title": "Skin Therapist Knowledge Tests 1 and 2",
+        "time_limit_min": 105,
         "pass_mark": 80,
-        "num_questions": 40,
+        "num_questions": 70,
         "retake_after_days": 3,
         "compulsory_category": null,
         "questions": [
           {
-            "cat": "Scope",
-            "q": "A client shows a changing mole during a facial. You should:",
+            "cat": "Skin science",
+            "q": "The Fitzpatrick scale describes:",
             "o": [
-              "Continue and ignore it",
-              "Pause and refer the client to the doctor",
-              "Apply a lightening product",
-              "Tell them it is harmless"
+              "How different skin types react to sun and procedures (types I to VI)",
+              "Hair thickness",
+              "The depth of wrinkles",
+              "Product ingredients"
             ],
-            "c": 1,
-            "e": "Anything outside therapist scope, including suspicious lesions, is referred to the doctor."
-          },
-          {
-            "cat": "Device safety",
-            "q": "Before a laser treatment starts, everyone in the room must:",
-            "o": [
-              "Remove their gloves",
-              "Wear the correct protective eyewear",
-              "Leave the door open",
-              "Switch off the lights"
-            ],
-            "c": 1,
-            "e": "Correct protective eyewear is mandatory for all persons in the laser room."
-          },
-          {
-            "cat": "Documentation",
-            "q": "When should a procedure be recorded?",
-            "o": [
-              "At the end of the week",
-              "Promptly and accurately after the procedure",
-              "Only if something went wrong",
-              "Never, the doctor records it"
-            ],
-            "c": 1,
-            "e": "Timely, accurate records protect the patient and the clinic."
+            "c": 0,
+            "e": "It guides risk and settings for each skin type."
           },
           {
             "cat": "Skin science",
-            "q": "The outermost layer of the skin is the:",
+            "q": "A mole that changes in shape, colour or size should:",
             "o": [
-              "Dermis",
-              "Epidermis",
-              "Hypodermis",
-              "Basal lamina"
+              "Be treated with a facial",
+              "Always be referred to the doctor",
+              "Be ignored",
+              "Be covered with make-up"
             ],
             "c": 1,
-            "e": "The epidermis is the outermost layer and forms the skin barrier."
+            "e": "Asymmetry, border, colour, diameter and evolving signs mean refer."
+          },
+          {
+            "cat": "Hair science",
+            "q": "The three phases of the hair cycle are:",
+            "o": [
+              "Alpha, beta and gamma",
+              "Growth, death and rebirth only",
+              "Anagen, catagen and telogen",
+              "Cuticle, cortex and medulla"
+            ],
+            "c": 2,
+            "e": "Know the cycle before scalp analysis."
+          },
+          {
+            "cat": "Scope of work",
+            "q": "Who diagnoses a skin or hair condition?",
+            "o": [
+              "The senior therapist",
+              "The product representative",
+              "The patient",
+              "The dermatologist; therapists never diagnose"
+            ],
+            "c": 3,
+            "e": "Therapists capture and record, never diagnose."
+          },
+          {
+            "cat": "Consultation",
+            "q": "What must be done before every treatment?",
+            "o": [
+              "Confirm consent and check contraindications",
+              "Take a selfie",
+              "Offer a discount",
+              "Start with the quickest step"
+            ],
+            "c": 0,
+            "e": "A missed consent or contraindication check fails the practical."
+          },
+          {
+            "cat": "Consultation",
+            "q": "Photos are taken:",
+            "o": [
+              "Whenever convenient, with filters",
+              "With consent, using the same light, angle and distance, with no filters",
+              "On a personal phone",
+              "Only after the treatment"
+            ],
+            "c": 1,
+            "e": "Standard photo method."
+          },
+          {
+            "cat": "Consultation",
+            "q": "Can a therapist promise results?",
+            "o": [
+              "Yes, within one session",
+              "Yes, for facials",
+              "No; results take weeks to months and are never guaranteed",
+              "Yes, if the patient pays in advance"
+            ],
+            "c": 2,
+            "e": "Set honest expectations."
+          },
+          {
+            "cat": "Treatments",
+            "q": "Extractions are done only on:",
+            "o": [
+              "Inflamed pimples",
+              "Any lesion",
+              "Moles",
+              "Non-inflamed blackheads and whiteheads"
+            ],
+            "c": 3,
+            "e": "Never on inflamed lesions."
+          },
+          {
+            "cat": "Treatments",
+            "q": "About how long is the standard facial in SOP-T-01?",
+            "o": [
+              "About 60 minutes",
+              "10 minutes",
+              "3 hours",
+              "Until the patient leaves"
+            ],
+            "c": 0,
+            "e": "Follow the time plan."
+          },
+          {
+            "cat": "Treatments",
+            "q": "Which step comes before the patient leaves after a facial?",
+            "o": [
+              "A scrub",
+              "Sunscreen and the aftercare sheet",
+              "Steam",
+              "Extractions"
+            ],
+            "c": 1,
+            "e": "Soothing mask, moisturiser, sunscreen and the aftercare sheet."
+          },
+          {
+            "cat": "Reactions",
+            "q": "The first step when a patient reacts during treatment is to:",
+            "o": [
+              "Continue more gently",
+              "Apply any cream available",
+              "Stop the treatment and remove the product or device",
+              "Wait to see if it settles"
+            ],
+            "c": 2,
+            "e": "SOP-T-02 step 1."
+          },
+          {
+            "cat": "Reactions",
+            "q": "Which signs mean you must call the nurse or doctor at once?",
+            "o": [
+              "Mild tightness only",
+              "A little redness that fades",
+              "Dry lips",
+              "Swelling, blistering, burning that does not settle, breathing difficulty or dizziness"
+            ],
+            "c": 3,
+            "e": "Mild redness can be normal; these signs are not."
+          },
+          {
+            "cat": "Devices and laser",
+            "q": "Who chooses device settings for a patient?",
+            "o": [
+              "The doctor; therapists never change them",
+              "The therapist",
+              "The patient",
+              "The device sales team"
+            ],
+            "c": 0,
+            "e": "Settings are chosen by the doctor for each patient."
+          },
+          {
+            "cat": "Devices and laser",
+            "q": "Laser eyewear must:",
+            "o": [
+              "Be worn by the patient only",
+              "Match the device's wavelength and be worn by everyone in the room",
+              "Be any dark sunglasses",
+              "Be removed during the pulse"
+            ],
+            "c": 1,
+            "e": "Use correct protective eyewear for everyone."
+          },
+          {
+            "cat": "Devices and laser",
+            "q": "Independent operation of advanced devices needs:",
+            "o": [
+              "No extra training",
+              "Only the Level 1 certificate",
+              "Level 2 certification",
+              "A friend's guidance"
+            ],
+            "c": 2,
+            "e": "No patient use until Level 2."
+          },
+          {
+            "cat": "Products",
+            "q": "Which sunscreen advice is correct?",
+            "o": [
+              "SPF 10 once a day",
+              "Only on sunny days",
+              "Only after treatments",
+              "SPF 30 or higher, broad spectrum, reapplied every 2 to 3 hours outdoors"
+            ],
+            "c": 3,
+            "e": "Sunscreen every morning."
+          },
+          {
+            "cat": "Products",
+            "q": "Product advice to patients should be:",
+            "o": [
+              "Honest and without pressure",
+              "Based on what earns the most",
+              "Pushy before they leave",
+              "Always the most expensive"
+            ],
+            "c": 0,
+            "e": "No-pressure advice."
           }
         ]
       },
       "checklist": {
-        "title": "Skin Therapist practical stations and logbook",
-        "description": "Supervised practical stations and logbook review.",
+        "title": "Skin Therapist practical exam, patient-safety check and logbook",
+        "description": "Observed live; any miss on a critical item means a failed exam and retake.",
         "requires_evidence": true,
+        "min_score": null,
         "items": [
           {
-            "label": "Station 1: Consultation and documentation",
+            "label": "Confirms consent and checks contraindications",
             "critical": true
           },
           {
-            "label": "Station 2: Facial protocol (supervised)",
+            "label": "Hand hygiene and clean set-up",
             "critical": true
           },
           {
-            "label": "Station 3: Skin treatment support",
+            "label": "Correct treatment steps and timing (SOP-T-01)",
             "critical": true
           },
           {
-            "label": "Station 4: Hair and scalp care",
+            "label": "Recognises and escalates a reaction (SOP-T-02)",
             "critical": true
           },
           {
-            "label": "Station 5: Device and laser-room safety",
+            "label": "Records products used and skin response",
             "critical": true
           },
           {
-            "label": "Station 6: Aftercare counselling within scope",
+            "label": "Gives the right aftercare",
             "critical": true
           },
           {
-            "label": "Logbook completed and signed by trainer",
+            "label": "Patient-safety check: contraindication scenario, reaction scenario and PPE (100%)",
             "critical": true
+          },
+          {
+            "label": "Logbook minimums met: 40 facials, 20 scalp analyses, 15 hair or scalp treatments, 30 consultations, 20 device assists",
+            "critical": false
           }
         ]
       }
@@ -987,90 +1148,263 @@
       ],
       "assessment": {
         "title": "Staff Nurse Knowledge Test",
-        "time_limit_min": 60,
+        "time_limit_min": 75,
         "pass_mark": 80,
         "num_questions": 50,
         "retake_after_days": 3,
         "compulsory_category": null,
         "questions": [
           {
-            "cat": "BLS",
-            "q": "Recommended adult chest-compression rate in BLS is:",
+            "cat": "Documentation",
+            "q": "How many identifiers confirm a patient's identity before a procedure?",
             "o": [
-              "60–80 per minute",
-              "100–120 per minute",
-              "140–160 per minute",
-              "As fast as possible"
+              "Two, such as name and phone number or ID",
+              "One, the name only",
+              "None if the patient is a regular",
+              "Three, including home address"
             ],
-            "c": 1,
-            "e": "Adult BLS uses 100–120 compressions per minute."
+            "c": 0,
+            "e": "SOP-N-01 requires two identifiers."
           },
           {
-            "cat": "BLS",
-            "q": "Adult compression depth should be about:",
+            "cat": "Documentation",
+            "q": "Photo consent for a patient is:",
             "o": [
-              "1–2 cm",
-              "5–6 cm",
-              "8–10 cm",
-              "Whatever feels comfortable"
+              "Included in the procedure consent",
+              "Separate from the procedure consent",
+              "Not needed for clinic photos",
+              "Given verbally by a relative"
             ],
             "c": 1,
-            "e": "Compress about 5–6 cm with full recoil."
-          },
-          {
-            "cat": "Medication safety",
-            "q": "Before administering any medication you must confirm:",
-            "o": [
-              "Only the patient's name",
-              "Right patient, drug, dose, route and time",
-              "That the pack looks familiar",
-              "That a colleague used it yesterday"
-            ],
-            "c": 1,
-            "e": "The medication 'rights' are verified every time."
+            "e": "Written consent is signed and photo consent is separate."
           },
           {
             "cat": "Sterilisation",
-            "q": "A sterilised pack has a chemical indicator that did not change colour. You:",
+            "q": "What is the first step in reprocessing a used instrument?",
             "o": [
-              "Use it anyway",
-              "Treat the pack as non-sterile and reprocess it",
-              "Re-tape it",
-              "Use it for low-risk procedures"
+              "Place it straight in the autoclave",
+              "Rinse it under the tap and reuse",
+              "Wipe gross dirt at the point of use and keep sharps apart",
+              "Wrap it in a sterile pack"
+            ],
+            "c": 2,
+            "e": "SOP-N-02 step 1."
+          },
+          {
+            "cat": "Sterilisation",
+            "q": "What must go inside every sterilisation pack?",
+            "o": [
+              "A patient label",
+              "A used swab",
+              "Nothing; the autoclave log is enough",
+              "A chemical indicator"
+            ],
+            "c": 3,
+            "e": "Pack with a chemical indicator and date."
+          },
+          {
+            "cat": "Sterilisation",
+            "q": "Can single-use items be reprocessed?",
+            "o": [
+              "No; single-use items are never reprocessed",
+              "Yes, once",
+              "Yes, if they look clean",
+              "Yes, if the patient agrees"
+            ],
+            "c": 0,
+            "e": "Single-use items are never reprocessed."
+          },
+          {
+            "cat": "Medication safety",
+            "q": "Refrigerated medicines are kept at:",
+            "o": [
+              "Room temperature",
+              "2 to 8 degrees C, with a temperature log checked twice daily",
+              "Below 0 degrees C",
+              "Any cool place in the clinic"
             ],
             "c": 1,
-            "e": "An indicator failure means sterility is not assured. Do not use and reprocess."
+            "e": "Report any cold chain break."
+          },
+          {
+            "cat": "Medication safety",
+            "q": "Which of these is one of the checks before giving a medicine?",
+            "o": [
+              "Patient's age only",
+              "Brand colour of the box",
+              "Right patient, drug, dose, route, time and documentation",
+              "Whether the previous nurse recorded it"
+            ],
+            "c": 2,
+            "e": "Check the six rights and expiry."
+          },
+          {
+            "cat": "Medication safety",
+            "q": "Topical anaesthetic cream is applied:",
+            "o": [
+              "On the whole face for convenience",
+              "Until the patient says it is numb, without a timer",
+              "As the nurse prefers",
+              "Only as ordered, on the specified area, for the time on the product label"
+            ],
+            "c": 3,
+            "e": "Follow the order and the label time, then remove."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "Adult BLS chest compressions are given at:",
+            "o": [
+              "100 to 120 per minute",
+              "60 to 80 per minute",
+              "140 to 160 per minute",
+              "As fast as possible"
+            ],
+            "c": 0,
+            "e": "Rate 100 to 120 a minute."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "Adult BLS compression depth is about:",
+            "o": [
+              "1 to 2 cm",
+              "5 to 6 cm",
+              "8 to 10 cm",
+              "Whatever feels comfortable"
+            ],
+            "c": 1,
+            "e": "Compress 5 to 6 cm with full recoil."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "In adult BLS, the compression to breath ratio is:",
+            "o": [
+              "15 to 1",
+              "10 to 10",
+              "30 compressions to 2 breaths",
+              "5 to 2"
+            ],
+            "c": 2,
+            "e": "Use the AED as soon as it is available."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "First action when anaphylaxis is suspected during a procedure?",
+            "o": [
+              "Finish the procedure first",
+              "Ask the patient to go home",
+              "Give any available tablet",
+              "Stop the product or procedure and call the doctor and a colleague, noting the time"
+            ],
+            "c": 3,
+            "e": "SOP-N-03 step 1."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "Emergency medicines may be given:",
+            "o": [
+              "Only as per the clinic's approved standing protocol or the doctor's order",
+              "Whenever the nurse thinks best",
+              "Only if the patient asks",
+              "After searching the internet"
+            ],
+            "c": 0,
+            "e": "Never improvise medicines in an emergency."
+          },
+          {
+            "cat": "Incidents",
+            "q": "After a needle-stick injury you should:",
+            "o": [
+              "Squeeze the wound",
+              "Wash with soap and running water, not squeeze, and report at once",
+              "Wait until the end of the shift",
+              "Cover it and say nothing"
+            ],
+            "c": 1,
+            "e": "SOP-N-04."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "How is a burn first cooled?",
+            "o": [
+              "With ice directly on the skin",
+              "With toothpaste",
+              "Under running water for 20 minutes",
+              "With oil"
+            ],
+            "c": 2,
+            "e": "Cool under running water for 20 minutes."
+          },
+          {
+            "cat": "Scope of work",
+            "q": "Who diagnoses, prescribes and orders procedures?",
+            "o": [
+              "The staff nurse",
+              "The therapist",
+              "The front desk",
+              "The dermatologist"
+            ],
+            "c": 3,
+            "e": "Nurses never diagnose, prescribe or perform an unordered procedure."
+          },
+          {
+            "cat": "Emergencies",
+            "q": "How often is the emergency tray checked?",
+            "o": [
+              "Weekly, against the signed list",
+              "Once a year",
+              "Only after an emergency",
+              "Whenever someone remembers"
+            ],
+            "c": 0,
+            "e": "SOP-N-05 covers tray, oxygen cylinder, AED battery and fridge log."
           }
         ]
       },
       "checklist": {
-        "title": "Staff Nurse practical stations",
-        "description": "Sterilisation, emergency drill, procedure assistance and logbook.",
+        "title": "Staff Nurse practical exams, emergency drill and logbook",
+        "description": "Practical exam 1 and 2, emergency drill and logbook minimums. Any miss on a critical item means a retake.",
         "requires_evidence": true,
+        "min_score": null,
         "items": [
           {
-            "label": "Sterilisation and instrument processing station",
-            "critical": true
-          },
-          {
-            "label": "Emergency drill (including BLS)",
-            "critical": true
-          },
-          {
-            "label": "Procedure assistance station",
-            "critical": true
-          },
-          {
-            "label": "Medication safety check station",
-            "critical": true
-          },
-          {
-            "label": "Documentation and consent station",
+            "label": "Exam 1: reprocesses instruments in the correct order (SOP-N-02)",
             "critical": false
           },
           {
-            "label": "Logbook completed and signed by trainer",
+            "label": "Exam 1: maintains sterility during tray set-up",
             "critical": true
+          },
+          {
+            "label": "Exam 1: handles sharps correctly",
+            "critical": true
+          },
+          {
+            "label": "Exam 2: identifies patient with two identifiers and checks consent and allergies",
+            "critical": true
+          },
+          {
+            "label": "Exam 2: completes the pre-procedure checklist (SOP-N-01)",
+            "critical": false
+          },
+          {
+            "label": "Exam 2: right drug, dose, route and documentation",
+            "critical": true
+          },
+          {
+            "label": "Exam 2: assists a mock procedure and counsels with teach-back",
+            "critical": false
+          },
+          {
+            "label": "Drill: BLS on manikin with correct rate, depth and ratio",
+            "critical": true
+          },
+          {
+            "label": "Drill: starts the emergency response correctly and calls the doctor (SOP-N-03)",
+            "critical": true
+          },
+          {
+            "label": "Logbook minimums met: 20 reprocessing cycles, 30 procedures assisted, 40 charts, 30 medication checks, 2 drills",
+            "critical": false
           }
         ]
       }
@@ -1212,86 +1546,295 @@
         "compulsory_category": null,
         "questions": [
           {
+            "cat": "Cleaning basics",
+            "q": "Which colour-coded cloth and mop is for toilets and washroom floors?",
+            "o": [
+              "Red",
+              "Blue",
+              "Green",
+              "Yellow"
+            ],
+            "c": 0,
+            "e": "Red for toilets and washroom floors."
+          },
+          {
+            "cat": "Cleaning basics",
+            "q": "Which colour is for washbasins and taps?",
+            "o": [
+              "Red",
+              "Yellow",
+              "Blue",
+              "Green"
+            ],
+            "c": 1,
+            "e": "Yellow for washbasins and taps."
+          },
+          {
+            "cat": "Cleaning basics",
+            "q": "Which colour is for treatment rooms and reception?",
+            "o": [
+              "Red",
+              "Yellow",
+              "Blue",
+              "Green"
+            ],
+            "c": 2,
+            "e": "Blue for treatment rooms and reception."
+          },
+          {
+            "cat": "Cleaning basics",
+            "q": "Which colour is for the pantry?",
+            "o": [
+              "Red",
+              "Yellow",
+              "Blue",
+              "Green"
+            ],
+            "c": 3,
+            "e": "Green for the pantry."
+          },
+          {
+            "cat": "Cleaning basics",
+            "q": "What is the right order?",
+            "o": [
+              "Clean first, then disinfect",
+              "Disinfect first, then clean",
+              "Only disinfect",
+              "Only clean"
+            ],
+            "c": 0,
+            "e": "Dirt blocks disinfectants."
+          },
+          {
             "cat": "Chemical safety",
-            "q": "Which must you never mix?",
+            "q": "Which mix is dangerous?",
             "o": [
-              "Water and detergent",
-              "Bleach and ammonia-based cleaners",
-              "Two cloths",
-              "Detergent and a mop"
+              "Water with detergent",
+              "Bleach with acids or ammonia products",
+              "Water with a cloth",
+              "Detergent with a mop"
             ],
             "c": 1,
-            "e": "Mixing bleach with ammonia or acids can release toxic gas."
+            "e": "Never mix chemicals; it can release toxic gas."
           },
           {
-            "cat": "Spill response",
-            "q": "You find a blood spill. First you:",
+            "cat": "Chemical safety",
+            "q": "Where do you find the dilution and contact time?",
             "o": [
-              "Wipe it with a dry cloth",
-              "Wear PPE, contain and treat the spill per protocol",
-              "Cover it with a towel and leave",
-              "Ask a patient to avoid it"
+              "From a friend",
+              "Guess by smell",
+              "On the product label, confirmed with branch policy",
+              "Any internet post"
             ],
-            "c": 1,
-            "e": "Wear PPE, contain and disinfect using the clinic's spill procedure."
+            "c": 2,
+            "e": "Follow the label and branch policy."
           },
           {
-            "cat": "Room turnover",
-            "q": "When cleaning a treatment room you work:",
+            "cat": "Chemical safety",
+            "q": "How often is fresh disinfectant solution made?",
             "o": [
+              "Once a week",
+              "Only when empty",
+              "Never; top it up",
+              "Every day, labelled with date and time"
+            ],
+            "c": 3,
+            "e": "Make fresh solution daily."
+          },
+          {
+            "cat": "Cleaning routine",
+            "q": "In which direction do you clean?",
+            "o": [
+              "Clean to dirty, top to bottom, far to near",
               "Dirty to clean",
-              "Clean to dirty, top to bottom",
-              "Randomly",
-              "Floor first, then surfaces"
+              "Bottom to top",
+              "Near to far"
+            ],
+            "c": 0,
+            "e": "Use two-bucket mopping."
+          },
+          {
+            "cat": "Cleaning routine",
+            "q": "Which surfaces are cleaned first?",
+            "o": [
+              "The ceiling",
+              "High-touch surfaces such as door handles, switches and bed rails",
+              "The back wall",
+              "The windows"
             ],
             "c": 1,
-            "e": "Clean-to-dirty and top-to-bottom avoids spreading contamination."
+            "e": "High-touch surfaces carry the most germs."
+          },
+          {
+            "cat": "Waste",
+            "q": "Which bin takes soiled cotton, gauze and dressings?",
+            "o": [
+              "Black",
+              "Blue",
+              "Yellow",
+              "White"
+            ],
+            "c": 2,
+            "e": "Yellow for soiled dressings."
+          },
+          {
+            "cat": "Waste",
+            "q": "Which container takes needles and blades?",
+            "o": [
+              "Yellow bag",
+              "Black bag",
+              "Red bag",
+              "White puncture-proof container"
+            ],
+            "c": 3,
+            "e": "Housekeeping never handles these; call the nurse."
+          },
+          {
+            "cat": "Waste",
+            "q": "How full may a waste bag be?",
+            "o": [
+              "Up to three-quarters",
+              "Completely full",
+              "Half only",
+              "Overflowing is fine"
+            ],
+            "c": 0,
+            "e": "Never press down a bag or put hands inside."
+          },
+          {
+            "cat": "Waste",
+            "q": "You see a loose needle on the floor. You:",
+            "o": [
+              "Pick it up with a cloth",
+              "Stay away and call the nurse",
+              "Kick it aside",
+              "Put it in the black bag"
+            ],
+            "c": 1,
+            "e": "Never touch a loose needle or blade."
+          },
+          {
+            "cat": "Spills",
+            "q": "First step in a blood or body-fluid spill?",
+            "o": [
+              "Mop it immediately",
+              "Wipe it with a dry cloth",
+              "Keep people away and tell the nurse",
+              "Cover with a towel and leave"
+            ],
+            "c": 2,
+            "e": "SOP-HK-04 step 1."
+          },
+          {
+            "cat": "Spills",
+            "q": "Which strength is typical for blood or body-fluid spills?",
+            "o": [
+              "0.001%",
+              "0.1% only",
+              "10% alcohol",
+              "1% chlorine solution"
+            ],
+            "c": 3,
+            "e": "General surfaces 0.1%; spills 1%; confirm with the branch policy."
+          },
+          {
+            "cat": "Washrooms",
+            "q": "Washrooms are cleaned at least:",
+            "o": [
+              "3 times a day, with red-code tools, and logged",
+              "Once a week",
+              "Once a day",
+              "Only on Mondays"
+            ],
+            "c": 0,
+            "e": "SOP-HK-03."
+          },
+          {
+            "cat": "Linen and rooms",
+            "q": "How is soiled linen handled?",
+            "o": [
+              "Shake it out",
+              "Wear gloves, do not shake it, carry it in a closed bag",
+              "Carry it open",
+              "Mix it with clean linen"
+            ],
+            "c": 1,
+            "e": "Keep soiled linen apart."
           },
           {
             "cat": "Laser room",
-            "q": "In a laser room with the 'laser in use' sign lit, you:",
+            "q": "When may housekeeping enter the laser room?",
             "o": [
-              "Enter to clean quickly",
-              "Do not enter until the treatment ends and it is declared safe",
-              "Enter without eyewear",
-              "Remove the sign"
+              "Anytime",
+              "During a procedure",
+              "Only when the nurse says the device is off",
+              "When the door is open"
             ],
-            "c": 1,
-            "e": "Never enter while the laser is in use; follow the room's safety instructions."
+            "c": 2,
+            "e": "Never touch a device or move cables."
+          },
+          {
+            "cat": "Room turnover",
+            "q": "The target time for a treatment room turnover is about:",
+            "o": [
+              "1 minute",
+              "45 minutes",
+              "2 hours",
+              "10 minutes"
+            ],
+            "c": 3,
+            "e": "SOP-HK-01."
           }
         ]
       },
       "checklist": {
-        "title": "Treatment-room turnover and spill response",
-        "description": "Observed practical with trainer sign-off.",
-        "requires_evidence": false,
+        "title": "Housekeeping practical check and spill response",
+        "description": "The trainer observes one full room turnover and a blood-spill response. All checks must be passed before working alone.",
+        "requires_evidence": true,
+        "min_score": null,
         "items": [
           {
-            "label": "Wears correct PPE and performs hand hygiene",
+            "label": "Hand hygiene and correct PPE",
+            "critical": false
+          },
+          {
+            "label": "Correct colour-coded cloth and mop chosen",
+            "critical": false
+          },
+          {
+            "label": "Disinfectant diluted correctly and labelled",
+            "critical": false
+          },
+          {
+            "label": "Cleaned clean to dirty, top to bottom",
+            "critical": false
+          },
+          {
+            "label": "High-touch surfaces cleaned",
+            "critical": false
+          },
+          {
+            "label": "Waste sorted into correct bins; sharps not touched",
+            "critical": false
+          },
+          {
+            "label": "Contact time respected",
+            "critical": false
+          },
+          {
+            "label": "Completed within about 10 minutes",
+            "critical": false
+          },
+          {
+            "label": "Log filled; PPE removed and hands cleaned",
+            "critical": false
+          },
+          {
+            "label": "Patient-safety check: blood-spill response (SOP-HK-04) without errors",
             "critical": true
           },
           {
-            "label": "Segregates waste by colour code",
-            "critical": true
-          },
-          {
-            "label": "Cleans high-touch surfaces clean-to-dirty",
-            "critical": true
-          },
-          {
-            "label": "Uses correct disinfectant dilution and contact time",
-            "critical": true
-          },
-          {
-            "label": "Performs spill response correctly",
-            "critical": true
-          },
-          {
-            "label": "Follows laser-room precautions",
-            "critical": true
-          },
-          {
-            "label": "Completes turnover checklist",
+            "label": "Logbook: 40 supervised room cleans and 5 supervised spill or waste tasks",
             "critical": false
           }
         ]
@@ -1500,71 +2043,247 @@
         "questions": [
           {
             "cat": "Compliance",
-            "q": "A number is on the DND registry and the person has not asked to be called. For a promotional call you:",
+            "q": "Which of these is an automatic fail on the call scoring sheet?",
             "o": [
-              "Call anyway",
-              "Do not call",
-              "Call after 9 pm",
-              "Send a promotional SMS from a personal number"
+              "Any guarantee, medical advice or privacy breach",
+              "A slow greeting",
+              "A long hold",
+              "A missing thank-you"
             ],
-            "c": 1,
-            "e": "Promotional calls to numbers on the DND registry are not allowed without valid consent."
+            "c": 0,
+            "e": "Compliance needs full marks."
           },
           {
             "cat": "Compliance",
-            "q": "A caller asks whether a treatment will 'definitely' cure their problem. You:",
+            "q": "Who may you call?",
             "o": [
-              "Promise a cure to book the appointment",
-              "Avoid guarantees and invite them for a doctor consultation",
-              "Say results are 100%",
-              "Quote another patient's results"
+              "Anyone from a list",
+              "People who have enquired or given consent",
+              "Neighbours",
+              "Everyone in the branch area"
             ],
             "c": 1,
-            "e": "Never guarantee outcomes. Invite the patient for a consultation."
+            "e": "Honour do-not-disturb requests."
           },
           {
-            "cat": "Boundaries",
-            "q": "A caller asks you to diagnose their rash. You:",
+            "cat": "Compliance",
+            "q": "When a call is recorded, you must:",
             "o": [
-              "Give your best guess",
-              "Explain you cannot diagnose and offer a doctor consultation",
-              "Recommend a cream",
-              "Tell them it is nothing"
+              "Say nothing",
+              "Delete it later",
+              "Tell the patient",
+              "Share it on WhatsApp"
             ],
-            "c": 1,
-            "e": "Telecallers never diagnose or prescribe."
+            "c": 2,
+            "e": "Recording notice is part of the scoring sheet."
           },
           {
-            "cat": "Privacy",
-            "q": "A person claiming to be a relative asks for a patient's appointment details. You:",
+            "cat": "Compliance",
+            "q": "Can you share patient details with anyone else?",
             "o": [
-              "Share them",
-              "Do not share without authorised verification",
-              "Share the date only",
-              "Share on WhatsApp"
+              "Yes, with friends",
+              "Yes, in a group chat",
+              "Yes, if they sound polite",
+              "No; never"
+            ],
+            "c": 3,
+            "e": "Privacy applies on every call."
+          },
+          {
+            "cat": "Objections",
+            "q": "A patient asks 'Is it safe?'. A good reply is:",
+            "o": [
+              "The doctor checks your skin and history first and explains risks and benefits",
+              "It is 100% safe",
+              "Do not worry",
+              "Everyone does it"
+            ],
+            "c": 0,
+            "e": "Never say it is 100% safe."
+          },
+          {
+            "cat": "Objections",
+            "q": "A patient asks 'Will I get results?'. You say:",
+            "o": [
+              "Guaranteed",
+              "Results vary; the doctor will explain what is realistic",
+              "Definitely in a week",
+              "Only if you buy a package"
             ],
             "c": 1,
-            "e": "Patient information is confidential and shared only after proper verification."
+            "e": "Never guarantee."
+          },
+          {
+            "cat": "Objections",
+            "q": "A patient says 'I will think about it'. You:",
+            "o": [
+              "Push for an immediate booking",
+              "Create false urgency",
+              "Offer to send details and ask when you may call back",
+              "Hang up"
+            ],
+            "c": 2,
+            "e": "No pressure."
+          },
+          {
+            "cat": "Objections",
+            "q": "'Another clinic is cheaper' is answered by:",
+            "o": [
+              "Criticising the other clinic",
+              "Inventing a discount",
+              "Saying we are the cheapest",
+              "Talking about doctor-led care and safety, without criticising the other clinic"
+            ],
+            "c": 3,
+            "e": "Stay honest."
+          },
+          {
+            "cat": "Call flows",
+            "q": "A follow-up call after a visit happens on:",
+            "o": [
+              "Day 2 or 3; pain, swelling or a reaction is transferred to the nurse or doctor at once",
+              "Day 30",
+              "Never",
+              "After a review"
+            ],
+            "c": 0,
+            "e": "Flow C."
+          },
+          {
+            "cat": "Call flows",
+            "q": "A complaint call is passed to the branch manager:",
+            "o": [
+              "Next week",
+              "The same hour, after logging the facts",
+              "Never",
+              "Only if repeated"
+            ],
+            "c": 1,
+            "e": "Flow D."
+          },
+          {
+            "cat": "CRM",
+            "q": "In the Concern field you write:",
+            "o": [
+              "Your opinion",
+              "A diagnosis",
+              "The patient's own words",
+              "Advice"
+            ],
+            "c": 2,
+            "e": "Facts only."
+          },
+          {
+            "cat": "CRM",
+            "q": "The Next follow-up field is filled:",
+            "o": [
+              "Never",
+              "Only for hot leads",
+              "Only on Fridays",
+              "With a date and time for every open lead"
+            ],
+            "c": 3,
+            "e": "CRM rules."
+          },
+          {
+            "cat": "CRM",
+            "q": "Which are valid dispositions?",
+            "o": [
+              "Booked, call back, not interested, wrong number, transferred",
+              "Maybe, later, never",
+              "Hot, warm, cold",
+              "Won, lost, spam"
+            ],
+            "c": 0,
+            "e": "Pick from the list."
+          },
+          {
+            "cat": "Treatments",
+            "q": "Who decides the treatment plan?",
+            "o": [
+              "The telecaller",
+              "The doctor, after examination",
+              "The patient alone",
+              "The front desk"
+            ],
+            "c": 1,
+            "e": "Always add that results vary."
+          },
+          {
+            "cat": "Treatments",
+            "q": "Which questions are transferred to the nurse or doctor?",
+            "o": [
+              "Opening hours",
+              "Parking",
+              "Pregnancy, medicines, reactions, pain or anything about a current treatment",
+              "Branch address"
+            ],
+            "c": 2,
+            "e": "Never answer these yourself."
+          },
+          {
+            "cat": "Call flows",
+            "q": "The six call flows include:",
+            "o": [
+              "Only new enquiries",
+              "Only complaints",
+              "Only reminders",
+              "New enquiry, booking, reminder, reschedule and cancellation, follow-up after visit, complaint"
+            ],
+            "c": 3,
+            "e": "Learn all six."
+          },
+          {
+            "cat": "Assessment",
+            "q": "To pass a scored call you need:",
+            "o": [
+              "80 or more overall and full marks on compliance",
+              "60 overall",
+              "Any score",
+              "Compliance can be zero"
+            ],
+            "c": 0,
+            "e": "At least 8 of 10 scored live calls must pass."
           }
         ]
       },
       "checklist": {
-        "title": "Mock calls and monitored live calls",
-        "description": "Mock-call score (minimum 85%), compliance check and monitored live-call approval.",
-        "requires_evidence": false,
-        "min_score": 85,
+        "title": "Telecaller call scoring sheet (100 points)",
+        "description": "Pass is 80 or more overall and full marks on compliance. A guarantee, medical advice or privacy breach is an automatic fail. Mock-call average of 85 is needed overall; 8 of 10 scored live calls must pass.",
+        "requires_evidence": true,
+        "min_score": 80,
         "items": [
           {
-            "label": "Mock-call score meets 85% or above",
+            "label": "Opening and tone (10)",
+            "critical": false
+          },
+          {
+            "label": "Listening and questions (15)",
+            "critical": false
+          },
+          {
+            "label": "Accuracy of information (20)",
+            "critical": false
+          },
+          {
+            "label": "Compliance (20): no guarantees, no medical advice, recording notice, DND respected",
             "critical": true
           },
           {
-            "label": "Compliance script check (DND, consent, no guarantees)",
-            "critical": true
+            "label": "Objection handling (10)",
+            "critical": false
           },
           {
-            "label": "Monitored live-call approval",
-            "critical": true
+            "label": "Booking and next step (10)",
+            "critical": false
+          },
+          {
+            "label": "CRM entry (10): complete and correct within 15 minutes",
+            "critical": false
+          },
+          {
+            "label": "Closing (5)",
+            "critical": false
           }
         ]
       }
