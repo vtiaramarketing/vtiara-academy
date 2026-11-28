@@ -47,6 +47,6 @@
 @media print {
   .no-print { display: none !important; }
   body { background: #fff; }
-  .print-cert { box-shadow: none !important; border: 0 !important; }
+  .print-cert { position: fixed !important; inset: 0 !important; width: 297mm !important; height: 210mm !important; max-width: none !important; margin: 0 !important; border-radius: 0 !important; box-shadow: none !important; border: 0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; z-index: 9999; }
   @page { size: A4 landscape; margin: 0; }
 }

@@ -11,15 +11,17 @@ export default function CertificateView({ cert, className }: { cert: Certificate
   return (
     <div className={cn('print-cert relative mx-auto aspect-[1.414/1] w-full max-w-4xl overflow-hidden rounded-md bg-white shadow-lift', className)}>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#EAF4F8_0%,transparent_60%)]" />
-      <div className="absolute inset-[2.2%] border-[3px] border-navy" />
-      <div className="absolute inset-[3.4%] border border-gold" />
-      {(['left-[3.4%] top-[3.4%]', 'right-[3.4%] top-[3.4%] rotate-90', 'bottom-[3.4%] right-[3.4%] rotate-180', 'bottom-[3.4%] left-[3.4%] -rotate-90'] as const).map((pos) => (
-        <svg key={pos} viewBox="0 0 40 40" className={cn('absolute h-6 w-6 sm:h-10 sm:w-10', pos)} aria-hidden>
-          <path d="M2 38 V2 H38" fill="none" stroke="#C9A227" strokeWidth="3" />
-          <path d="M9 38 V9 H38" fill="none" stroke="#C9A227" strokeWidth="1" />
-          <rect x="12" y="12" width="6" height="6" transform="rotate(45 15 15)" fill="#C9A227" />
-        </svg>
-      ))}
+      <svg viewBox="0 0 1414 1000" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden>
+        <rect x="26" y="26" width="1362" height="948" fill="none" stroke="#0D2137" strokeWidth="9" />
+        <rect x="46" y="46" width="1322" height="908" fill="none" stroke="#C9A227" strokeWidth="2.5" />
+        {[[46, 46, 1, 1], [1368, 46, -1, 1], [1368, 954, -1, -1], [46, 954, 1, -1]].map(([x, y, sx, sy]) => (
+          <g key={`${x}-${y}`} transform={`translate(${x} ${y}) scale(${sx} ${sy})`} fill="none" stroke="#C9A227">
+            <path d="M-12 100 V-12 H100" strokeWidth="7" />
+            <path d="M12 70 V12 H70" strokeWidth="2.5" />
+            <rect x="22" y="22" width="12" height="12" transform="rotate(45 28 28)" fill="#C9A227" stroke="none" />
+          </g>
+        ))}
+      </svg>
       <div className="relative flex h-full flex-col items-center justify-between px-[8%] py-[6.5%] text-center">
         <img src="/logo.png" alt="VTIARA Training Academy" className="h-11 w-auto sm:h-24" width={702} height={229} />
         <div>
