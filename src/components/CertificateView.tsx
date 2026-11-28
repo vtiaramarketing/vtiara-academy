@@ -43,7 +43,7 @@ export default function CertificateView({ cert, className }: { cert: Certificate
             <p><span className="text-navy/45">Valid until</span> <strong className="text-navy">{cert.valid_until ? fmtDate(cert.valid_until) : cert.status === 'awaiting_approval' ? '—' : 'Not specified'}</strong></p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="rounded-lg bg-white p-1 ring-1 ring-navy/10 sm:p-1.5"><QRCodeSVG value={url} size={72} level="M" fgColor="#0D2137" className="h-10 w-10 sm:h-[72px] sm:w-[72px]" /></div>
+            <div className="bg-white p-1 sm:p-1.5"><QRCodeSVG value={url} size={72} level="M" fgColor="#0D2137" className="h-10 w-10 sm:h-[72px] sm:w-[72px]" /></div>
             <p className="mt-0.5 hidden max-w-[11rem] break-all text-[8px] text-navy/45 sm:block">{url}</p>
           </div>
           <div className="text-right">
