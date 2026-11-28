@@ -12,15 +12,8 @@ export default function CertificateView({ cert, className }: { cert: Certificate
     <div className={cn('print-cert relative mx-auto aspect-[1.414/1] w-full max-w-4xl overflow-hidden rounded-md bg-white shadow-lift', className)}>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#EAF4F8_0%,transparent_60%)]" />
       <svg viewBox="0 0 1414 1000" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden>
-        <rect x="26" y="26" width="1362" height="948" fill="none" stroke="#0D2137" strokeWidth="9" />
-        <rect x="46" y="46" width="1322" height="908" fill="none" stroke="#C9A227" strokeWidth="2.5" />
-        {[[46, 46, 1, 1], [1368, 46, -1, 1], [1368, 954, -1, -1], [46, 954, 1, -1]].map(([x, y, sx, sy]) => (
-          <g key={`${x}-${y}`} transform={`translate(${x} ${y}) scale(${sx} ${sy})`} fill="none" stroke="#C9A227">
-            <path d="M-12 100 V-12 H100" strokeWidth="7" />
-            <path d="M12 70 V12 H70" strokeWidth="2.5" />
-            <rect x="22" y="22" width="12" height="12" transform="rotate(45 28 28)" fill="#C9A227" stroke="none" />
-          </g>
-        ))}
+        <rect x="26" y="26" width="1362" height="948" rx="56" fill="none" stroke="#0D2137" strokeOpacity="0.45" strokeWidth="7" />
+        <rect x="48" y="48" width="1318" height="904" rx="38" fill="none" stroke="#C9A227" strokeWidth="2.5" />
       </svg>
       <div className="relative flex h-full flex-col items-center justify-between px-[8%] py-[6.5%] text-center">
         <img src="/logo.png" alt="VTIARA Training Academy" className="h-11 w-auto sm:h-24" width={702} height={229} />
