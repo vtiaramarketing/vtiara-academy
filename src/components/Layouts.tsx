@@ -135,12 +135,16 @@ export function RequireStaff() {
 function Bell_({ dark }: { dark?: boolean }) {
   const [open, setOpen] = useState(false);
   const { user } = useAuth();
-  const { data, reload } = useQuery(() => backend.select<Notification>('notifications', { eq: { user_id: user!.id }, order: ['created_at', false], limit: 12 }), [user?.id, open]);
+  const { data, reload } = useQuery(() => backend.select<Notification>('notifications', { eq: { user_id: user!.id }, order: ['created_at', false], limit: 30 }), [user?.id, open]);
   const unread = (data ?? []).filter((n) => !n.is_read).length;
   const nav = useNavigate();
   const read = async (n: Notification) => {
     await backend.update('notifications', { id: n.id }, { is_read: true }); reload(); setOpen(false);
-    if (n.link) nav(n.link.startsWith('/app') || n.link.startsWith('/admin') || n.link.startsWith('/courses') ? n.link : '/app/dashboard');
+    if (n.link) nav(['/app', '/admin', '/tutor', '/courses'].some((p) => n.link!.startsWith(p)) ? n.link : '/app/dashboard');
+  };
+  const markAll = async () => {
+    for (const n of (data ?? []).filter((x) => !x.is_read)) await backend.update('notifications', { id: n.id }, { is_read: true });
+    reload();
   };
   return (
     <div className="relative">
@@ -148,8 +152,11 @@ function Bell_({ dark }: { dark?: boolean }) {
         <Bell className="h-5 w-5" />{unread > 0 && <span className="absolute right-1.5 top-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-gold px-1 text-[10px] font-bold text-navy">{unread}</span>}
       </button>
       {open && (
-        <div className="absolute right-0 z-50 mt-2 w-80 max-w-[85vw] rounded-2xl border border-navy/10 bg-white p-2 text-navy shadow-lift">
-          <p className="px-3 py-2 text-xs font-semibold uppercase tracking-wider text-navy/50">Notifications</p>
+        <div className="absolute right-0 z-50 mt-2 max-h-[70vh] w-80 max-w-[85vw] overflow-y-auto overscroll-contain rounded-2xl border border-navy/10 bg-white p-2 text-navy shadow-lift">
+          <div className="sticky -top-2 z-10 -mx-2 -mt-2 mb-1 flex items-center justify-between rounded-t-2xl bg-white px-5 py-2.5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-navy/50">Notifications</p>
+            {unread > 0 && <button onClick={markAll} className="text-xs font-semibold text-teal hover:underline">Mark all as read</button>}
+          </div>
           {(data ?? []).length === 0 && <p className="px-3 py-6 text-center text-sm text-navy/55">You're all caught up.</p>}
           {(data ?? []).map((n) => (
             <button key={n.id} onClick={() => read(n)} className={cn('block w-full rounded-xl px-3 py-2.5 text-left hover:bg-pale', !n.is_read && 'bg-pale/60')}>
