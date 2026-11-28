@@ -9,11 +9,22 @@ export default function CertificateView({ cert, className }: { cert: Certificate
   const bad = cert.status === 'revoked' || cert.status === 'expired';
   const url = verifyUrl(cert.cert_no);
   return (
-    <div className={cn('print-cert relative mx-auto aspect-[1.414/1] w-full max-w-4xl overflow-hidden rounded-md bg-white shadow-lift', className)}>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#EAF4F8_0%,transparent_60%)]" />
+    <div className={cn('print-cert relative mx-auto aspect-[1.414/1] w-full max-w-4xl overflow-hidden bg-white shadow-lift', className)}>
       <svg viewBox="0 0 1414 1000" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden>
-        <rect x="10" y="10" width="1394" height="980" rx="46" fill="none" stroke="#F2C230" strokeWidth="8" />
-        <rect x="34" y="34" width="1346" height="932" rx="30" fill="none" stroke="#CBD5E1" strokeWidth="2.5" />
+        <rect x="26" y="26" width="1362" height="948" fill="none" stroke="#0D2137" strokeWidth="14" />
+        <rect x="48" y="48" width="1318" height="904" fill="none" stroke="#C9A227" strokeWidth="5" />
+        {[
+          'translate(0 0)',
+          'translate(1414 0) scale(-1 1)',
+          'translate(0 1000) scale(1 -1)',
+          'translate(1414 1000) scale(-1 -1)',
+        ].map((t) => (
+          <g key={t} transform={t}>
+            <path d="M37 37 H125 M37 37 V125" stroke="#C9A227" strokeWidth="9" fill="none" />
+            <path d="M60 60 H160 M60 60 V160" stroke="#C9A227" strokeOpacity="0.45" strokeWidth="2" fill="none" />
+            <path d="M76 66 L86 76 L76 86 L66 76 Z" fill="#C9A227" />
+          </g>
+        ))}
       </svg>
       <div className="relative flex h-full flex-col items-center justify-between px-[8%] py-[6.5%] text-center">
         <img src="/logo.png" alt="VTIARA Training Academy" className="h-11 w-auto sm:h-24" width={702} height={229} />
