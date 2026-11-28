@@ -70,7 +70,8 @@ export function createSupabaseBackend(url: string, anonKey: string): Backend {
     async update(table, match, patch) {
       let query: any = sb.from(table).update(patch);
       for (const [k, v] of Object.entries(match)) query = query.eq(k, v);
-      const { data, error } = await query.select();
+      // profiles hides nursing/consent columns from SELECT, so RETURNING * would be refused (403)
+      const { data, error } = await (table === 'profiles' ? query.select('id') : query.select());
       fail(error);
       return (data ?? []) as any[];
     },
